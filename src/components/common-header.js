@@ -2,11 +2,22 @@
 import ThiyoLogo from "../assets/images/logofooter.25bbaa5d.png";
 import Image from "next/image";
 import Link from "next/link";
-import '././../style.css'
+import { useState } from "react";
+// import '././../style.css'
 function PageHeader() {
+  const [dropdown, setDropdown] = useState("")
+  const handleOpen = (name)=>{
+    console.log(name,"chckname----->>>>>")
+    setDropdown((pre)=>{
+      return pre==name ? "":name
+    })
+  }
+
+  
+
   return (
     <div>
-      <nav className=" navbar-expand-lg header">
+      <nav className=" navbar-expand-lg header ">
         <div className="navbar">
           <div className="container">
             <Link className="navbar-brand" href="/">
@@ -30,8 +41,8 @@ function PageHeader() {
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav ms-auto mx-lg-auto mb-2 gap-2  mb-lg-0 align-items-start">
-                <li className="nav-item border-0 relative top-10 dropdown Real_Estate">
+               <ul className="navbar-nav ms-auto mx-lg-auto mb-2 gap-2  mb-lg-0 align-items-start">
+                <li className="nav-item border-0 relative top-10 dropdown Real_Estate" >
                   <a
                     className="nav-link  gap-2  d-flex align-items-center"
                     role="button"
@@ -39,7 +50,7 @@ function PageHeader() {
                     aria-expanded="false"
                     href="#"
                   >
-                    <p className="flex align-items-center justify-content-between w-100">
+                    <p className="flex align-items-center justify-content-between w-100" onClick={()=>handleOpen(1)}>
                       For Buyers
                     </p>
                     <div className="d-none d-lg-block">
@@ -87,7 +98,7 @@ function PageHeader() {
                       </svg>
                     </div>
                   </a>
-                  <ul className="dropdown-menu">
+                  <ul className={`dropdown-menu ${dropdown==1&&"d-block"}`}>
                     <li>
                       <a className="dropdown-item" href="#">
                         Property in Abu Dhabi
@@ -135,7 +146,7 @@ function PageHeader() {
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item border-0 dropdown Real_Estate">
+                <li className="nav-item border-0 dropdown Real_Estate" onClick={()=>handleOpen(2)}>
                   <a
                     className="nav-link  gap-2  d-flex align-items-center"
                     role="button"
@@ -191,7 +202,7 @@ function PageHeader() {
                       </svg>
                     </div>
                   </a>
-                  <ul className="dropdown-menu">
+                  <ul className={`dropdown-menu ${dropdown==2&&"d-block"}`}>
                     <li>
                       <a className="dropdown-item" href="#">
                         Tenants 01

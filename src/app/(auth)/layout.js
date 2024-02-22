@@ -4,7 +4,7 @@ import PageFooter from "@/components/page-footer";
 import PageHeader from "@/components/page-header";
 // import { useEffect } from "react";
 
-// import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css";
 import "../globals.css";
 
 // export const metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <PageHeader />
+        // {/* <PageHeader /> */}
         <div className="container-fluid">
           <div className="row auth">
             <div className="col-lg-6">
@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
             <div className="col-lg-6">{children}</div>
           </div>
         </div>
-        <PageFooter />
+        {/* <PageFooter /> */}
       </body>
     </html>
   );
