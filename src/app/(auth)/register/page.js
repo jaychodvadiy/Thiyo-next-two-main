@@ -1,12 +1,12 @@
 
 import React from "react";
 
-import Thiyoherder from "../herder/thiyoherder";
+
 import Image from "next/image";
-import ThiyoLogo from "../../../img/logofooter.25bbaa5d.png";
-import beautiful from "../../../img/beautiful-umbrella-chair-around-swimming-pool-hotel-resort 1.png";
-import Googleicons from "../../../img/googleicon.png";
-import facebook from "../../../img/facebook.png";
+import ThiyoLogo from "../../../assets/images/logofooter.25bbaa5d.png";
+import beautiful from "../../../assets/images/beautiful-umbrella-chair-around-swimming-pool-hotel-resort 1.png";
+import Googleicons from "../../../assets/images/googleicon.png";
+import facebook from "../../../assets/images/facebook.png";
 import Link from "next/link";
 
 function Register() {
@@ -160,7 +160,7 @@ function Register() {
                   </div>
                   <h6 className="no-account text-center">
                     Already have an Account, Click to{" "}
-                    <Link href="/loging">
+                    <Link href="/login">
                       <span className="singup">LOGIN</span>
                     </Link>
                   </h6>

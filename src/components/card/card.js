@@ -278,7 +278,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -467,7 +467,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -654,7 +654,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -843,7 +843,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -1032,7 +1032,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -1225,7 +1225,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -1415,7 +1415,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -1602,7 +1602,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -1792,7 +1792,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -1981,7 +1981,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -2172,7 +2172,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -2361,7 +2361,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -2545,7 +2545,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -2736,7 +2736,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -2923,7 +2923,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -3112,7 +3112,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -3297,7 +3297,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>
@@ -3482,7 +3482,7 @@ function Card() {
                           </div>
                           <div className="btn-main">
                             <p className="outlines">AED 6000</p>
-                            <Link href="/listpage">
+                            <Link href="/dashboard/listproperty">
                               <button type="button" className="outline">
                                 View Details
                               </button>

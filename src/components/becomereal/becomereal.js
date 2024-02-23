@@ -15,7 +15,7 @@ function BecomeReal() {
                   Accelerate your listings to new heights and unleash the
                   potential of captivating leads andvalued clients.
                 </p>
-                <Link href="/Register">
+                <Link href="/register">
                   <button
                     className="btn btncolornow btn-outline-secondary"
                     type="submit"

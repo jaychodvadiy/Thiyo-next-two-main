@@ -16,7 +16,7 @@ function Lookinghome() {
                   Unlock a hassle-free selling experience and unleash the real
                   potential of your cherished property.
                 </h6>
-                <Link href="/listproperty">
+                <Link href="/propertys">
                   <button className="d-none d-md-flex align-items-center justify-content-center thiyo-btn">
                     LIST YOUR PROPERTY
                   </button>
