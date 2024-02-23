@@ -242,7 +242,7 @@ function PageHeader() {
                 </li>
               </ul>
               <div className="d-flex ">
-                <Link href="/listproperty">
+                <Link href="/propertys">
                   <div className="listproperty d-none d-lg-block relative top-2 mr-3">
                     <button className="button gradient-hover-effect primary">
                       List Property
@@ -275,11 +275,11 @@ function PageHeader() {
                       ></path>
                     </svg>
                     <div className="d-flex text-capitalize">
-                      <Link href="/loging" className="loging" replace>
+                      <Link href="/login" className="loging" replace>
                         Log In
                       </Link>
                       /
-                      <Link href="/Register" className="loging" replace>
+                      <Link href="/register" className="loging" replace>
                         Register
                       </Link>
                     </div>

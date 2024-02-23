@@ -3,9 +3,9 @@
 import React from "react";
 // import "../../../style/thiyo.css";
 import Image from "next/image";
-// import ThiyoLogo from "../../../img/logofooter.25bbaa5d.png";
+import ThiyoLogo from "../../../assets/images/logofooter.25bbaa5d.png";
 // import Googleicons from "../../../img/googleicon.png";
-// import beautiful from "../../../img/beautiful-umbrella-chair-around-swimming-pool-hotel-resort 1.png";
+import beautiful from "../../../assets/images/beautiful-umbrella-chair-around-swimming-pool-hotel-resort 1.png";
 // import facebook from "../../../img/facebook.png";
 import Link from "next/link";
 
@@ -15,17 +15,17 @@ function Loging() {
         <div className="container ">
           <div className="row">
             <div className="col-sm-6 h-full w-3/6">
-              {/* <Image src={beautiful} alt="Beautiful Scene" /> */}
+              <Image src={beautiful} alt="Beautiful Scene" />
             </div>
             <div className="col-sm-6 ">
               <div className=" row auth--content">
                 <form>
                   <div className="auth--logo d-flex justify-content-center my-5">
-                    {/* <Image
+                    <Image
                       className="img-fluid"
                       src={ThiyoLogo}
                       alt="ThiyoLogo"
-                    /> */}
+                    />
                   </div>
                   <div className="col-12 mb-4 ">
                     <label
@@ -117,7 +117,7 @@ function Loging() {
                   </div>
                   <h6 className="no-account text-center">
                     Already have an Account, Click to
-                    <Link href="/Register">
+                    <Link href="/register">
                       <span className="singup">Sing UP </span>
                     </Link>
                   </h6>

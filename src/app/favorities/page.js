@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Page = () => {
+function Page() {
   return (
     <div>
-      sdfnajksdhfjasdhglfjs
+      lkgfsndk;nldsfnglkjsd nbfrkgj sdrijkfnb
     </div>
   )
 }
