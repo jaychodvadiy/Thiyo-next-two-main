@@ -143,7 +143,7 @@ function Page() {
               <div>
                 <form>
                   <div className="princinorder propertylistprofile uploadphothos">
-                    <Link href="/property">
+                    <Link href="/otpverify/property">
                       <button className="border-0 bg-transparent ps-0">
                         <svg
                           width="45"

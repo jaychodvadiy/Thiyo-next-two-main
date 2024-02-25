@@ -490,12 +490,7 @@ function Page() {
                                 </a>
                               </div>
                               <div className="btn-main">
-                                <Link href="/dashboard/
-                                
-                                
-                                
-                                
-                                ">
+                                <Link href="/dashboard/listproperty">
                                   <button type="button">View Details</button>
                                 </Link>
                                 <button className="outline">Book</button>

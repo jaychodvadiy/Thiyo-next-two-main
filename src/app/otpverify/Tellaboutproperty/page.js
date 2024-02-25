@@ -108,7 +108,7 @@ function Page() {
                 <div className="propertylistprofile propertylistprofile-cs">
                   <form>
                     <div className="profilepage">
-                      <Link href="/otpverify/property">
+                      <Link href="/otpverify/otpverifydetails">
                         <button className="border-0 p-0" type="button">
                           <svg
                             width="45"
