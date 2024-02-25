@@ -126,7 +126,7 @@ function Page() {
                 <form>
                   <div className="">
                     <div className="uploadphothos">
-                      <Link href="/Tellaboutproperty">
+                      <Link href="/otpverify/Tellaboutproperty">
                       <button type="button" className="border-0 bg-transparent">
                         <svg
                           width="45"
