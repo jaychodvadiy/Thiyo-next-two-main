@@ -5403,7 +5403,7 @@ function Page() {
                   <div className="col-lg-4">
                     <div className="checkoutText mb-4 mb-lg-0">
                       <h2>Do you need more inspiration for your holiday?</h2>
-                      <a href="/blog">Check it out</a>
+                      <a href="/Insights">Check it out</a>
                     </div>
                   </div>
                 </div>
