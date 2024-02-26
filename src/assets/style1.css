@@ -4260,6 +4260,14 @@ element.style {
   padding: 15px;
   border: 1px solid black;
 }
+
+.rentproperty .accordion .accordion-body .filterPrice .multi-range-slider .thumb .caption * {
+  background-color: #565656;
+  box-shadow: none;
+  border-radius: 5px;
+  width: 55px;
+  /* padding: 1px 8px; */
+}
 /* Find Holiday Homes for your next trip */
 
 .readmorepart {

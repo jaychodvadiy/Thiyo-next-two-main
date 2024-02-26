@@ -4,9 +4,9 @@ import React from "react";
 // import "../../../style/thiyo.css";
 import Image from "next/image";
 import ThiyoLogo from "../../../assets/images/logofooter.25bbaa5d.png";
-// import Googleicons from "../../../img/googleicon.png";
+import Googleicons from "../../../assets/images/googleicon.png";
 import beautiful from "../../../assets/images/beautiful-umbrella-chair-around-swimming-pool-hotel-resort 1.png";
-// import facebook from "../../../img/facebook.png";
+import facebook from "../../../assets/images/facebook.png";
 import Link from "next/link";
 
 function Loging() {
@@ -104,13 +104,13 @@ function Loging() {
                   <div className="row mb-4 pb-2">
                     <div className="col-md-6 col-12 mb-lg-0 mb-2">
                       <button className="social-btn">
-                        {/* <Image src={Googleicons} alt="Googleicons" /> */}
+                        <Image src={Googleicons} alt="Googleicons" />
                         Loging with Google
                       </button>
                     </div>
                     <div className="col-md-6 col-12 mb-lg-0 mb-2">
                       <button className="social-btn">
-                        {/* <Image src={facebook} alt="Googleicons" /> */}
+                        <Image src={facebook} alt="Googleicons" />
                         Loging with Google
                       </button>
                     </div>

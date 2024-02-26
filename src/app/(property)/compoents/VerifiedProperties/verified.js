@@ -134,7 +134,7 @@ function Verified() {
                                     />
                                     <div className="thumb thumb-right">
                                       <div className="caption">
-                                        <span className="max-caption">30</span>
+                                        <span className="max-caption">35000</span>
                                       </div>
                                     </div>
                                     <div
@@ -495,7 +495,7 @@ function Verified() {
                                     />
                                     <div className="thumb thumb-right">
                                       <div className="caption">
-                                        <span className="max-caption">30</span>
+                                        <span className="max-caption">35000</span>
                                       </div>
                                     </div>
                                     <div
