@@ -107,8 +107,7 @@ const Verified = () => {
                               data-bs-target="#panelsStayOpen-collapseOne"
                               aria-expanded="true"
                               aria-controls="panelsStayOpen-collapseOne"
-                              // onClick={() => handleClick(2)}
-                              onClick={()=>handleClick(2)}
+                              onClick={() => handleClick(2)}
                             >
                               Budget
                             </button>
