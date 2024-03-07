@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React,{ useState } from "react";
 import aroundpool from "../../../../assets/images/umbrella-chair-around-swimming-pool.jpg";
 import gardenlight from "../../../../assets/images/light-garden-luxury-pool-nature.jpg";
 import colonial from "../../../../assets/images/colonial-style-house-night-scene.jpg";
@@ -21,11 +22,28 @@ import puvoor from "../../../../assets/images/5627.jpg";
 import eruohouseing from "../../../../assets/images/5206.jpg";
 import houseingpuvoor from "../../../../assets/images/5392.jpg";
 import houseingcanada from "../../../../assets/images/7219.jpg";
-import Image from 'next/image';
-function Verified() {
+import Image from "next/image";
+const Verified = () => {
+  const [dropdow, setDropdow] = useState();
+
+  const handleClick = (name) => {
+    console.log(name, "checking------->>>>>");
+    setDropdow((pre) => {
+      return pre == name ? "" : name
+    });
+  };
+
+  // function PageHeader() {
+  //   const [dropdown, setDropdown] = useState("");
+  //   const handleOpen = (name) => {
+  //     console.log(name, "chckname----->>>>>");
+  //     setDropdown((pre) => {
+  //       return pre == name ? "" : name;
+  //     });
+  //   };
   return (
     <div>
-   <section>
+      <section>
         <div className="container">
           <div className="row">
             <div className="rentproperty rentproperty-main">
@@ -70,7 +88,9 @@ function Verified() {
                         </div>
                       </div>
                     </div>
-                    <div className="card mb-2 p-0">
+                    <div
+                      className='card mb-2 p-0'
+                    >
                       <div
                         className="accordion"
                         id="accordionPanelsStayOpenExample"
@@ -87,15 +107,20 @@ function Verified() {
                               data-bs-target="#panelsStayOpen-collapseOne"
                               aria-expanded="true"
                               aria-controls="panelsStayOpen-collapseOne"
+                              // onClick={() => handleClick(2)}
+                              onClick={()=>handleClick(2)}
                             >
                               Budget
                             </button>
                           </h2>
                           <div
                             id="panelsStayOpen-collapseOne"
-                            className="accordion-collapse collapse show"
+                            className={`dropdow-menu ${
+                              dropdow == 1 && "d-block"
+                            }accordion-collapse collapse show`}
                             aria-labelledby="panelsStayOpen-headingOne"
                             style={{}}
+                            
                           >
                             <div className="accordion-body">
                               <div className="filterPrice">
@@ -134,7 +159,9 @@ function Verified() {
                                     />
                                     <div className="thumb thumb-right">
                                       <div className="caption">
-                                        <span className="max-caption">35000</span>
+                                        <span className="max-caption">
+                                          35000
+                                        </span>
                                       </div>
                                     </div>
                                     <div
@@ -495,7 +522,9 @@ function Verified() {
                                     />
                                     <div className="thumb thumb-right">
                                       <div className="caption">
-                                        <span className="max-caption">35000</span>
+                                        <span className="max-caption">
+                                          35000
+                                        </span>
                                       </div>
                                     </div>
                                     <div
@@ -4262,7 +4291,7 @@ function Verified() {
                                   </p>
                                 </div>
                                 <div className="d-flex justify-content-between gap-2 flex-wrap house-main align-items-center">
-                                <a href="#">
+                                  <a href="#">
                                     <Image src={beadroom} alt="beadroom" />3
                                     Bedroom
                                   </a>
@@ -4487,7 +4516,7 @@ function Verified() {
                                   </p>
                                 </div>
                                 <div className="d-flex justify-content-between gap-2 flex-wrap house-main align-items-center">
-                                <a href="#">
+                                  <a href="#">
                                     <Image src={beadroom} alt="beadroom" />3
                                     Bedroom
                                   </a>
@@ -4712,7 +4741,7 @@ function Verified() {
                                   </p>
                                 </div>
                                 <div className="d-flex justify-content-between gap-2 flex-wrap house-main align-items-center">
-                                <a href="#">
+                                  <a href="#">
                                     <Image src={beadroom} alt="beadroom" />3
                                     Bedroom
                                   </a>
@@ -4937,7 +4966,7 @@ function Verified() {
                                   </p>
                                 </div>
                                 <div className="d-flex justify-content-between gap-2 flex-wrap house-main align-items-center">
-                                <a href="#">
+                                  <a href="#">
                                     <Image src={beadroom} alt="beadroom" />3
                                     Bedroom
                                   </a>
@@ -5162,7 +5191,7 @@ function Verified() {
                                   </p>
                                 </div>
                                 <div className="d-flex justify-content-between gap-2 flex-wrap house-main align-items-center">
-                                <a href="#">
+                                  <a href="#">
                                     <Image src={beadroom} alt="beadroom" />3
                                     Bedroom
                                   </a>
@@ -5387,7 +5416,7 @@ function Verified() {
                                   </p>
                                 </div>
                                 <div className="d-flex justify-content-between gap-2 flex-wrap house-main align-items-center">
-                                <a href="#">
+                                  <a href="#">
                                     <Image src={beadroom} alt="beadroom" />3
                                     Bedroom
                                   </a>
@@ -5612,7 +5641,7 @@ function Verified() {
                                   </p>
                                 </div>
                                 <div className="d-flex justify-content-between gap-2 flex-wrap house-main align-items-center">
-                                <a href="#">
+                                  <a href="#">
                                     <Image src={beadroom} alt="beadroom" />3
                                     Bedroom
                                   </a>
@@ -5837,7 +5866,7 @@ function Verified() {
                                   </p>
                                 </div>
                                 <div className="d-flex justify-content-between gap-2 flex-wrap house-main align-items-center">
-                                <a href="#">
+                                  <a href="#">
                                     <Image src={beadroom} alt="beadroom" />3
                                     Bedroom
                                   </a>
@@ -6062,7 +6091,7 @@ function Verified() {
                                   </p>
                                 </div>
                                 <div className="d-flex justify-content-between gap-2 flex-wrap house-main align-items-center">
-                                <a href="#">
+                                  <a href="#">
                                     <Image src={beadroom} alt="beadroom" />3
                                     Bedroom
                                   </a>
@@ -6225,7 +6254,7 @@ function Verified() {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Verified
+export default Verified;
