@@ -1,6 +1,4 @@
-
 import React from "react";
-
 
 import Image from "next/image";
 import ThiyoLogo from "../../../assets/images/logofooter.25bbaa5d.png";
@@ -8,8 +6,18 @@ import beautiful from "../../../assets/images/beautiful-umbrella-chair-around-sw
 import Googleicons from "../../../assets/images/googleicon.png";
 import facebook from "../../../assets/images/facebook.png";
 import Link from "next/link";
+// import { useFormik } from "formik";
 
 function Register() {
+  // const formik = useFormik({
+  //   initialValues: {
+  //     username: "",
+  //     moblienuber: "",
+  //     email: "",
+  //   },
+  //   validationSchema
+  // });
+
   return (
     <div>
       {/* <Thiyoherder /> */}
