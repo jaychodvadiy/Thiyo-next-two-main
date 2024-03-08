@@ -112,10 +112,10 @@ function Page() {
                         >
                           <div className="getstart-tabbutton">
                             <button className="active">Apartment</button>
-                            <button className="active">Rent / Lease</button>
-                            <button className="active">Townhouse</button>
-                            <button className="active">Hotel Apartment</button>
-                            <button className="active">Penthouse</button>
+                            <button className="">Rent / Lease</button>
+                            <button className="">Townhouse</button>
+                            <button className="">Hotel Apartment</button>
+                            <button className="">Penthouse</button>
                           </div>
                         </div>
                         <div
@@ -125,9 +125,9 @@ function Page() {
                         >
                           <div className="getstart-tabbutton">
                             <button className="active">Apartment</button>
-                            <button className="active">Rent / Lease</button>
-                            <button className="active">Townhouse</button>
-                            <button className="active">Penthouse</button>
+                            <button className="">Rent / Lease</button>
+                            <button className="">Townhouse</button>
+                            <button className="">Penthouse</button>
                           </div>
                         </div>
                       </div>

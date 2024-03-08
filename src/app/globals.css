@@ -1,3 +1,5 @@
+@import url("../assets/style1.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,7 +34,7 @@ body {
   }
 }
 
-@import url("./../assets/style1.css");
+
 
 * {
   scroll-behavior: smooth;
