@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PageFooter from "@/components/page-footer";
 import Page_Header from "@/components/page-header";
+import PageLoging from "@/components/page-loging";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div>
-          <Page_Header />
+          <PageLoging />
           {/* <Loging/> */}
           {children}
           <PageFooter />

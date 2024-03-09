@@ -1,5 +1,5 @@
-"use client"
-import React,{ useState } from "react";
+"use client";
+import React, { useState } from "react";
 import aroundpool from "../../../../assets/images/umbrella-chair-around-swimming-pool.jpg";
 import gardenlight from "../../../../assets/images/light-garden-luxury-pool-nature.jpg";
 import colonial from "../../../../assets/images/colonial-style-house-night-scene.jpg";
@@ -24,12 +24,12 @@ import houseingpuvoor from "../../../../assets/images/5392.jpg";
 import houseingcanada from "../../../../assets/images/7219.jpg";
 import Image from "next/image";
 const Verified = () => {
-  const [dropdow, setDropdow] = useState();
+  const [dropdown, setDropdown] = useState("");
 
   const handleClick = (name) => {
     console.log(name, "checking------->>>>>");
-    setDropdow((pre) => {
-      return pre == name ? "" : name
+    setDropdown((prev) => {
+      return prev == name ? "" : name;
     });
   };
 
@@ -88,9 +88,7 @@ const Verified = () => {
                         </div>
                       </div>
                     </div>
-                    <div
-                      className='card mb-2 p-0'
-                    >
+                    <div className="card mb-2 p-0">
                       <div
                         className="accordion"
                         id="accordionPanelsStayOpenExample"
@@ -101,13 +99,13 @@ const Verified = () => {
                             id="panelsStayOpen-headingOne"
                           >
                             <button
-                              className="accordion-button selectoptionbtn title"
+                              className="accordion-button select-option-btn title"
                               type="button"
                               data-bs-toggle="collapse"
                               data-bs-target="#panelsStayOpen-collapseOne"
                               aria-expanded="true"
                               aria-controls="panelsStayOpen-collapseOne"
-                              onClick={() => handleClick(2)}
+                              onClick={() => handleClick(1)}
                             >
                               Budget
                             </button>
@@ -115,11 +113,10 @@ const Verified = () => {
                           <div
                             id="panelsStayOpen-collapseOne"
                             className={`dropdow-menu ${
-                              dropdow == 1 && "d-block"
-                            }accordion-collapse collapse show`}
+                              dropdown == 1 ? "d-block" : "d-none"
+                            } accordion-collapse collapse show`}
                             aria-labelledby="panelsStayOpen-headingOne"
                             style={{}}
-                            
                           >
                             <div className="accordion-body">
                               <div className="filterPrice">
@@ -225,14 +222,17 @@ const Verified = () => {
                               data-bs-target="#panelsStayOpen-collapseTwo"
                               aria-expanded="true"
                               aria-controls="panelsStayOpen-collapseTwo"
+                              onClick={() => handleClick(2)}
                             >
                               Property Type
                             </button>
                           </h2>
                           <div
-                            id="panelsStayOpen-collapseTwo"
-                            className="accordion-collapse collapse show"
-                            aria-labelledby="panelsStayOpen-headingTwo"
+                            id="panelsStayOpen-collapseOne"
+                            className={`dropdow-menu ${
+                              dropdown == 2 ? "d-block" : "d-none"
+                            } accordion-collapse collapse show`}
+                            aria-labelledby="panelsStayOpen-headingOne"
                             style={{}}
                           >
                             <div className="accordion-body">
@@ -333,14 +333,17 @@ const Verified = () => {
                               data-bs-target="#panelsStayOpen-collapseThree"
                               aria-expanded="false"
                               aria-controls="panelsStayOpen-collapseThree"
+                              onClick={() => handleClick(3)}
                             >
                               Beds &amp; Baths
                             </button>
                           </h2>
                           <div
-                            id="panelsStayOpen-collapseThree"
-                            className="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingThree"
+                            id="panelsStayOpen-collapseOne"
+                            className={`dropdow-menu ${
+                              dropdown == 3 ? "d-block" : "d-none"
+                            } accordion-collapse collapse show`}
+                            aria-labelledby="panelsStayOpen-headingOne"
                             style={{}}
                           >
                             <div className="accordion-body">
@@ -394,14 +397,17 @@ const Verified = () => {
                               data-bs-target="#panelsStayOpen-collapseFive"
                               aria-expanded="false"
                               aria-controls="panelsStayOpen-collapseFive"
+                              onClick={() => handleClick(4)}
                             >
                               Posted By
                             </button>
                           </h2>
                           <div
-                            id="panelsStayOpen-collapseFive"
-                            className="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingFive"
+                            id="panelsStayOpen-collapseOne"
+                            className={`dropdow-menu ${
+                              dropdown == 4 ? "d-block" : "d-none"
+                            } accordion-collapse collapse show`}
+                            aria-labelledby="panelsStayOpen-headingOne"
                             style={{}}
                           >
                             <div className="accordion-body">
@@ -474,14 +480,17 @@ const Verified = () => {
                               data-bs-target="#panelsStayOpen-collapseOnelogo"
                               aria-expanded="true"
                               aria-controls="panelsStayOpen-collapseOnelogo"
+                              onClick={() => handleClick(5)}
                             >
                               Aera
                             </button>
                           </h2>
                           <div
-                            id="panelsStayOpen-collapseOnelogo"
-                            className="accordion-collapse collapse show"
-                            aria-labelledby="panelsStayOpen-headingOnelogo"
+                            id="panelsStayOpen-collapseOne"
+                            className={`dropdow-menu ${
+                              dropdown == 5 ? "d-block" : "d-none"
+                            } accordion-collapse collapse show`}
+                            aria-labelledby="panelsStayOpen-headingOne"
                             style={{}}
                           >
                             <div className="accordion-body">
@@ -588,14 +597,17 @@ const Verified = () => {
                               data-bs-target="#panelsStayOpen-collapsen"
                               aria-expanded="false"
                               aria-controls="panelsStayOpen-collapsen"
+                              onClick={() => handleClick(6)}
                             >
                               Purchase Type
                             </button>
                           </h2>
                           <div
-                            id="panelsStayOpen-collapsen"
-                            className="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingn"
+                            id="panelsStayOpen-collapseOne"
+                            className={`dropdow-menu ${
+                              dropdown == 6 ? "d-block" : "d-none"
+                            } accordion-collapse collapse show`}
+                            aria-labelledby="panelsStayOpen-headingOne"
                             style={{}}
                           >
                             <div className="accordion-body">
@@ -653,14 +665,17 @@ const Verified = () => {
                               data-bs-target="#panelsStayOpen-collapseten"
                               aria-expanded="false"
                               aria-controls="panelsStayOpen-collapseten"
+                              onClick={() => handleClick(7)}
                             >
                               Amenities
                             </button>
                           </h2>
                           <div
-                            id="panelsStayOpen-collapseten"
-                            className="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingten"
+                            id="panelsStayOpen-collapseOne"
+                            className={`dropdow-menu ${
+                              dropdown == 7 ? "d-block" : "d-none"
+                            } accordion-collapse collapse show`}
+                            aria-labelledby="panelsStayOpen-headingOne"
                             style={{}}
                           >
                             <div className="accordion-body">
@@ -749,14 +764,17 @@ const Verified = () => {
                               data-bs-target="#panelsStayOpen-collapsenine"
                               aria-expanded="false"
                               aria-controls="panelsStayOpen-collapsenine"
+                              onClick={() => handleClick(8)}
                             >
                               Furnishing Status
                             </button>
                           </h2>
                           <div
-                            id="panelsStayOpen-collapsenine"
-                            className="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingnine"
+                            id="panelsStayOpen-collapseOne"
+                            className={`dropdow-menu ${
+                              dropdown == 8 ? "d-block" : "d-none"
+                            } accordion-collapse collapse show`}
+                            aria-labelledby="panelsStayOpen-headingOne"
                             style={{}}
                           >
                             <div className="accordion-body">
