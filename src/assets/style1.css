@@ -2350,7 +2350,7 @@ rentproperty .propertyslider .cs-main .cs-tab p {
 .completion-product-view-tab .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: #f8f4f0;
-  color: var(--primary);
+  /* color: var(--primary); */
 }
 .nav-fill .nav-item .nav-link,
 .nav-justified .nav-item .nav-link {

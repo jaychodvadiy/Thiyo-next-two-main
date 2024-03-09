@@ -389,7 +389,7 @@ function Slider_Page() {
                   </div>
                   <div className="d-none d-xl-block"></div>
                   <div className="area selectproperty moredataproperty d-flex align-items-center justify-content-end gap-2 flex-row">
-                    <p className="filter">More Filters</p>
+                    <p className="filter">More Filters</p>  
                     <span className="fs-5 d-flex align-items-center justify-content-center">
                       +
                     </span>
