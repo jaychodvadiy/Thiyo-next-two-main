@@ -76,7 +76,6 @@ function Villa() {
                   </div>
                 </div>
               </div>
-              <div></div>
             </div>
             <div
               className="modal fade photos-grid-modal"

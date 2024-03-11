@@ -204,7 +204,7 @@ function Page() {
                         <div className="price_details d-flex">
                           <div>
                             <div>
-                            <input className="form-control" placeholder="₹ Expected Price" type="number" value=""/>
+                            <input className="form-control" placeholder="₹ Expected Price" type="number" defaultValue=""/>
                             </div>
                           </div>
                           <div>
