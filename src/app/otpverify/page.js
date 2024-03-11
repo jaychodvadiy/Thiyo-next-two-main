@@ -115,7 +115,7 @@ function Page() {
                     Enter OTP, Received on your Email ID
                   </h2>
                   <div className="CTPUT">
-                    <p id="editText" contenteditable="true">
+                    <p id="editText" children="true">
                       item@gmail.com
                     </p>
                     <svg

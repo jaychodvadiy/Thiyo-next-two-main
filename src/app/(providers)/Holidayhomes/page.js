@@ -301,7 +301,7 @@ function Page() {
                           AJMAN
                         </button>
                       </li>
-                    </ul>
+                    </ul>                             
                     <div className="tab-content propertyslider  cstm-tab-content-feature-home">
                       <div
                         className="tab-pane fade show active"

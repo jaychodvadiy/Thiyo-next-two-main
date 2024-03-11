@@ -27,7 +27,7 @@ const Verified = () => {
   const [dropdown, setDropdown] = useState("");
 
   const handleClick = (name) => {
-    console.log(name, "checking------->>>>>");
+    // console.log(name, "checking------->>>>>");
     setDropdown((prev) => {
       return prev == name ? "" : name;
     });
