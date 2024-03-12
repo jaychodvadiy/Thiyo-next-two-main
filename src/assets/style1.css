@@ -1006,9 +1006,16 @@ span {
   background: #fff;
   border-radius: 3px 0 0 0;
 }
+.react-tel-input .country-list .country {
+  padding: 7px 9px;
+  list-style-type: none;
+  background-color: #1d4e80;
+}
+
 .react-tel-input .flag {
   width: 16px;
   height: 11px;
+  background-image: url("../assets/images/download.png");
 }
 
 .react-tel-input .flag-dropdown.open {
@@ -4240,28 +4247,43 @@ a {
   bottom: -23px;
 }
 
-
 element.style {
 }
-.propertylistprofile .profilepage .Furnished .items.checkbox .value .form-check-input {
-    height: 20px;
-    width: 20px;
+.propertylistprofile
+  .profilepage
+  .Furnished
+  .items.checkbox
+  .value
+  .form-check-input {
+  height: 20px;
+  width: 20px;
 }
-.form-check-input:checked[type=checkbox] {
-    --bs-form-check-bg-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e);
+.form-check-input:checked[type="checkbox"] {
+  --bs-form-check-bg-image: url(
+    data:image/svg + xml,
+    %3csvgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 20 20"%3e%3cpathfill="none"stroke="%23fff"stroke-linecap="round"stroke-linejoin="round"stroke-width="3"d="m6 10 3 3 6-6"/%3e%3c/svg%3e
+  );
 }
 .form-check-input:checked {
-    background-color: #af824a;
-    border-color: #af824a;
+  background-color: #af824a;
+  border-color: #af824a;
 }
-.propertylistprofile .profilepage .profilehomepage .floorplaninput, .propertylistprofile .profilepage .profilehomepage .thiyo-btn {
+.propertylistprofile .profilepage .profilehomepage .floorplaninput,
+.propertylistprofile .profilepage .profilehomepage .thiyo-btn {
   height: 35px;
   border-radius: 10px !important;
   padding: 15px;
   border: 1px solid black;
 }
 
-.rentproperty .accordion .accordion-body .filterPrice .multi-range-slider .thumb .caption * {
+.rentproperty
+  .accordion
+  .accordion-body
+  .filterPrice
+  .multi-range-slider
+  .thumb
+  .caption
+  * {
   background-color: #565656;
   box-shadow: none;
   border-radius: 5px;
@@ -5361,4 +5383,3 @@ label.form-check-label {
   font-size: 12px;
   line-height: 20px;
 }
-

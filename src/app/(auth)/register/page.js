@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 
 import Image from "next/image";
 import ThiyoLogo from "../../../assets/images/logofooter.25bbaa5d.png";
@@ -6,21 +6,62 @@ import beautiful from "../../../assets/images/beautiful-umbrella-chair-around-sw
 import Googleicons from "../../../assets/images/googleicon.png";
 import facebook from "../../../assets/images/facebook.png";
 import Link from "next/link";
-// import { useFormik } from "formik";
+import PhoneInput from "react-phone-input-2";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
-  // const formik = useFormik({
-  //   initialValues: {
-  //     username: "",
-  //     moblienuber: "",
-  //     email: "",
-  //   },
-  //   validationSchema
-  // });
+  const initialValues = { fullname: "", email: "", number: "" };
+  const [value, setValue] = useState("+12133734253");
+  const [fullName, SetFullName] = useState("");
+  const [email, SetEmail] = useState("");
+  const [number, SetNumber] = useState("");
+  const [errors, setErrors] = useState({});
+  const [formErrors, setFormErrors] = useState({});
+  const [formValue, setFormValue] = useState();
+  const [dropdown, setDropdown] = useState("");
+
+  const handleClick = () => {
+    const navigate = useNavigate();
+    console.log(data?.current?.value, "initial value");
+    const error = {};
+    if (!fullName) {
+      error.fullname = "fullname is reqiuer";
+    }
+    if (!email) {
+      error.email = "Email is reqiuer";
+    }
+    if (!number) {
+      error.number = "Email is reqiuer";
+    }
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
+    localStorage.setItem("fullname", fullName);
+    localStorage.setItem("email", email);
+    localStorage.setItem("number", number);
+    console.log(localStorage.getItem("inputvalue"), "-------->>>>>>>>>");
+    setFormValue(initialValues);
+    setFormErrors({});
+    navigate("/login");
+  };
+
+  const handClick = (name) => {
+    console.log(name, "checking------->>>>>");
+    setDropdown((prev) => {
+      return prev === name ? "" : name;
+    });
+  };
+  console.log(`fullname:${fullName} email:${email} number:${number}`);
+
+  const hendle = (e) => {
+    e.preventDefault(); // Correct spelling here
+    handleClick(e);
+  };
 
   return (
     <div>
-      {/* <Thiyoherder /> */}
       <section>
         <div className="container ">
           <div className="row">
@@ -29,7 +70,7 @@ function Register() {
             </div>
             <div className="col-sm-6 ">
               <div className=" row auth--content">
-                <form className="staffform">
+                <form className="staffform" onClick={hendle}>
                   <div className="thiyoiconsa my-5">
                     <Image
                       className="img-fluid"
@@ -48,24 +89,35 @@ function Register() {
                       type="text"
                       defaultValue=""
                       name="userName"
+                      onChange={(e) => SetFullName(e.target.value)}
                     ></input>
+                    {formErrors.fullName && (
+                      <div id="fullname" className="text-dark">
+                        {formErrors.fullname}
+                      </div>
+                    )}
                   </div>
                   <div className="col-12 mb-3">
-                    <label htmlFor="mobile" className="form-label">
+                    <label
+                      htmlFor="mobile"
+                      className="form-label"
+                      onChange={(e) => SetNumber(e.target.value)}
+                      onClick={() => handClick(0)}
+                    >
                       Mobile Number
                     </label>
                     <div className=" react-tel-input ">
                       <div className="special-label">Phone</div>
-                      <input
-                        className="form-control "
-                        placeholder="1 (702) 123-4567"
-                        type="tel"
-                        defaultValue="+91"
-                        name="phone"
+                      <PhoneInput
+                        coun  try="US"
+                        value={value}
+                        onChange={setValue}
                       />
                       <div className="flag-dropdown ">
                         <div
-                          className="selected-flag"
+                          className={`dropdow-menu ${
+                            dropdown === 0 ? "d-block" : "d-none"
+                          } selected-flag`}
                           title="India: + 91"
                           tabIndex="0"
                           role="button"
@@ -77,11 +129,17 @@ function Register() {
                         </div>
                       </div>
                     </div>
+                    {formErrors.number && (
+                      <div id="number" className="text-dark">
+                        {formErrors.number}
+                      </div>
+                    )}
                   </div>
                   <div className="col-12 mb-2">
                     <label
                       htmlFor="exampleFormControlInput1"
                       className="form-lalbe mb-3"
+                      onChange={(e) => SetEmail(e.target.value)}
                     >
                       Email Address
                     </label>
@@ -98,6 +156,11 @@ function Register() {
                         Send OTP
                       </button>
                     </div>
+                    {formErrors.email && (
+                      <div id="email" className="text-red">
+                        {formErrors.email}
+                      </div>
+                    )}
                   </div>
 
                   <div className="col-12 mb-3">
@@ -145,6 +208,7 @@ function Register() {
                     <button
                       type="submit"
                       className="button-primary-gradient gradient-hover-effect my-4 w-100"
+                      onClick={handleClick}
                     >
                       REGISTER
                     </button>
