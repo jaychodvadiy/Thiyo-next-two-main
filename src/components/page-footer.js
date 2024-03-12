@@ -277,11 +277,6 @@ function PageFooter() {
                             ></path>
                           </g>
                         </svg>
-                        {/* <img
-                          className="position-absolute"
-                          src="/_next/static/media/instagram.c86d9302.png"
-                          alt=""
-                        /> */}
                       </a>
                     </li>
                     <li className="item-02 position-relative">
@@ -300,11 +295,6 @@ function PageFooter() {
                             ></path>
                           </g>
                         </svg>
-                        {/* <img
-                          src="/_next/static/media/facebook.51b9cc20.png"
-                          alt=""
-                          className="position-absolute"
-                        /> */}
                       </a>
                     </li>
                     <li className="item-03 position-relative">
@@ -323,11 +313,6 @@ function PageFooter() {
                             ></path>
                           </g>
                         </svg>
-                        {/* <img
-                          src="/_next/static/media/twitter.bf0d842d.png"
-                          alt=""
-                          className="position-absolute twitter"
-                        /> */}
                       </a>
                     </li>
                     <li className="item-04 position-relative">
@@ -350,11 +335,6 @@ function PageFooter() {
                             ></path>
                           </g>
                         </svg>
-                        {/* <img
-                          src="/_next/static/media/linkedin.e28d2fc8.png"
-                          alt=""
-                          className="position-absolute linkdin"
-                        /> */}
                       </a>
                     </li>
                   </ul>

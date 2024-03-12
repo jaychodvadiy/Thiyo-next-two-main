@@ -122,16 +122,16 @@ function PageLoging() {
                         aria-expanded="false"
                         href="#"
                       >
-                        <p className="d-flex align-items-center justify-content-between w-100">
-                          <div className="d-flex align-items-center gap-2">
+                        <div className="d-flex align-items-center justify-content-between w-100">
+                          <p className=" d-flex align-items-center gap-2">
                             <Image
                               className="m-0"
                               src={AllCities}
                               alt="Real_Estate"
                             />
                             All Cities
-                          </div>
-                        </p>
+                          </p>
+                        </div>
                         <div className="d-none d-lg-block">
                           <svg
                             width="10"
@@ -564,4 +564,4 @@ function PageLoging() {
   );
 }
 
-export default PageLoging
+export default PageLoging;

@@ -10,6 +10,7 @@ import facebook from "../../../assets/images/facebook.png";
 import Link from "next/link";
 
 function Loging() {
+  
   return (
     <div>
         <div className="container ">
