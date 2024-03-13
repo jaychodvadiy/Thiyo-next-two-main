@@ -7,8 +7,9 @@ import Googleicons from "../../../assets/images/googleicon.png";
 import facebook from "../../../assets/images/facebook.png";
 import Link from "next/link";
 import PhoneInput from "react-phone-input-2";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useRouter } from 'next/router'
+import { data } from "autoprefixer";
 
 function Register() {
   const initialValues = { fullname: "", email: "", number: "" };
@@ -20,9 +21,16 @@ function Register() {
   const [formErrors, setFormErrors] = useState({});
   const [formValue, setFormValue] = useState();
   const [dropdown, setDropdown] = useState("");
+ 
 
+
+  useEffect(() => {
+    if (localStorage.getItem("address")) {
+      setConnectionAddress(localStorage.getItem("address"));
+    }
+  }, []);
   const handleClick = () => {
-    const navigate = useNavigate();
+   
     console.log(data?.current?.value, "initial value");
     const error = {};
     if (!fullName) {
@@ -44,7 +52,8 @@ function Register() {
     console.log(localStorage.getItem("inputvalue"), "-------->>>>>>>>>");
     setFormValue(initialValues);
     setFormErrors({});
-    navigate("/login");
+    // router.push('/login');
+
   };
 
   const handClick = (name) => {
@@ -109,7 +118,8 @@ function Register() {
                     <div className=" react-tel-input ">
                       <div className="special-label">Phone</div>
                       <PhoneInput
-                        coun  try="US"
+                        coun
+                        try="US"
                         value={value}
                         onChange={setValue}
                       />

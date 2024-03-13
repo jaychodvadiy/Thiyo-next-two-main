@@ -978,6 +978,7 @@ span {
   top: 50%;
   margin-top: -5px;
 }
+
 .react-tel-input .in {
   background-position: -208px -55px;
 }
@@ -1000,6 +1001,7 @@ span {
   border-left: 3px solid transparent;
   border-right: 3px solid transparent;
   border-top: 4px solid #555;
+  height: 100px;
 }
 .react-tel-input .flag-dropdown.open,
 .react-tel-input .flag-dropdown.open .selected-flag {
@@ -1009,9 +1011,22 @@ span {
 .react-tel-input .country-list .country {
   padding: 7px 9px;
   list-style-type: none;
-  background-color: #1d4e80;
+  background-color: #fdfdfd;
+  /* width: 50%; */
+  /* margin: 0 auto; */
+  overflow: hidden;
 }
-
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+.react-tel-input .flag-dropdown::-webkit-scrollbar-track{
+  border-radius: 16px;
+  border: solid 5px transparent;
+}
+/* :hover::-webkit-slider-thumb{
+  overflow-y: scroll;
+} */
 .react-tel-input .flag {
   width: 16px;
   height: 11px;
