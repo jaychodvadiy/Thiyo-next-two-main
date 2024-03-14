@@ -8,7 +8,7 @@ import facebook from "../../../assets/images/facebook.png";
 import Link from "next/link";
 import PhoneInput from "react-phone-input-2";
 import { useEffect, useState } from "react";
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
 import { data } from "autoprefixer";
 
 function Register() {
@@ -21,16 +21,14 @@ function Register() {
   const [formErrors, setFormErrors] = useState({});
   const [formValue, setFormValue] = useState();
   const [dropdown, setDropdown] = useState("");
- 
-
 
   useEffect(() => {
     if (localStorage.getItem("address")) {
       setConnectionAddress(localStorage.getItem("address"));
     }
   }, []);
+  
   const handleClick = () => {
-   
     console.log(data?.current?.value, "initial value");
     const error = {};
     if (!fullName) {
@@ -49,18 +47,10 @@ function Register() {
     localStorage.setItem("fullname", fullName);
     localStorage.setItem("email", email);
     localStorage.setItem("number", number);
-    console.log(localStorage.getItem("inputvalue"), "-------->>>>>>>>>");
+    console.log(localStorage.getItem("inputValue"), "******");
     setFormValue(initialValues);
     setFormErrors({});
     // router.push('/login');
-
-  };
-
-  const handClick = (name) => {
-    console.log(name, "checking------->>>>>");
-    setDropdown((prev) => {
-      return prev === name ? "" : name;
-    });
   };
   console.log(`fullname:${fullName} email:${email} number:${number}`);
 
@@ -68,14 +58,24 @@ function Register() {
     e.preventDefault(); // Correct spelling here
     handleClick(e);
   };
+  const handClick = (name) => {
+    // console.log(name, "checking------->>>>>");
+    setDropdown((prev) => {
+      return prev === name ? "" : name;
+    });
+  };
 
   return (
     <div>
       <section>
-        <div className="container ">
+        <div className="container " >
           <div className="row">
-            <div className="col-sm-6 h-full w-3/6">
-              <Image src={beautiful} alt="Beautiful Scene" />
+           <div className="col-sm-6 h-full auth">
+              <div className="left--img">
+                <div className="img">
+                <Image className="img-fluid" src={beautiful} alt="Beautiful Scene" />
+                </div>
+              </div>
             </div>
             <div className="col-sm-6 ">
               <div className=" row auth--content">
@@ -98,11 +98,16 @@ function Register() {
                       type="text"
                       defaultValue=""
                       name="userName"
-                      onChange={(e) => SetFullName(e.target.value)}
+                      onChange={e => SetFullName(e.target.value)}
                     ></input>
                     {formErrors.fullName && (
-                      <div id="fullname" className="text-dark">
-                        {formErrors.fullname}
+                      <div
+                        id="fullName"
+                        variant="outlined"
+                        severity="error"
+                        style={{ color: "red" }}
+                      >
+                        {formErrors.fullName}
                       </div>
                     )}
                   </div>
@@ -115,8 +120,6 @@ function Register() {
                     >
                       Mobile Number
                     </label>
-                    <div className=" react-tel-input ">
-                      <div className="special-label">Phone</div>
                       <PhoneInput
                         coun
                         try="US"
@@ -138,6 +141,8 @@ function Register() {
                           </div>
                         </div>
                       </div>
+                    <div className=" react-tel-input ">
+                      <div className="special-label">Phone</div>
                     </div>
                     {formErrors.number && (
                       <div id="number" className="text-dark">

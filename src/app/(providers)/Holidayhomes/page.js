@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 import hhcad from "../../../assets/images/hh-canada.922d05fe.png";
 import heroo from "../../../assets/images/Expand More.ea981875.svg";
 import last from "../../../assets/images/hh-lastmin.4f2e6cf9.png";
@@ -28,11 +28,11 @@ import iconse from "../../../assets/images/IconInput.fcdc7489.svg";
 import CapitalHotel from "../../../assets/images/restaurant-interior.jpg";
 import elegant from "../../../assets/images/elegant-hotel-room-with-big-bed.jpg";
 import morning from "../../../assets/images/san-diego-dawn-early-morning-with-palm-tree-silhouette.jpg";
-import Link from 'next/link';
+import Link from "next/link";
 function Page() {
   return (
     <div>
-        <section>
+      <section>
         <div>
           <div className="holidaybannerbg">
             <section className="holidaybanner holidaybannercard">
@@ -255,6 +255,7 @@ function Page() {
                           data-bs-target="#abu-dhabi"
                           aria-controls="abu-dhabi"
                           aria-selected="true"
+                          tabIndex="-1"
                         >
                           ABU DHABI
                         </button>
@@ -287,21 +288,21 @@ function Page() {
                           SHARJAH
                         </button>
                       </li>
-                      <li className="nav-item" role="presentation">
+                      <li class="nav-item" role="presentation">
                         <button
                           type="button"
-                          className="nav-link"
+                          class="nav-link active"
                           role="tab"
                           data-bs-toggle="tab"
                           data-bs-target="#ajman"
                           aria-controls="ajman"
-                          aria-selected="false"
+                          aria-selected="true"
                           ndex="-1"
                         >
                           AJMAN
                         </button>
                       </li>
-                    </ul>                             
+                    </ul>
                     <div className="tab-content propertyslider  cstm-tab-content-feature-home">
                       <div
                         className="tab-pane fade show active"
@@ -3207,7 +3208,7 @@ function Page() {
                             </div>
                             <div className="card-body cstm-card-body-main">
                               <p className="title">
-                              OYO Flagship Hotel Park Palace
+                                OYO Flagship Hotel Park Palace
                               </p>
                               <div className="d-flex pb-2 pb-lg-0 my-1 my-lg-2 gap-1 align-items-center">
                                 <svg
@@ -3235,7 +3236,8 @@ function Page() {
                                   </defs>
                                 </svg>
                                 <p className="card-title ">
-                                bunderNear Minara Masjid, Mandvi, Mumbai, Mumbai
+                                  bunderNear Minara Masjid, Mandvi, Mumbai,
+                                  Mumbai
                                 </p>
                               </div>
                               <div className="d-flex justify-content-between gap-2 flex-wrap house-main house-main-02 align-items-center">
@@ -3693,7 +3695,6 @@ function Page() {
             </div>
           </section>
 
-          
           <section className="HH-checkout-section h-100">
             <div className="container">
               <div className="holidaymainpage">
@@ -5358,7 +5359,7 @@ function Page() {
                           className="img-fluid holidayHomeimg"
                           alt="img"
                         />
-                        
+
                         <div className="checkout-img-content">
                           <span>Holiday homes in Canada</span>
                           <Image
@@ -5648,7 +5649,7 @@ function Page() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default Page
+export default Page;

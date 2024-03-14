@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import driving from '../../../assets/images/driving-green-neon-color-motorcycle-road.jpg'
+import drivin from '../../../assets/images/driving-green-neon-color-motorcycle-road.jpg'
 const Page = () => {
   return (
     <div>
@@ -15,7 +15,7 @@ const Page = () => {
               <div className="leftContent">
                 <div className="blogListContent">
                   <Image
-                    src={driving}
+                    src={drivin}
                     alt="driving"
                     className="img-fluid pb-3"
                   />
@@ -162,7 +162,7 @@ const Page = () => {
                 </div>
                 <div className="blogListContent">
                 <Image
-                    src={driving}
+                    src={drivin}
                     alt="driving"
                     className="img-fluid pb-3"
                   />
