@@ -1,11 +1,19 @@
+"use client";
 // import React from "react";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import ThiyoLogo from "../assets/images/logofooter.25bbaa5d.png";
 import AllCities from "../assets/images/All_Cities.737b46d4.png";
 import Link from "next/link";
 
 function PageLoging() {
+  const [dropdown, setDropdown] = useState("");
+  const handleOpen = (name) => {
+    console.log(name, "chckname----->>>>>");
+    setDropdown((pre) => {
+      return pre == name ? "" : name;
+    });
+  };
   return (
     <div>
       <div>
@@ -122,7 +130,10 @@ function PageLoging() {
                         aria-expanded="false"
                         href="#"
                       >
-                        <div className="d-flex align-items-center justify-content-between w-100">
+                        <div
+                          onClick={() => handleOpen(1)}
+                          className="d-flex align-items-center justify-content-between w-100"
+                        >
                           <p className=" d-flex align-items-center gap-2">
                             <Image
                               className="m-0"
@@ -132,7 +143,7 @@ function PageLoging() {
                             All Cities
                           </p>
                         </div>
-                        <div className="d-none d-lg-block">
+                        <div className=" d-none d-lg-block">
                           <svg
                             width="10"
                             height="7"
@@ -177,7 +188,11 @@ function PageLoging() {
                           </svg>
                         </div>
                       </a>
-                      <ul className="dropdown-menu">
+                      <ul
+                        className={`dropdow-menu ${
+                          dropdown == 1 ? "d-block" : "d-none"
+                        } dropdown-menu`}
+                      >
                         <div className="row">
                           <div className="col-6 p-0">
                             <li>

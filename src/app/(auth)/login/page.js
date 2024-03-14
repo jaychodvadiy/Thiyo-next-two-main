@@ -13,10 +13,14 @@ function Loging() {
   
   return (
     <div>
-        <div className="container ">
+        <div className="container-fluid">
           <div className="row">
-            <div className="col-sm-6 h-full w-3/6">
-              <Image src={beautiful} alt="Beautiful Scene" />
+            <div className="col-sm-6 h-full auth">
+              <div className="left--img">
+                <div className="img">
+                <Image  src={beautiful} alt="Beautiful Scene" />
+                </div>
+              </div>
             </div>
             <div className="col-sm-6 ">
               <div className=" row auth--content">
