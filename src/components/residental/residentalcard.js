@@ -21,7 +21,7 @@ function Residentalcard() {
               <div className="imageitemHoele">
                 <div className=" d-flex justify-content-between flex-column ">
                   <h5>Residental</h5>
-                  <p>
+                  <p  style={{color:"gray"}}>
                     Buy or sell your home with our agents. House prices,
                     inspections, negotiations and other services are included in
                     the house price.
@@ -84,7 +84,7 @@ function Residentalcard() {
                 </div>
                 <div className="text-end img-gallery-info d-flex justify-content-between flex-column">
                   <h5>Commercial</h5>
-                  <p>
+                  <p  style={{color:"gray"}}>
                     Buy or sell your home with our agents. House prices,
                     inspections, negotiations and other services are included in
                     the house price.
