@@ -11,7 +11,7 @@ function BecomeReal() {
             <div className="col-sm-6">
               <div className="becomereal">
                 <h1>Become a Real Estate Agent</h1>
-                <p>
+                <p  style={{color:"gray"}}>
                   Accelerate your listings to new heights and unleash the
                   potential of captivating leads andvalued clients.
                 </p>
