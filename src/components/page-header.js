@@ -1,9 +1,18 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import ThiyoLogo from "../assets/images/logofooter.25bbaa5d.png";
 import AllCities from "../assets/images/All_Cities.737b46d4.png";
 import Link from "next/link";
 function Page_Header() {
+  const [dropdow, setDropdown] = useState("");
+  const onclike = (name) => {
+    console.log(name, "chckname----->>>>>");
+
+    setDropdown((pre) => {
+      return pre == name ? "" : name;
+    });
+  };
   return (
     <div>
       <section>
@@ -111,7 +120,7 @@ function Page_Header() {
                       </p>
                     </a>
                   </li>
-                  <li className="nav-item dropdown Real_Estate">
+                  <li className="nav-item dropdown Real_Estate"onClick={()=>onclike(1)}>
                     <a
                       className="nav-link  gap-2  d-flex align-items-center"
                       role="button"
@@ -174,7 +183,7 @@ function Page_Header() {
                         </svg>
                       </div>
                     </a>
-                    <ul className="dropdown-menu">
+                    <ul className={`dropdown-menu ${dropdow == 1 && "d-block"}`}>
                       <div className="row">
                         <div className="col-6 p-0">
                           <li>
