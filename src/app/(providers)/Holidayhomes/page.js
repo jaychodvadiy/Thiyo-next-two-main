@@ -36,6 +36,8 @@ function Page() {
   const onButtonClick = (targetId) => {
     setActiveButton(targetId);
   };
+  const [dropdow, setDropdown] = useState("");
+  
   return (
     <div>
       <section>
@@ -319,7 +321,13 @@ function Page() {
                     </ul>
                     <div className="tab-content propertyslider  cstm-tab-content-feature-home">
                       <div className="tab-pane fade">
-                        <div className={`tab-pane fade ${ activeButton === "abu-dhabi" ? "show active" : ""}`} id="abu-dhabi" role="tabpanel" >
+                        <div
+                          className={`tab-pane fade ${
+                            activeButton === "abu-dhabi" ? "show active" : ""
+                          }`}
+                          id="abu-dhabi"
+                          role="tabpanel"
+                        >
                           <div className="countryfeaturehome">
                             <div className="card cstm-card-main">
                               <div className="position-relative">
@@ -1272,7 +1280,13 @@ function Page() {
                         </div>
                       </div>
                       <div className="tab-pane fade">
-                        <div className={`tab-pane fade ${activeButton === "dubai" ? "show active" : ""}`} id="dubai" role="tabpanel">
+                        <div
+                          className={`tab-pane fade ${
+                            activeButton === "dubai" ? "show active" : ""
+                          }`}
+                          id="dubai"
+                          role="tabpanel"
+                        >
                           <div className="countryfeaturehome">
                             <div className="card cstm-card-main">
                               <div className="position-relative">

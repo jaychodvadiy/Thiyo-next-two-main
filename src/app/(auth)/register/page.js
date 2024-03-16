@@ -10,6 +10,7 @@ import PhoneInput from "react-phone-input-2";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { data } from "autoprefixer";
+import { all } from "yap";
 
 function Register() {
   const initialValues = { fullname: "", email: "", number: "" };
@@ -121,7 +122,7 @@ function Register() {
                       Mobile Number
                     </label>
                       <PhoneInput
-                        coun
+                        country={all}
                         try="US"
                         value={value}
                         onChange={setValue}

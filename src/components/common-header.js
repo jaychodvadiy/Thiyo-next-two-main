@@ -7,7 +7,7 @@ import { useState } from "react";
 function PageHeader() {
   const [dropdown, setDropdown] = useState("");
   const handleOpen = (name) => {
-    console.log(name, "chckname----->>>>>");
+    // console.log(name, "chckname----->>>>>");
     setDropdown((pre) => {
       return pre == name ? "" : name
     });
