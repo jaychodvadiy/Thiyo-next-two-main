@@ -8,9 +8,11 @@ import facebook from "../../../assets/images/facebook.png";
 import Link from "next/link";
 import PhoneInput from "react-phone-input-2";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import { data } from "autoprefixer";
-import { all } from "yap";
+// import { all } from "yap";
+import flags from "react-phone-number-input/flags";
+import 'react-phone-input-2/lib/style.css'
 
 function Register() {
   const initialValues = { fullname: "", email: "", number: "" };
@@ -22,13 +24,15 @@ function Register() {
   const [formErrors, setFormErrors] = useState({});
   const [formValue, setFormValue] = useState();
   const [dropdown, setDropdown] = useState("");
+  const [state, setState] = useState("");
+  const [phone, setPhone] = useState("");
 
   useEffect(() => {
     if (localStorage.getItem("address")) {
       setConnectionAddress(localStorage.getItem("address"));
     }
   }, []);
-  
+
   const handleClick = () => {
     console.log(data?.current?.value, "initial value");
     const error = {};
@@ -69,12 +73,16 @@ function Register() {
   return (
     <div>
       <section>
-        <div className="container " >
+        <div className="container ">
           <div className="row">
-           <div className="col-sm-6 h-full auth">
+            <div className="col-sm-6 h-full auth">
               <div className="left--img">
                 <div className="img">
-                <Image className="img-fluid" src={beautiful} alt="Beautiful Scene" />
+                  <Image
+                    className="img-fluid"
+                    src={beautiful}
+                    alt="Beautiful Scene"
+                  />
                 </div>
               </div>
             </div>
@@ -99,7 +107,7 @@ function Register() {
                       type="text"
                       defaultValue=""
                       name="userName"
-                      onChange={e => SetFullName(e.target.value)}
+                      onChange={(e) => SetFullName(e.target.value)}
                     ></input>
                     {formErrors.fullName && (
                       <div
@@ -121,27 +129,27 @@ function Register() {
                     >
                       Mobile Number
                     </label>
-                      <PhoneInput
-                        country={all}
-                        try="US"
-                        value={value}
-                        onChange={setValue}
-                      />
-                      <div className="flag-dropdown ">
-                        <div
-                          className={`dropdow-menu ${
-                            dropdown === 0 ? "d-block" : "d-none"
-                          } selected-flag`}
-                          title="India: + 91"
-                          tabIndex="0"
-                          role="button"
-                          aria-haspopup="listbox"
-                        >
-                          <div className="flag in">
-                            <div className="arrow"></div>
-                          </div>
+                    <PhoneInput
+                      country={"us"}
+                      value={phone}
+                      onChange={(phone) => setState({ phone })}
+                    />
+                    {/* <Link href={'https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css'}/> */}
+                    <div className="flag-dropdown ">
+                      <div
+                        className={`dropdow-menu ${
+                          dropdown === 0 ? "d-block" : "d-none"
+                        } selected-flag`}
+                        title="India: + 91"
+                        tabIndex="0"
+                        role="button"
+                        aria-haspopup="listbox"
+                      >
+                        <div className="flag in">
+                          <div className="arrow"></div>
                         </div>
                       </div>
+                    </div>
                     <div className=" react-tel-input ">
                       <div className="special-label">Phone</div>
                     </div>

@@ -36,7 +36,7 @@ function Page() {
   const onButtonClick = (targetId) => {
     setActiveButton(targetId);
   };
-  const [dropdow, setDropdown] = useState("");
+
   
   return (
     <div>

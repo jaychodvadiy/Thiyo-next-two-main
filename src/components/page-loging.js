@@ -9,7 +9,7 @@ import Link from "next/link";
 function PageLoging() {
   const [dropdown, setDropdown] = useState("");
   const handleOpen = (name) => {
-    console.log(name, "chckname----->>>>>");
+    // console.log(name, "chckname----->>>>>");
     setDropdown((pre) => {
       return pre == name ? "" : name;
     });
