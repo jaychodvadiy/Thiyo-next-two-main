@@ -13,10 +13,12 @@ import { data } from "autoprefixer";
 // import { all } from "yap";
 import flags from "react-phone-number-input/flags";
 import 'react-phone-input-2/lib/style.css'
+import * as Yup from "yup";
+import { useFormik } from "formik";
 
 function Register() {
   const initialValues = { fullname: "", email: "", number: "" };
-  const [value, setValue] = useState("+12133734253");
+
   const [fullName, SetFullName] = useState("");
   const [email, SetEmail] = useState("");
   const [number, SetNumber] = useState("");
@@ -26,6 +28,26 @@ function Register() {
   const [dropdown, setDropdown] = useState("");
   const [state, setState] = useState("");
   const [phone, setPhone] = useState("");
+  
+  const [accestockn, setAccestockn]=useState("")
+  const formik = useFormik({
+    initialValues: {
+      fullName: "",
+      number: "",
+      email: ""
+    },
+
+    // onSubmit: (value)=>{
+
+    // }
+    // console.log
+  });
+  const display = Yup.object().shape({
+    fullName:Yup.string().required("Full Name is reqiuer"),
+    number:Yup.string().required("Moblie Nmuber is reqiuer"),
+    email:Yup.string().required("Email is reqiuer")
+  });
+
 
   useEffect(() => {
     if (localStorage.getItem("address")) {
@@ -33,36 +55,36 @@ function Register() {
     }
   }, []);
 
-  const handleClick = () => {
-    console.log(data?.current?.value, "initial value");
-    const error = {};
-    if (!fullName) {
-      error.fullname = "fullname is reqiuer";
-    }
-    if (!email) {
-      error.email = "Email is reqiuer";
-    }
-    if (!number) {
-      error.number = "Email is reqiuer";
-    }
-    if (Object.keys(errors).length > 0) {
-      setFormErrors(errors);
-      return;
-    }
-    localStorage.setItem("fullname", fullName);
-    localStorage.setItem("email", email);
-    localStorage.setItem("number", number);
-    console.log(localStorage.getItem("inputValue"), "******");
-    setFormValue(initialValues);
-    setFormErrors({});
-    // router.push('/login');
-  };
-  console.log(`fullname:${fullName} email:${email} number:${number}`);
+  // const handleClick = () => {
+  //   console.log(data?.current?.value, "initial value");
+  //   const error = {};
+  //   if (!fullName) {
+  //     error.fullname = "fullname is reqiuer";
+  //   }
+  //   if (!email) {
+  //     error.email = "Email is reqiuer";
+  //   }
+  //   if (!number) {
+  //     error.number = "Email is reqiuer";
+  //   }
+  //   if (Object.keys(errors).length > 0) {
+  //     setFormErrors(errors);
+  //     return;
+  //   }
+  //   localStorage.setItem("fullname", fullName);
+  //   localStorage.setItem("email", email);
+  //   localStorage.setItem("number", number);
+  //   console.log(localStorage.getItem("inputValue"), "******");
+  //   setFormValue(initialValues);
+  //   setFormErrors({});
+  //   // router.push('/login');
+  // };
+  // console.log(`fullname:${fullName} email:${email} number:${number}`);
 
-  const hendle = (e) => {
-    e.preventDefault(); // Correct spelling here
-    handleClick(e);
-  };
+  // const hendle = (e) => {
+  //   e.preventDefault(); // Correct spelling here
+  //   handleClick(e);
+  // };
   const handClick = (name) => {
     // console.log(name, "checking------->>>>>");
     setDropdown((prev) => {
@@ -78,73 +100,37 @@ function Register() {
             <div className="col-sm-6 h-full auth">
               <div className="left--img">
                 <div className="img">
-                  <Image
-                    className="img-fluid"
-                    src={beautiful}
-                    alt="Beautiful Scene"
-                  />
+                  <Image className="img-fluid" src={beautiful}  alt="Beautiful Scene" />
                 </div>
               </div>
             </div>
+            
             <div className="col-sm-6 ">
               <div className=" row auth--content">
-                <form className="staffform" onClick={hendle}>
+                <form className="staffform" >
                   <div className="thiyoiconsa my-5">
-                    <Image
-                      className="img-fluid"
-                      src={ThiyoLogo}
-                      alt="ThiyoLogo"
-                    />
+                    <Image className="img-fluid" src={ThiyoLogo}  alt="ThiyoLogo"/>
                   </div>
                   <div className="col-12 mb-3">
                     <label htmlFor="userName" className="form-label">
                       Full Name
                     </label>
-                    <input
-                      className="form-control"
-                      id="userName"
-                      placeholder="Full Name"
-                      type="text"
-                      defaultValue=""
-                      name="userName"
-                      onChange={(e) => SetFullName(e.target.value)}
-                    ></input>
-                    {formErrors.fullName && (
-                      <div
-                        id="fullName"
-                        variant="outlined"
-                        severity="error"
-                        style={{ color: "red" }}
-                      >
-                        {formErrors.fullName}
-                      </div>
-                    )}
+                    <input className="form-control" id="userName" placeholder="Full Name" type="text" defaultValue="" name="userName" onChange={(e) => SetFullName(e.target.value)}></input>
+                 
+                    {formik.fullName && (<div id="fullName" variant="outlined" severity="error" style={{ color: "red" }} >{formik.fullName}</div>)}
+               
                   </div>
                   <div className="col-12 mb-3">
-                    <label
-                      htmlFor="mobile"
-                      className="form-label"
-                      onChange={(e) => SetNumber(e.target.value)}
-                      onClick={() => handClick(0)}
-                    >
-                      Mobile Number
-                    </label>
-                    <PhoneInput
-                      country={"us"}
-                      value={phone}
-                      onChange={(phone) => setState({ phone })}
-                    />
+                    <label htmlFor="mobile" className="form-label" onChange={(e) => SetNumber(e.target.value)} onClick={() => handClick(0)}>Mobile Number</label>
+
+                    <PhoneInput country={"us"} value={phone} onChange={(phone) => setState({ phone })}/>
+                    
                     {/* <Link href={'https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css'}/> */}
+                 
                     <div className="flag-dropdown ">
-                      <div
-                        className={`dropdow-menu ${
-                          dropdown === 0 ? "d-block" : "d-none"
-                        } selected-flag`}
-                        title="India: + 91"
-                        tabIndex="0"
-                        role="button"
-                        aria-haspopup="listbox"
-                      >
+                    
+                      <div  className={`dropdow-menu ${dropdown === 0 ? "d-block" : "d-none"} selected-flag`} title="India: + 91"  tabIndex="0"  role="button"  aria-haspopup="listbox">
+                    
                         <div className="flag in">
                           <div className="arrow"></div>
                         </div>
@@ -153,74 +139,39 @@ function Register() {
                     <div className=" react-tel-input ">
                       <div className="special-label">Phone</div>
                     </div>
-                    {formErrors.number && (
-                      <div id="number" className="text-dark">
-                        {formErrors.number}
-                      </div>
-                    )}
-                  </div>
+                   
+                    {formik.number && (<div id="number" className="text-dark"> {formik.number}</div>)}</div>
+                 
                   <div className="col-12 mb-2">
-                    <label
-                      htmlFor="exampleFormControlInput1"
-                      className="form-lalbe mb-3"
-                      onChange={(e) => SetEmail(e.target.value)}
-                    >
+                   
+                    <label htmlFor="exampleFormControlInput1" className="form-lalbe mb-3" onChange={(e) => SetEmail(e.target.value)}>
                       Email Address
                     </label>
+               
                     <div className="emailadder relative sendotp">
-                      <input
-                        className="form-control"
-                        id="email"
-                        placeholder="Enter your email address"
-                        type="email"
-                        defaultValue=""
-                        name="email"
-                      />
+                      <input className="form-control" id="email" placeholder="Enter your email address" type="email" defaultValue="" name="email"/>
+                    
                       <button type="submit" className="absolute lockicon">
                         Send OTP
                       </button>
+                 
                     </div>
-                    {formErrors.email && (
-                      <div id="email" className="text-red">
-                        {formErrors.email}
-                      </div>
-                    )}
+                    {formik.email && (<div id="email" className="text-red"> {formik.email}</div>)}
+                 
                   </div>
-
                   <div className="col-12 mb-3">
+                  
                     <label htmlFor="">
                       Enter OTP, Recieved on your Email ID
                     </label>
+                 
                     <br />
+                  
                     <div className="otp-verification-main">
-                      <input
-                        className="tab-class outline-none"
-                        id=""
-                        maxLength="1"
-                        type="text"
-                        name=""
-                      />
-                      <input
-                        className="tab-class outline-none"
-                        id=""
-                        maxLength="1"
-                        type="text"
-                        name=""
-                      />
-                      <input
-                        className="tab-class outline-none"
-                        id=""
-                        maxLength="1"
-                        type="text"
-                        name=""
-                      />
-                      <input
-                        className="tab-class outline-none"
-                        id=""
-                        maxLength="1"
-                        type="text"
-                        name=""
-                      />
+                      <input className="tab-class outline-none" id="" maxLength="1" type="text" name=""/>
+                      <input className="tab-class outline-none" id="" maxLength="1" type="text" name=""/>
+                      <input className="tab-class outline-none" id="" maxLength="1" type="text" name=""/>
+                      <input className="tab-class outline-none" id="" maxLength="1" type="text" name=""/>
                     </div>
                   </div>
                   <div className="col-12 text-end pb-2">
@@ -232,7 +183,7 @@ function Register() {
                     <button
                       type="submit"
                       className="button-primary-gradient gradient-hover-effect my-4 w-100"
-                      onClick={handleClick}
+                      // onClick={handleClick}
                     >
                       REGISTER
                     </button>
