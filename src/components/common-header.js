@@ -251,7 +251,7 @@ function PageHeader() {
                     <button className="button gradient-hover-effect primary">
                       List Property
                     </button>
-                    <div className="listnew flex align-items-center justify-content-center absolute">
+                    <div className="listnew flex align-items-center justify-content-center">
                       free
                     </div>
                   </div>

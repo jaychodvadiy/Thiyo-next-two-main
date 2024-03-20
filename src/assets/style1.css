@@ -399,19 +399,30 @@ h3 {
 }
 
 .header .navbar .listproperty .listnew {
-  right: -7px;
-  top: -7px;
+  /* right: -8px;
+  top: -9px;
   text-transform: uppercase;
-  color: white;
+  color: #fff;
   background-color: red;
   border-radius: 8px;
   font-weight: 600;
   height: 18px;
-  width: 35px;
+  width: 37px;
   position: absolute;
-  /* left: 72px; */
+  font-size: 10px;
+  text-align: start; */
+
+  position: absolute;
+  right: 6px;
+  top: -10px;
+  text-transform: uppercase;
+  color: var(--header-light);
+  background-color: var(--badge-red);
   font-size: 9px;
-  /* padding: 2px 15px 5px 0px; */
+  border-radius: 8px;
+  font-weight: 600;
+  height: 18px;
+  width: 34px;
   text-align: center;
 }
 .navbar-collapse {
@@ -473,10 +484,10 @@ h3 {
 .sellhome .property .cta-info h3 {
   color: #000;
 }
-.sellhome .looking-sell-para {
+/* .sellhome .looking-sell-para {
   color: var(--secondary-light);
   line-height: 21px;
-}
+} */
 .ctn {
   position: relative;
   top: 102px;
@@ -566,7 +577,7 @@ h3 {
 }
 .becomereal {
   position: relative;
-  top: 6pc;
+  top: 4pc;
 }
 .imagedeepki {
   position: relative;
@@ -691,6 +702,7 @@ footer .social h5 {
   color: #a2aab8;
   height: 48px;
 }
+
 .form-control {
   display: block;
   width: 100%;
@@ -4009,6 +4021,9 @@ h1 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+/* .btncolornow{
+  border-radius: 15px;
+} */
 .holidaybanner ul {
   display: flex;
   gap: 10px;

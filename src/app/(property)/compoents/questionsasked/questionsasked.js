@@ -1,11 +1,11 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 import line from "../../../../assets/images/line.ca65a041.png";
 function QuestionsAsked() {
   return (
     <div>
-    <section className="freq-que">
+      <section className="freq-que">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center freq-que-main">
@@ -95,7 +95,7 @@ function QuestionsAsked() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default QuestionsAsked
+export default QuestionsAsked;

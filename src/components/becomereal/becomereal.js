@@ -10,14 +10,14 @@ function BecomeReal() {
           <div className="row">
             <div className="col-sm-6">
               <div className="becomereal">
-                <h1>Become a Real Estate Agent</h1>
-                <p  style={{color:"gray"}}>
+                <h1 className='mb-3'>Become a Real Estate Agent</h1>
+                <p className="pb-lg-4 pb-2" style={{color:"gray"}}>
                   Accelerate your listings to new heights and unleash the
                   potential of captivating leads andvalued clients.
                 </p>
                 <Link href="/register">
                   <button
-                    className="btn btncolornow btn-outline-secondary"
+                    className="btn btncolornow btn-outline-secondary rounded-xl"
                     type="submit"
                   >
                     REGISTER NOW
