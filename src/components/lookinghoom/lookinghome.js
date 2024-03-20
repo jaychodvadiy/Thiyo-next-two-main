@@ -11,8 +11,8 @@ function Lookinghome() {
           <div className="property">
             <div className="row">
               <div className="col-sm-6 cta-info ctn">
-                <h3 className="">Looking to sell your home?</h3>
-                <h6 className="">
+                <h3 className="pb-1 pb-md-3">Looking to sell your home?</h3>
+                <h6 className="pb-2 pb-md-3 looking-sell-para fw-normal">
                   Unlock a hassle-free selling experience and unleash the real
                   potential of your cherished property.
                 </h6>

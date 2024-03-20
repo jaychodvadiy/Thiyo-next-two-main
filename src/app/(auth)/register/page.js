@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 import { data } from "autoprefixer";
 // import { all } from "yap";
 import flags from "react-phone-number-input/flags";
-import 'react-phone-input-2/lib/style.css'
+import "react-phone-input-2/lib/style.css";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 
@@ -28,26 +28,32 @@ function Register() {
   const [dropdown, setDropdown] = useState("");
   const [state, setState] = useState("");
   const [phone, setPhone] = useState("");
-  
-  const [accestockn, setAccestockn]=useState("")
+  const [message, setMessage] = useState(""); // This will be used to show a message if the submission is successful
+  const [submitted, setSubmitted] = useState(false);
+  const [accestockn, setAccestockn] = useState("");
   const formik = useFormik({
     initialValues: {
       fullName: "",
       number: "",
-      email: ""
+      email: "",
     },
 
-    // onSubmit: (value)=>{
-
-    // }
-    // console.log
+    onSubmit: () => {
+      setMessage("fomesubmitted");
+      setSubmitted(true);
+    },
+    validationSchema: Yup.object({
+      fullName: Yup.string().trim().required("Full Name is reqiuer"),
+      email: Yup.string().trim().email().required("email is reqiuer"),
+      number: Yup.string().trim().required("mobile number is reqiuer"),
+    }),
+    
   });
-  const display = Yup.object().shape({
-    fullName:Yup.string().required("Full Name is reqiuer"),
-    number:Yup.string().required("Moblie Nmuber is reqiuer"),
-    email:Yup.string().required("Email is reqiuer")
-  });
-
+  // const display = Yup.object().shape({
+  //   fullName: Yup.string().required("Full Name is reqiuer"),
+  //   number: Yup.string().required("Moblie Nmuber is reqiuer"),
+  //   email: Yup.string().required("Email is reqiuer"),
+  // });
 
   useEffect(() => {
     if (localStorage.getItem("address")) {
@@ -81,10 +87,10 @@ function Register() {
   // };
   // console.log(`fullname:${fullName} email:${email} number:${number}`);
 
-  // const hendle = (e) => {
-  //   e.preventDefault(); // Correct spelling here
-  //   handleClick(e);
-  // };
+  const hendle = (e) => {
+    e.preventDefault(); // Correct spelling here
+    handleClick(e);
+  };
   const handClick = (name) => {
     // console.log(name, "checking------->>>>>");
     setDropdown((prev) => {
@@ -100,37 +106,77 @@ function Register() {
             <div className="col-sm-6 h-full auth">
               <div className="left--img">
                 <div className="img">
-                  <Image className="img-fluid" src={beautiful}  alt="Beautiful Scene" />
+                  <Image
+                    className="img-fluid"
+                    src={beautiful}
+                    alt="Beautiful Scene"
+                  />
                 </div>
               </div>
             </div>
-            
+
             <div className="col-sm-6 ">
               <div className=" row auth--content">
-                <form className="staffform" >
+                <form className="staffform" onSubmit={formik.handleSubmit}>
                   <div className="thiyoiconsa my-5">
-                    <Image className="img-fluid" src={ThiyoLogo}  alt="ThiyoLogo"/>
+                    <Image
+                      className="img-fluid"
+                      src={ThiyoLogo}
+                      alt="ThiyoLogo"
+                    />
                   </div>
                   <div className="col-12 mb-3">
                     <label htmlFor="userName" className="form-label">
                       Full Name
                     </label>
-                    <input className="form-control" id="userName" placeholder="Full Name" type="text" defaultValue="" name="userName" onChange={(e) => SetFullName(e.target.value)}></input>
-                 
-                    {formik.fullName && (<div id="fullName" variant="outlined" severity="error" style={{ color: "red" }} >{formik.fullName}</div>)}
-               
+                    <input
+                      className="form-control"
+                      id="userName"
+                      placeholder="Full Name"
+                      type="text"
+                      name="userName"
+                      value={formik.values.fullName}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                    />
+                    {formik.errors.fullName && (
+                      <div
+                        id="fullName"
+                        variant="outlined"
+                        severity="error"
+                        style={{ color: "red" }}
+                      >
+                        {formik.errors.fullName}
+                      </div>
+                    )}
                   </div>
                   <div className="col-12 mb-3">
-                    <label htmlFor="mobile" className="form-label" onChange={(e) => SetNumber(e.target.value)} onClick={() => handClick(0)}>Mobile Number</label>
+                    <label
+                      htmlFor="mobile"
+                      className="form-label"
+                      onChange={formik.handleChange}
+                      value={formik.values.number}
+                      onBlur={formik.handleBlur}
+                      onClick={() => handClick(0)}
+                    >
+                      Mobile Number
+                    </label>
 
-                    <PhoneInput country={"us"} value={phone} onChange={(phone) => setState({ phone })}/>
-                    
-                    {/* <Link href={'https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css'}/> */}
-                 
+                    <PhoneInput
+                      country={"us"}
+                      value={phone}
+                      onChange={(phone) => setState({ phone })}
+                    />
                     <div className="flag-dropdown ">
-                    
-                      <div  className={`dropdow-menu ${dropdown === 0 ? "d-block" : "d-none"} selected-flag`} title="India: + 91"  tabIndex="0"  role="button"  aria-haspopup="listbox">
-                    
+                      <div
+                        className={`dropdow-menu ${
+                          dropdown === 0 ? "d-block" : "d-none"
+                        } selected-flag`}
+                        title="India: + 91"
+                        tabIndex="0"
+                        role="button"
+                        aria-haspopup="listbox"
+                      >
                         <div className="flag in">
                           <div className="arrow"></div>
                         </div>
@@ -139,39 +185,80 @@ function Register() {
                     <div className=" react-tel-input ">
                       <div className="special-label">Phone</div>
                     </div>
-                   
-                    {formik.number && (<div id="number" className="text-dark"> {formik.number}</div>)}</div>
-                 
-                  <div className="col-12 mb-2">
-                   
-                    <label htmlFor="exampleFormControlInput1" className="form-lalbe mb-3" onChange={(e) => SetEmail(e.target.value)}>
+
+                    {formik.errors.number && (
+                      <div
+                        id="email"
+                        className="text-red"
+                        style={{ color: "red" }}
+                      >
+                        {formik.errors.number}
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="col-12 mb-3">
+                    <label
+                      htmlFor="exampleFormControlInput1"
+                      className="form-lalbe mb-3"
+                    >
                       Email Address
                     </label>
-               
-                    <div className="emailadder relative sendotp">
-                      <input className="form-control" id="email" placeholder="Enter your email address" type="email" defaultValue="" name="email"/>
-                    
-                      <button type="submit" className="absolute lockicon">
-                        Send OTP
-                      </button>
-                 
-                    </div>
-                    {formik.email && (<div id="email" className="text-red"> {formik.email}</div>)}
-                 
+                    <input
+                      type="text"
+                      placeholder="Enter your email address"
+                      className="form-control"
+                      value={formik.values.email}
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                    />
+                    <button type="submit" className="absolute lockicon">
+                      Send OTP
+                    </button>
+                    {formik.errors.email && (
+                      <div
+                        id="email"
+                        className="text-red"
+                        style={{ color: "red" }}
+                      >
+                        {formik.errors.email}
+                      </div>
+                    )}
                   </div>
                   <div className="col-12 mb-3">
-                  
                     <label htmlFor="">
                       Enter OTP, Recieved on your Email ID
                     </label>
-                 
                     <br />
-                  
                     <div className="otp-verification-main">
-                      <input className="tab-class outline-none" id="" maxLength="1" type="text" name=""/>
-                      <input className="tab-class outline-none" id="" maxLength="1" type="text" name=""/>
-                      <input className="tab-class outline-none" id="" maxLength="1" type="text" name=""/>
-                      <input className="tab-class outline-none" id="" maxLength="1" type="text" name=""/>
+                      <input
+                        className="tab-class outline-none"
+                        id=""
+                        maxLength="1"
+                        type="text"
+                        name=""
+                      />
+                      <input
+                        className="tab-class outline-none"
+                        id=""
+                        maxLength="1"
+                        type="text"
+                        name=""
+                      />
+                      <input
+                        className="tab-class outline-none"
+                        id=""
+                        maxLength="1"
+                        type="text"
+                        name=""
+                      />
+                      <input
+                        className="tab-class outline-none"
+                        id=""
+                        maxLength="1"
+                        type="text"
+                        name=""
+                      />
                     </div>
                   </div>
                   <div className="col-12 text-end pb-2">
