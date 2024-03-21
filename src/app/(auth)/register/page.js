@@ -37,18 +37,23 @@ function Register() {
       number: "",
       email: "",
     },
-
-    onSubmit: () => {
-      setMessage("fomesubmitted");
-      setSubmitted(true);
-    },
     validationSchema: Yup.object({
-      fullName: Yup.string().trim().required("Full Name is reqiuer"),
-      email: Yup.string().trim().email().required("email is reqiuer"),
-      number: Yup.string().trim().required("mobile number is reqiuer"),
+      fullName: Yup.string().trim().required("Full Name is required"),
+      email: Yup.string()
+        .trim()
+        .email("Invalid email")
+        .required("Email is required"),
+      number: Yup.string().trim().required("Mobile number is required"),
     }),
-    
+
+    onSubmit: (values, { setSubmitted }) => {
+      console.log(values); // Check form values in console
+      setSubmitting(false);
+    },
   });
+  console.log(formik.values); // Debug form values
+  console.log(formik.errors); // Debug form errors
+  console.log(formik.touched); // Debug touched fields
   // const display = Yup.object().shape({
   //   fullName: Yup.string().required("Full Name is reqiuer"),
   //   number: Yup.string().required("Moblie Nmuber is reqiuer"),
@@ -131,41 +136,34 @@ function Register() {
                     </label>
                     <input
                       className="form-control"
-                      id="userName"
-                      placeholder="Full Name"
+                      id="fullName"
+                      name="fullName"
                       type="text"
-                      name="userName"
-                      value={formik.values.fullName}
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
+                      value={formik.values.fullName}
                     />
-                    {formik.errors.fullName && (
-                      <div
-                        id="fullName"
-                        variant="outlined"
-                        severity="error"
-                        style={{ color: "red" }}
-                      >
-                        {formik.errors.fullName}
-                      </div>
-                    )}
+                    {formik.touched.fullName && formik.errors.fullName ? (
+                      <div>{formik.errors.fullName}</div>
+                    ) : null}
                   </div>
                   <div className="col-12 mb-3">
                     <label
                       htmlFor="mobile"
                       className="form-label"
-                      onChange={formik.handleChange}
-                      value={formik.values.number}
-                      onBlur={formik.handleBlur}
-                      onClick={() => handClick(0)}
+                      onChange={(phone) => setState({ phone })}
                     >
                       Mobile Number
                     </label>
 
                     <PhoneInput
                       country={"us"}
-                      value={phone}
-                      onChange={(phone) => setState({ phone })}
+                      id="number"
+                      name="number"
+                      type="text"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.number}
                     />
                     <div className="flag-dropdown ">
                       <div
@@ -185,16 +183,9 @@ function Register() {
                     <div className=" react-tel-input ">
                       <div className="special-label">Phone</div>
                     </div>
-
-                    {formik.errors.number && (
-                      <div
-                        id="email"
-                        className="text-red"
-                        style={{ color: "red" }}
-                      >
-                        {formik.errors.number}
-                      </div>
-                    )}
+                    {formik.touched.number && formik.errors.number ? (
+                      <div>{formik.errors.number}</div>
+                    ) : null}
                   </div>
 
                   <div className="col-12 mb-3">
@@ -205,25 +196,21 @@ function Register() {
                       Email Address
                     </label>
                     <input
-                      type="text"
+                      type="email"
                       placeholder="Enter your email address"
                       className="form-control"
-                      value={formik.values.email}
+                      id="email"
+                      name="email"
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
+                      value={formik.values.email}
                     />
                     <button type="submit" className="absolute lockicon">
                       Send OTP
                     </button>
-                    {formik.errors.email && (
-                      <div
-                        id="email"
-                        className="text-red"
-                        style={{ color: "red" }}
-                      >
-                        {formik.errors.email}
-                      </div>
-                    )}
+                    {formik.touched.email && formik.errors.email ? (
+                      <div>{formik.errors.email}</div>
+                    ) : null}
                   </div>
                   <div className="col-12 mb-3">
                     <label htmlFor="">
