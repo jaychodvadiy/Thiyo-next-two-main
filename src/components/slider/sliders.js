@@ -1,8 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import home from "../../assets/images/pexelsexpect.png"
+import React, { useState } from "react";
+import home from "../../assets/images/pexelsexpect.png";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 function Sliders() {
+  const [search, setSearch] = useState("");
+  const formik = useFormik({
+    initialValues: {
+      search: ""
+    },
+    validationSchema: Yup.object({
+      search: Yup.string().trim().required("search  location is required"),
+
+    }),
+
+    onSubmit: (values, { setSubmitted }) => {
+      console.log(values); // Check form values in console
+      setSubmitting(false);
+    },
+  });
   return (
     <div>
       <section className="pagerent">
@@ -361,9 +378,18 @@ function Sliders() {
                                     fill="white"
                                   ></path>
                                 </svg>
-                                <Link className="searchaa" href="/properties">
+                                <Link className="searchaa" href="/properties"
+                                 onChange={formik.handleChange}
+                                 onBlur={formik.handleBlur}
+                                 value={formik.values.search}
+                                 onSubmit={formik.handleSubmit}
+                                >
                                   Search
                                 </Link>
+                                {formik.touched.search &&
+                                formik.errors.search ? (
+                                  <div>{formik.errors.search}</div>
+                                ) : null}
                               </button>
                             </div>
                           </div>
