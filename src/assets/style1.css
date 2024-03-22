@@ -1547,8 +1547,8 @@ span {
   line-height: 16px;
   color: #ba8b50;
   cursor: pointer;
-  position: relative;
-  top: 6px;
+  /* position: relative;
+  top: 6px; */
 }
 p {
   line-height: 21px;
