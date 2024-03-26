@@ -423,7 +423,7 @@ h3 {
   font-weight: 600;
   height: 18px;
   width: 34px;
-  text-align: center;
+  text-align: center !important;
   font-size: 9px;
 }
 .lastfree{
