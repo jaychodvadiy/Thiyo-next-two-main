@@ -424,6 +424,9 @@ h3 {
   height: 18px;
   width: 34px;
   text-align: center;
+  font-size: 9px;
+}
+.lastfree{
 }
 .navbar-collapse {
   flex-basis: 100%;
