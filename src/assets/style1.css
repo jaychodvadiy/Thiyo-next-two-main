@@ -415,6 +415,7 @@ h3 {
   position: absolute;
   right: 6px;
   top: -10px;
+  display: flex;
   text-transform: uppercase;
   color: var(--header-light);
   background-color: var(--badge-red);
