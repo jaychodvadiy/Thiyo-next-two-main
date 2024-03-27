@@ -17,7 +17,7 @@ import * as Yup from "yup";
 import { useFormik } from "formik";
 
 function Register() {
-  const initialValues = { fullname: "", email: "", number: "" };
+  // const initialValues = { fullname: "", email: "", number: "" };
 
   const [fullName, SetFullName] = useState("");
   const [email, SetEmail] = useState("");
@@ -29,8 +29,10 @@ function Register() {
   const [state, setState] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState(""); // This will be used to show a message if the submission is successful
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitting] = useState();
   const [accestockn, setAccestockn] = useState("");
+  const [clickedButton, setClickedButton] = useState(null);
+
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -38,33 +40,34 @@ function Register() {
       email: "",
     },
     validationSchema: Yup.object({
-      fullName: Yup.string().trim().required("Full Name is required"),
-      email: Yup.string()
-        .trim()
-        .email("Invalid email")
-        .required("Email is required"),
-      number: Yup.string().trim().required("Mobile number is required"),
+      fullName:
+        clickedButton !== "resendotp"
+          ? Yup.string().required("Full Name is required")
+          : "",
+      number:
+        clickedButton !== "resendotp"
+          ? Yup.string().required("Mobile number is required")
+          : "",
+      email:
+        clickedButton !== "resendotp"
+          ? Yup.string().email("Invalid email").required("Email is required")
+          : "",
     }),
 
-    onSubmit: (values, { setSubmitted }) => {
+    onSubmit: (values) => {
       console.log(values); // Check form values in console
-      setSubmitting(false);
+      setSubmitted(false);
     },
   });
   console.log(formik.values); // Debug form values
   console.log(formik.errors); // Debug form errors
   console.log(formik.touched); // Debug touched fields
-  // const display = Yup.object().shape({
-  //   fullName: Yup.string().required("Full Name is reqiuer"),
-  //   number: Yup.string().required("Moblie Nmuber is reqiuer"),
-  //   email: Yup.string().required("Email is reqiuer"),
-  // });
 
-  useEffect(() => {
-    if (localStorage.getItem("address")) {
-      setConnectionAddress(localStorage.getItem("address"));
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (localStorage.getItem("address")) {
+  //     setConnectionAddress(localStorage.getItem("address"));
+  //   }
+  // }, []);
 
   // const handleClick = () => {
   //   console.log(data?.current?.value, "initial value");
@@ -92,16 +95,12 @@ function Register() {
   // };
   // console.log(`fullname:${fullName} email:${email} number:${number}`);
 
-  const hendle = (e) => {
-    e.preventDefault(); // Correct spelling here
-    handleClick(e);
-  };
-  const handClick = (name) => {
-    // console.log(name, "checking------->>>>>");
-    setDropdown((prev) => {
-      return prev === name ? "" : name;
-    });
-  };
+  // const handClick = (name) => {
+  //   console.log(name, "checking------->>>>>");
+  //   setDropdown((prev) => {
+  //     return prev === name ? "" : name;
+  //   });
+  // };
 
   return (
     <div>
@@ -144,32 +143,38 @@ function Register() {
                       value={formik.values.fullName}
                     />
                     {formik.touched.fullName && formik.errors.fullName ? (
-                      <div>{formik.errors.fullName}</div>
+                      <div style={{ color: "red" }}>
+                        {formik.errors.fullName}
+                      </div>
                     ) : null}
                   </div>
                   <div className="col-12 mb-3">
                     <label
                       htmlFor="mobile"
                       className="form-label"
-                      onChange={(phone) => setState({ phone })}
                     >
                       Mobile Number
                     </label>
 
                     <PhoneInput
-                      country={"us"}
+                    defdefaultCountry={"in"}
+                      country={"in"}
                       id="number"
                       name="number"
                       type="text"
-                      onChange={formik.handleChange}
-                      onBlur={formik.handleBlur}
+                      onChange={(phone) =>
+                        formik.setFieldValue("number", phone)
+                      }
+                      // onBlur={formik.handleBlur}
                       value={formik.values.number}
+                      // onClick={hendleClick}
+                      inputProps={{
+                        number: "",
+                      }}
                     />
                     <div className="flag-dropdown ">
                       <div
-                        className={`dropdow-menu ${
-                          dropdown === 0 ? "d-block" : "d-none"
-                        } selected-flag`}
+                        className="selected-flag"
                         title="India: + 91"
                         tabIndex="0"
                         role="button"
@@ -184,7 +189,7 @@ function Register() {
                       <div className="special-label">Phone</div>
                     </div>
                     {formik.touched.number && formik.errors.number ? (
-                      <div>{formik.errors.number}</div>
+                      <div style={{ color: "red" }}>{formik.errors.number}</div>
                     ) : null}
                   </div>
 
@@ -209,7 +214,7 @@ function Register() {
                       Send OTP
                     </button>
                     {formik.touched.email && formik.errors.email ? (
-                      <div>{formik.errors.email}</div>
+                      <div style={{ color: "red" }}>{formik.errors.email}</div>
                     ) : null}
                   </div>
                   <div className="col-12 mb-3">
@@ -221,7 +226,7 @@ function Register() {
                       <input
                         className="tab-class outline-none"
                         id=""
-                        maxLength="1"
+                        maxLength={1}
                         type="text"
                         name=""
                       />
