@@ -15,6 +15,7 @@ import flags from "react-phone-number-input/flags";
 import "react-phone-input-2/lib/style.css";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import axios from "axios";
 
 function Register() {
   // const initialValues = { fullname: "", email: "", number: "" };
@@ -29,7 +30,7 @@ function Register() {
   const [state, setState] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState(""); // This will be used to show a message if the submission is successful
-  const [submitted, setSubmitting] = useState();
+  const [submitted, setSubmitted] = useState();
   const [accestockn, setAccestockn] = useState("");
   const [clickedButton, setClickedButton] = useState(null);
 
@@ -54,14 +55,24 @@ function Register() {
           : "",
     }),
 
-    onSubmit: (values) => {
+    onSubmit: (values,action) => {
       console.log(values); // Check form values in console
       setSubmitted(false);
+      action.resetForm();
     },
   });
   console.log(formik.values); // Debug form values
   console.log(formik.errors); // Debug form errors
-  console.log(formik.touched); // Debug touched fields
+  console.log(formik.touched); // Debug touched fields  
+
+ const hendleClick=()=>{
+  // try{
+  //     axios.
+  // }
+  // catch{
+
+  // }
+ }
 
   // useEffect(() => {
   //   if (localStorage.getItem("address")) {
@@ -157,8 +168,8 @@ function Register() {
                     </label>
 
                     <PhoneInput
-                    defdefaultCountry={"in"}
-                      country={"in"}
+                    // defdefaultCountry={"in"}
+                      country={"us"}
                       id="number"
                       name="number"
                       type="text"

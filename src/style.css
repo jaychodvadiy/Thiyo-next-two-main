@@ -1,0 +1,6096 @@
+.container {
+    max-width: calc(100% - 200px);
+    margin: auto;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+  }
+  
+  .outline-button,
+  .gradient-button {
+    background: linear-gradient(180deg, #c49255 0%, #b0834a 100%);
+    padding: 8px 23px !important;
+    min-width: auto !important;
+    color: #ffffff !important;
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    line-height: 14px !important;
+    border: 1px solid transparent !important;
+    width: 100%;
+  }
+  
+  .outline-button {
+    border: 1px solid #af824a !important;
+    background: transparent !important;
+    color: #c18f53 !important;
+  }
+  
+  .outline-button-light {
+    border: 1px solid #efefef;
+    height: 27px;
+    padding: 0 17px !important;
+    border-radius: 100px !important;
+    min-width: auto !important;
+    font-size: 8px !important;
+    font-weight: 400 !important;
+    line-height: 11px !important;
+  }
+  
+  .outline-button-light-sm {
+    height: 20px;
+  }
+  
+  .outline-button-light-sm-circle {
+    min-width: auto !important;
+    width: max-content;
+    padding: 5px 10px !important;
+    background-color: transparent;
+    border: 1px solid #efefef;
+    border-radius: 100px !important;
+  }
+  
+  .outline-button-light-sm-circle.active,
+  .outline-button-light.active {
+    background-color: #fde8cd !important;
+    color: #b48e5d;
+    border: 1px solid #fde8cd;
+  }
+  
+  .primary-dropdown .property-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8.5px;
+    row-gap: 4.5px;
+  }
+  
+  .primary-dropdown .dropdown-menu.show {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border: 1px solid #af824a;
+    padding: 10px 15px;
+    max-width: 300px !important;
+    white-space: nowrap;
+  }
+  
+  .primary-dropdown-lg .dropdown-menu.show {
+    max-width: 300px;
+  }
+  
+  .primary-dropdown .dropdown-menu.show::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #af824a;
+    left: 50%;
+    top: -6px;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  .primary-dropdown .dropdown-menu.show::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 31px;
+    background-color: #ffffff;
+    left: 45%;
+    top: 0px;
+  }
+  
+  .primary-dropdown .dropdown-menu .drop-title {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #555555;
+    margin-bottom: 8px;
+  }
+  
+  .primary-dropdown .nav-pills {
+    border: 1px solid #efefef;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  .primary-dropdown .nav-pills .nav-item .nav-link {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #555555;
+    background-color: transparent !important;
+    width: 100%;
+    max-width: 100%;
+    height: 22px;
+    min-width: 80px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .primary-dropdown .nav-pills .nav-item .nav-link.active {
+    background-color: #fde8cd !important;
+    color: #b48e5d;
+    border-radius: 4px;
+  }
+  
+  .th-primary-btn {
+    background: linear-gradient(180deg, #c49255 0%, #b0834a 100%);
+    border-radius: 4px;
+    padding: 8px 23px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    outline: none;
+  }
+  
+  .primary-dropdown .dropdown-toggle::after {
+    content: "";
+    border: none;
+    background-image: url("../src/assets/images/downArrow.svg");
+    background-size: 10px;
+    height: 8px;
+    width: 10px;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+  }
+  .primary-dropdown .show.dropdown-toggle::after {
+    transform: rotate(180deg);
+    margin-top: 0;
+  }
+  
+  .auth label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #737d8c;
+    cursor: pointer;
+    margin-bottom: 11px;
+  }
+  
+  .auth .form-control {
+    padding: 15px 20px;
+    box-shadow: none;
+    border: 1px solid #cdd6e1;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #a2aab8;
+    height: 48px;
+  }
+  
+  .auth .LockInput input {
+    padding-right: 50px;
+  }
+  .auth .LockInput .LockIcon {
+    top: 10px;
+    right: 20px;
+  }
+  .auth a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #737d8c;
+    text-decoration: underline !important;
+  }
+  
+  .button-primary-gradient {
+    box-shadow: 0px 3px 6px 0px #0e3e8440;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 7px 20px;
+    border: 1px solid #af824a;
+  }
+  .button-primary-gradient:hover {
+    box-shadow: none;
+  }
+  
+  .th-divider::before,
+  .th-divider::after {
+    content: "";
+    position: relative;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .th-divider::before {
+    background: linear-gradient(90deg, rgba(115, 125, 140, 0) 0%, #cbd1dc 100%);
+  }
+  .th-divider::after {
+    background: linear-gradient(90deg, #cbd1dc 0%, rgba(115, 125, 140, 0) 100%);
+  }
+  
+  .th-divider {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #737d8c;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  
+  .form-check-input:checked {
+    background-color: #af824a;
+    border-color: #af824a;
+  }
+  .form-check-input:focus {
+    box-shadow: none;
+    border-color: #af824a;
+  }
+  
+  .social-btn {
+    padding: 8px 15px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #737d8c;
+    border: 1px solid #cdd6e1;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .auth--content {
+    max-width: 85%;
+    margin: auto;
+    margin-bottom: 35px;
+  }
+  
+  .auth .left--img img {
+    height: 100vh;
+    /* max-height: 750px; */
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+  }
+  
+  .auth .no-account span,
+  .auth .no-account {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    color: #2a323c;
+    margin-bottom: 38px;
+  }
+  
+  .auth .no-account span {
+    color: #af824a;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .auth .sendOtp input {
+    padding-right: 120px;
+  }
+  .auth .sendOtp .LockIcon {
+    background-color: #deaa62;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #ffffff;
+    top: 0;
+    right: 0;
+  }
+  
+  /* blog */
+  
+  .blog .breadCrumb {
+    background-color: #f8f8f8;
+    padding: 43px 16px 31px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .blog .breadCrumb h6 {
+    font-weight: 400;
+  }
+  
+  .blog .blog-content {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .blog .leftContent {
+    width: calc(100% - 330px);
+  }
+  
+  .blog .rightSidebar {
+    width: 330px;
+  }
+  
+  .blog .leftContent .auther h6 {
+    font-weight: 400;
+    color: #7b7b7b;
+  }
+  
+  .blog .bloglist h2 {
+    font-weight: 700;
+    color: #373737;
+    padding: 30px 0;
+  }
+  
+  .blog .bloglist p {
+    color: #7b7b7b;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .blog .bloglist button {
+    border: 1px solid #af824a;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #af824a;
+    padding: 7px 33px;
+    border-radius: 8px;
+  }
+  
+  .blog .leftContent .blogListContent {
+    padding: 60px 0;
+  }
+  
+  .blog .leftContent .blogListContent:first-child {
+    padding-top: 0;
+  }
+  
+  .blog .rightSidebar .blog-search {
+    box-shadow: 0px 1px 10px 0px #0000001a;
+    padding: 16px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 40px;
+  }
+  
+  .blog .rightSidebar .blog-search input {
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #7b7b7b;
+    width: 100%;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .blog .rightSidebar .card {
+    box-shadow: 0px 1px 10px 0px #0000001a;
+    border: none;
+    padding: 25px 19px;
+  }
+  .blog .rightSidebar .card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #373737;
+    margin-bottom: 40px !important;
+  }
+  .blog .rightSidebar .card img {
+    height: 48px;
+    width: 48px;
+    border-radius: 100px;
+  }
+  .blog .rightSidebar .card .post-item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 24px;
+  }
+  .blog .rightSidebar .card .post-item:last-child {
+    margin-bottom: 0;
+  }
+  .blog .rightSidebar .card .post-item p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #373737;
+  }
+  
+  .blod-details .breadCrumb {
+    background-color: #f4f4f4;
+    padding: 10px 8px;
+  }
+  .blod-details .breadCrumb h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #4c4a4a;
+  }
+  .blod-details .breadCrumb p {
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 11px;
+    color: #4c4a4a;
+  }
+  .blod-details .blod-details-info .blod-details-img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .blod-details .blod-details-info .card {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 37px 40px 90px 44px;
+    margin-bottom: 147px;
+    border-radius: 0;
+    margin-top: -147px;
+  }
+  .blod-details .blod-details-info .card h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 14px !important;
+  }
+  .blod-details .blod-details-info .card .auther {
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 6px;
+  }
+  .blod-details .blod-details-info .card .auther p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #4c4a4a;
+  }
+  .blod-details .blod-details-info .card .blod-details-content {
+    padding-top: 28px;
+  }
+  .blod-details .blod-details-info .card .blod-details-content p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: justify;
+    color: #4c4a4a;
+    margin-bottom: 25px;
+  }
+  .blod-details .blod-details-info .card .blod-details-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #070707;
+    padding: 28px 0;
+  }
+  
+  .blod-details .blod-details-info .card .blod-details-content ul {
+    margin-bottom: 28px;
+  }
+  .blod-details .blod-details-info .card .blod-details-content ul li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #4c4a4a;
+  }
+  
+  /* property-details */
+  
+  .pdetails .pdetails-left {
+    padding: 44px 0;
+  }
+  .pdetails .pdetails-left h1.title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000000;
+    padding-bottom: 8px;
+  }
+  .pdetails .pdetails-left p.location {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #747474;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .pdetails .pdetails-right h2.price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000000;
+  }
+  
+  .photos-grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0;
+    align-items: start;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  .photos-grid-container img {
+    max-width: 100%;
+    display: block;
+    height: 100%;
+  
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+  }
+  
+  .photos-grid-container .img-box {
+    padding-top: 85%;
+    display: block;
+    position: relative;
+  }
+  .photos-grid-container .img-box span {
+    background-color: #ffffffd9;
+    padding: 9px 8px;
+    position: absolute;
+    z-index: 9;
+    bottom: 8px;
+    right: 8px;
+    border-radius: 13px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .photos-grid-container .main-photo {
+    grid-row: 1;
+    grid-column: 1;
+    height: 100%;
+  }
+  
+  .photos-grid-container .sub {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0em;
+    gap: 12px;
+  }
+  
+  .photos-grid-container .sub:nth-child(0) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .photos-grid-container .sub:nth-child(1) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .photos-grid-container .sub:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .photos-grid-container .sub:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  .photos-grid-modal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    z-index: 99;
+  }
+  .photos-grid-modal .modal-dialog .modal-content {
+    width: 70%;
+    height: 70vh;
+    margin: auto;
+    background-color: transparent;
+    z-index: 99;
+    border: none;
+    border-radius: 0;
+  }
+  .photos-grid-modal .modal-dialog .modal-content .swiper {
+    height: 100%;
+    width: 100%;
+  }
+  .photos-grid-modal .modal-dialog .modal-content .swiper .modalImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .pdetails .pdetails-overview {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .pdetails .pdetails-overview .left {
+    padding: 23px 18px 39px 22px;
+    background-color: #fcfcfc;
+    width: 50%;
+  }
+  .pdetails .pdetails-overview .left h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 24px !important;
+  }
+  .pdetails .pdetails-overview .left .card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4.5px;
+    row-gap: 8.5px;
+  }
+  .pdetails .pdetails-overview .left .card {
+    box-shadow: 0px 1px 4px 0px #00000040;
+    background-color: #fff;
+    padding: 10px 14px 14px 12px;
+    border: none;
+  }
+  .pdetails .pdetails-overview .left .card h4 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 9px !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .pdetails .pdetails-overview .left .card p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #626262;
+  }
+  .pdetails .pdetails-overview .right {
+    width: 50%;
+  }
+  .pdetails .pdetails-overview .right img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+  }
+  .pdetails .pdetails-details {
+    display: flex;
+    gap: 12px;
+  }
+  .pdetails .pdetails-details .pdetails-left {
+    width: calc(100% - 210px);
+  }
+  .pdetails .pdetails-details .pdetails-right {
+    width: 210px;
+  }
+  .pdetails .pdetails-details .pdetails-right .card {
+    background-color: #fcfcfc;
+    padding: 18px 21px 27px 21px;
+    border: none;
+  }
+  .pdetails .pdetails-details .pdetails-right .card h2.title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #000000;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dfdfdf;
+  }
+  .pdetails .pdetails-details .pdetails-right .card .auther {
+    gap: 13px;
+    display: flex;
+    align-items: center;
+    margin: 22px 0;
+    padding-left: 10px;
+  }
+  .pdetails .pdetails-details .pdetails-right .card .auther img {
+    height: 47px;
+    width: 47px;
+    min-width: 47px;
+    border-radius: 100px;
+  }
+  .pdetails .pdetails-details .pdetails-right .card .auther .name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #2f2f2f;
+  }
+  .pdetails .pdetails-details .pdetails-right .card .contact {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .pdetails .pdetails-details .pdetails-right .card .contact button.call {
+    border: none;
+    background: linear-gradient(180deg, #af824a 0%, #cf9c5b 100%);
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+    color: #fff;
+    gap: 4px;
+    border-radius: 8px;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 11px;
+    text-align: center;
+  }
+  .pdetails .pdetails-details .pdetails-right .card .contact button.WhatsApp {
+    background: #1db171;
+  }
+  .pdetails .pdetails-details .pdetails-right .card form select,
+  .pdetails .pdetails-details .pdetails-right .card form input {
+    border: 1px solid #eeeeee;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 11px;
+    color: #505050;
+    border-radius: 8px;
+    height: 33px;
+    margin-bottom: 11px;
+    width: 162px;
+  }
+  .pdetails .pdetails-details .pdetails-right .card form select:focus,
+  .pdetails .pdetails-details .pdetails-right .card form input:focus {
+    box-shadow: none;
+  }
+  .form-check {
+    margin-bottom: 0 !important;
+  }
+  .pdetails .pdetails-details .pdetails-right .card form .form-check {
+    display: flex;
+    /* align-items: center; */
+    gap: 8px;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 11px;
+    color: #4e4d4d;
+    cursor: pointer;
+  }
+  .pdetails .pdetails-details .pdetails-right .card form .form-check-label {
+    cursor: pointer;
+  }
+  .pdetails .pdetails-details .pdetails-right .card form .form-check span {
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 11px;
+    color: #44b080;
+  }
+  .pdetails .pdetails-details .pdetails-right .card form input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    border-radius: 0;
+  }
+  .pdetails .pdetails-details .pdetails-right .card form .submit {
+    background: linear-gradient(180deg, #af824a 0%, #f2b96e 145.55%);
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 33px;
+    margin-top: 18px;
+  }
+  .pdetails .pdetails-details .pdetails-disc {
+    background-color: #fcfcfc;
+    padding: 23px 28px 34px 30px;
+    margin-bottom: 10px;
+  }
+  .pdetails .pdetails-details .pdetails-disc h2.title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 17px !important;
+  }
+  .pdetails .pdetails-details .pdetails-disc p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify;
+    color: #626262;
+  }
+  .pdetails .pdetails-details .pdetails-disc .pdetails-group .pdetails-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 9px;
+  }
+  .pdetails .pdetails-details .pdetails-disc .pdetails-group .pdetails-list div {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: justify;
+    color: #626262;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .pdetails
+    .pdetails-details
+    .pdetails-disc
+    .pdetails-group
+    .pdetails-list
+    .pdetails-download {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: justify;
+    color: #af824a;
+    cursor: pointer;
+  }
+  .pdetails .pdetails-details .pdetails-left .card {
+    border: 1px solid #f5f5f5;
+    margin-bottom: 13px;
+  }
+  .pdetails .pdetails-details .pdetails-left .card .additional-details,
+  .pdetails .pdetails-details .pdetails-left .card .details {
+    padding: 24px 29px 20px 29px;
+  }
+  .pdetails .pdetails-details .pdetails-left .card .details .title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000000;
+  }
+  .pdetails .pdetails-details .pdetails-left .card .additional-details .group,
+  .pdetails .pdetails-details .pdetails-left .card .details .group {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .additional-details
+    .group
+    .col-6,
+  .pdetails .pdetails-details .pdetails-left .card .details .group .col-6 {
+    margin-bottom: 10px;
+  }
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .additional-details
+    .group
+    .name,
+  .pdetails .pdetails-details .pdetails-left .card .details .group .name {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: justify;
+    color: #4a4a4a;
+  }
+  .pdetails .pdetails-details .pdetails-left .card .details .group .name {
+    line-height: 22px;
+  }
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .additional-details
+    .group
+    .value,
+  .pdetails .pdetails-details .pdetails-left .card .details .group .value {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: justify;
+    color: #626262;
+    text-transform: capitalize;
+  }
+  
+  .cstm-features {
+    font-size: 13px;
+  }
+  
+  .pdetails .pdetails-details .pdetails-left .card .details .row .col-lg-4 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: justify;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .pdetails .pdetails-details .pdetails-left .card .details .aedPrice h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000000;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #0000007a;
+    margin-bottom: 40px !important;
+  }
+  .pdetails .pdetails-details .pdetails-left .card .details .aedPrice h2 span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #4a4a4a;
+    margin-left: 8px;
+  }
+  
+  .pdetails .pdetails-details .pdetails-left .card .details .aedInput {
+    border: 1px solid #cfcfcf;
+    height: 33px;
+    border-radius: 8px;
+    display: flex;
+    width: 100%;
+  }
+  .pdetails .pdetails-details .pdetails-left .card .details .aedInput span {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #939393;
+    border-right: 1px solid #cfcfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px;
+    width: 32px;
+    height: 100%;
+  }
+  .pdetails .pdetails-details .pdetails-left .card .details .aedItem {
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+  }
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .details
+    .aedItem
+    button.CALCULATE {
+    background: linear-gradient(180deg, #af824a 0%, #f2b96e 145.55%);
+    border-radius: 100px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #ffffff;
+    padding: 8px 28px;
+    margin-top: auto;
+  }
+  .pdetails .pdetails-details .pdetails-left .card .details .aedLabel {
+    display: block;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #4a4a4a;
+    margin-bottom: 6px;
+  }
+  .pdetails .pdetails-details .pdetails-left .card .details .aedInput input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+  
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #505050;
+  }
+  
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .floorPlans
+    .accordion-header
+    button:focus {
+    box-shadow: none;
+  }
+  
+  .pdetails .pdetails-details .pdetails-left .card .additional {
+    background-color: #fff6ec;
+    height: 33.32px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: justify;
+    color: #4a4a4a;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+  }
+  .css-13cymwt-control {
+    border-color: #efefef !important;
+  }
+  .css-t3ipsp-control,
+  .css-13cymwt-control {
+    width: 100%;
+    /* min-width: 200px; */
+    border-radius: 100px !important;
+    height: 27px;
+    min-height: 27px !important;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 11px;
+    padding: 0 10px;
+  }
+  .css-hlgwow,
+  .css-1fdsijx-ValueContainer {
+    padding: 0 !important;
+  }
+  .css-19bb58m,
+  .css-qbdosj-Input {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .css-1nmdiq5-menu {
+    /* margin: 0 !important; */
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.25) !important;
+  }
+  .css-1nmdiq5-menu .css-1n6sfyn-MenuList {
+    width: 100%;
+    max-height: 158px;
+  }
+  .css-1nmdiq5-menu .css-tr4s17-option,
+  .css-1nmdiq5-menu .css-d7l1ni-option,
+  .css-1nmdiq5-menu .css-10wo9uf-option {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 11px !important;
+    font-weight: 600;
+    line-height: 16px;
+    color: #555555;
+  }
+  .css-1nmdiq5-menu .css-10wo9uf-option:active,
+  .css-1nmdiq5-menu .css-tr4s17-option,
+  .css-1nmdiq5-menu .css-d7l1ni-option {
+    background-color: #fde8cd;
+    cursor: pointer;
+    line-height: 16px;
+    color: #b48e5d;
+  }
+  
+  *::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #fafafa;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 3px;
+    background-color: #f5f5f5;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #c1bfbf;
+  }
+  /* .css-qbdosj-Input input {
+    padding: 0 10px !important;
+  } */
+  .css-t3ipsp-control {
+    border-color: #af824a !important;
+    box-shadow: 0 0 0 1px #af824a !important;
+  }
+  
+  .css-t3ipsp-control .css-1wy0on6,
+  .css-b62m3t-container .css-1wy0on6,
+  .css-t3ipsp-control .css-1hb7zxy-IndicatorsContainer,
+  .css-13cymwt-control .css-1hb7zxy-IndicatorsContainer {
+    display: none;
+  }
+  .css-t3ipsp-control:hover {
+    border-color: transparent;
+  }
+  
+  .searchLocation {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 4px 10px;
+    background-color: #f6f6f6;
+    border-radius: 4px;
+    width: 300px;
+  }
+  
+  .searchLocation .multi_select,
+  .searchLocation .css-b62m3t-container {
+    width: 100%;
+  }
+  
+  .listpropertysearch {
+    min-width: 140px;
+  }
+  .listpropertysearch button {
+    background: linear-gradient(180deg, #af824a 0%, #c79557 100%);
+    box-shadow: 0px 3px 3px 0px #09172c40;
+    border-radius: 4px;
+    border: none;
+    padding: 11px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    border: 1px solid #af824a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+  }
+  .searchLocation .css-13cymwt-control {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: auto;
+  }
+  
+  .searchLocation .css-3w2yfm-ValueContainer {
+    padding: 0;
+  }
+  .searchLocation .css-1cfo1cf,
+  .searchLocation .css-166bipr-Input,
+  .searchLocation .css-19bb58m:after,
+  .searchLocation .css-qbdosj-Input:after,
+  .searchLocation .css-1jqq78o-placeholder,
+  .searchLocation .css-wsp0cs-MultiValueGeneric {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+  }
+  .searchLocation .css-10wo9uf-option,
+  .searchLocation .css-d7l1ni-option {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+  }
+  .bannerinputmain .icon-input .searchLocation .css-1wlit7h-NoOptionsMessage {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  .bannerinputmain .icon-input .searchLocation .css-1nmdiq5-menu {
+    min-width: 200px;
+    width: 100%;
+  }
+  .searchLocation .css-1wlit7h-NoOptionsMessage {
+    padding: 0;
+  }
+  .searchLocation .css-d7l1ni-option {
+    color: #b48e5d;
+  }
+  .searchLocation .css-t3ipsp-control {
+    border: none;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    padding: 0;
+  }
+  
+  .searchLayout .searchLayoutTop {
+    display: grid;
+    align-items: center;
+    gap: 11px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .searchLayout .searchLayoutBottom {
+    display: grid;
+    align-items: center;
+    gap: 11px;
+    margin-top: 11px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .property-detail-search .property-detail-search-top {
+    display: grid;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 11px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .primary-dropdown button {
+    position: relative;
+  }
+  
+  .primary-dropdown .dropdown-toggle::after {
+    position: absolute;
+    right: 10px;
+  }
+  
+  .AreaPriceDropdownSingle .select__control {
+    background-color: transparent;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px !important;
+    /* padding: 1px solid #CFCFCF; */
+    height: auto;
+  }
+  .AreaPriceDropdownSingle .css-t3ipsp-control {
+    border: 1px solid #cfcfcf !important;
+    border-color: #cfcfcf;
+    box-shadow: none !important;
+    border-radius: 8px !important;
+  }
+  .AreaPriceDropdownSingle .select__input-container {
+    height: 45px;
+  }
+  .AreaPriceDropdownSingle .select__single-value.css-1dimb5e-singleValue {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #939393;
+  }
+  
+  .AreaPriceDropdownSingle .css-3w2yfm-ValueContainer {
+    padding: 0;
+  }
+  .AreaPriceDropdownSingle .css-1cfo1cf,
+  .AreaPriceDropdownSingle .css-166bipr-Input,
+  .AreaPriceDropdownSingle .css-19bb58m:after,
+  .AreaPriceDropdownSingle .css-qbdosj-Input:after,
+  .AreaPriceDropdownSingle .css-1jqq78o-placeholder,
+  .AreaPriceDropdownSingle .css-wsp0cs-MultiValueGeneric {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+  }
+  .AreaPriceDropdownSingle .css-10wo9uf-option,
+  .AreaPriceDropdownSingle .css-d7l1ni-option {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+  }
+  .AreaPriceDropdownSingle .css-1wlit7h-NoOptionsMessage {
+    padding: 0;
+  }
+  .AreaPriceDropdownSingle .css-d7l1ni-option {
+    color: #b48e5d;
+  }
+  .property-detail-search .property-detail-search-bottom {
+    display: grid;
+    align-items: center;
+    column-gap: 11px;
+    margin-top: 11px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .property-detail-search .property-detail-search-bottom .area .title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #4c4a4a;
+    margin-bottom: 10px;
+  }
+  .property-detail-search
+    .property-detail-search-bottom
+    .area.selectproperty
+    span {
+    background-color: #d9d9d98a;
+    border-radius: 6px;
+    height: 21.51px;
+    width: 21.51px;
+    cursor: pointer;
+  }
+  .property-detail-search
+    .property-detail-search-bottom
+    .area.selectproperty
+    p.filter {
+    color: #939393;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    cursor: pointer;
+  }
+  .property-detail-search .property-detail-search-bottom .area .areaInput {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    width: 100%;
+  }
+  .property-detail-search
+    .property-detail-search-bottom
+    .area
+    .areaInput.areaInput-cs
+    .basic-multi-select {
+    padding: 0;
+    border: none;
+  }
+  .property-detail-search .primary-dropdown .dropdown-toggle:hover,
+  .property-detail-search .primary-dropdown .dropdown-toggle {
+    background: transparent !important;
+    border: 1px solid #efefef;
+    height: 45px;
+  }
+  .property-detail-search .searchLocation {
+    height: 45px;
+    border: 1px solid #efefef;
+    background-color: transparent;
+  }
+  .property-detail-search
+    .property-detail-search-bottom
+    .area
+    .areaButton
+    button {
+    border: 1px solid #cfcfcf;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #939393;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    height: 25px;
+    width: 94px;
+    padding: 0;
+  }
+  
+  .property-detail-search
+    .property-detail-search-bottom
+    .area
+    .areaButton
+    button:hover,
+  .property-detail-search
+    .property-detail-search-bottom
+    .area
+    .areaButton
+    button.active {
+    background-color: #fde8cd !important;
+    color: #b48e5d;
+    border: 1px solid #fde8cd;
+  }
+  
+  .property-detail-search .property-detail-search-bottom .searchLocation {
+    width: 100%;
+  }
+  
+  .countryFilter {
+    border-top: 0.5px solid #d0d0d0;
+    margin: 25px 0;
+  }
+  .countryFilter .title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #4c4a4a;
+    margin-bottom: 20px;
+  }
+  .countryFilter .countryGroup {
+    border: 1px solid #ececec;
+    border-radius: 7px;
+    padding: 14px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 11px;
+  }
+  .countryFilter .countryGroup .countryItem {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .countryFilter .countryGroup .countryItem p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #ba8b50;
+    cursor: pointer;
+  }
+  .countryFilter .countryGroup .countryItem span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #939393;
+  }
+  /* h2.title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    color: #4c4a4a;
+    margin-bottom: 6px;
+    color: red !important;
+  } */
+  
+  .rentproperty {
+    margin-bottom: 50px;
+  }
+  
+  .rentproperty .completionstatus .selectsheet {
+    position: sticky;
+    top: 5px;
+  }
+  .rentproperty .completionstatus .selectsheet .card {
+    padding: 12px 10px;
+  }
+  
+  .rentproperty .selectsheet .title,
+  .rentproperty .selectsheet .selectcircle {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 14px !important;
+    color: #434343 !important;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .selectoptionbtn,
+  .rentproperty .completionstatus .selectsheet .card .accordion .accordion-body,
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-button:not(.collapsed) {
+    padding: 12px 10px !important;
+  }
+  
+  .rentproperty .completionstatus .selectsheet .card .accordion .accordion-body {
+    padding-top: 0 !important;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .nav-pills
+    li
+    button {
+    border-radius: 0;
+    padding: 4px 12px;
+    margin-top: -8px;
+  }
+  
+  .rentproperty .accordion .accordion-body .filterPrice .multi-range-slider {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 20px 24px;
+  }
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .thumb::before {
+    box-shadow: none;
+    border: none;
+    background-color: #b7884e;
+  }
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .bar-right,
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .bar-left {
+    box-shadow: none;
+    background-color: #fde8cd;
+    height: 4px;
+  }
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .bar-left,
+  .rentproperty .accordion .accordion-body .filterPrice .multi-range-slider .bar,
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .bar-inner {
+    height: 4px;
+    padding: 0;
+  }
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .bar-inner {
+    background-color: #b7884e;
+    box-shadow: none;
+    border: none;
+  }
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .labels,
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .ruler {
+    display: none;
+  }
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .thumb
+    .caption
+    * {
+    background-color: #565656;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 0 8px;
+  }
+  .rentproperty .accordion .accordion-body .priceRange {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 10px 10px 0;
+  }
+  .primary-dropdown .dropdown-toggle.dropdown-toggle-cs {
+    padding-right: 30px;
+  }
+  .rentproperty .accordion .accordion-body .filterPrice {
+    margin-top: 40px;
+  }
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .caption {
+    display: flex;
+    visibility: visible;
+  }
+  .rentproperty
+    .accordion
+    .accordion-body
+    .priceRange
+    .AreaPriceDropdownSingle
+    .select__input-container {
+    height: 35px;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-body
+    .subTitle {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 16px;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-body
+    .popularBtnList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    gap: 8px;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-body
+    .popularBtnList
+    .popularBtn {
+    border: 1px solid #cfcfcf;
+    height: 25px;
+    padding: 0 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
+  
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #666666;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-body
+    .locationInput {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-body
+    .locationInput
+    .AreaPriceDropdownSingle
+    .select__input-container {
+    height: 35px;
+  }
+  .rentproperty .completionstatus .selectsheet .card .form-switch {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .rentproperty .completionstatus .selectsheet .verifed {
+    border-radius: 4px;
+    padding: 4px 6px;
+    cursor: pointer;
+  }
+  .rentproperty .completionstatus .selectsheet .verifed span {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #ffffff;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .selectcircle
+    button {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .selectcircle
+    button.active {
+    background-color: #fde8cd;
+    color: #b48e5d;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    button.selectoptionbtn.title2 {
+    padding: 12px 0px !important;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .constrtuctiuonbtn
+    button {
+    height: 26px;
+    border-radius: 100px;
+    color: #939393;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .constrtuctiuonbtn
+    button.active {
+    background-color: #fde8cd;
+    color: #b48e5d;
+    border: 1px solid #fde8cd;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-button {
+    position: relative;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-button::after {
+    background-image: url("../src/assets/images/FilterAccordianArrow.png");
+    background-size: 12px;
+    transition: none;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-button:not(.collapsed)::after {
+    top: 3px;
+    right: 17px;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-body
+    .form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-body
+    .form-check
+    input {
+    margin-top: -4px;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-body
+    .form-check
+    label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #939393;
+    cursor: pointer;
+  }
+  .breadcrumbMain .title {
+    color: red !important;
+  }
+  
+  .propertyLogin h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000000;
+  }
+  .propertyLogin h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 28px !important;
+  }
+  .propertyLogin .otp {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 29px;
+  }
+  .propertyLogin button.verify {
+    background: linear-gradient(180deg, #af824a 0%, #c79557 100%);
+    box-shadow: 0px 3px 3px 0px #09172c40;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #fff;
+    width: 100%;
+    border: 1px solid #af824a;
+    border-radius: 4px;
+  }
+  .propertyLogin button.verify:hover{
+    background: transparent;
+    box-shadow: none;
+    color: #af824a;
+  }
+  .propertyLogin button.verify.outline {
+    border: 1px solid #af824a;
+    color: #af824a;
+    background: #fff;
+  }
+  .propertyLogin button.verify.outline:hover {
+    background: linear-gradient(180deg, #af824a 0%, #c79557 100%);
+    color: white;
+  }
+  .error {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #f83639;
+    margin-bottom: 10px;
+  }
+  .listing-dropdown .multi_select div{
+    color: #878787;
+  }
+  .propertyLogin .error {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #f83639;
+    margin-bottom: 10px;
+  }
+  .propertyLogin p.login span,
+  .propertyLogin p.login {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000000;
+  }
+  .propertyLogin .PropertyBackArrow {
+    margin-bottom: 26px;
+    cursor: pointer;
+  }
+  .propertyLogin .CTPUT {
+    display: flex;
+    gap: 15px;
+  }
+  .propertyLogin .CTPUT svg {
+    cursor: pointer;
+  }
+  .propertyLogin .CTPUT p {
+    width: max-content;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000000;
+    border: none;
+    margin-bottom: 39px !important;
+  }
+  .propertyLogin .CTPUT p:focus-visible {
+    outline: 1px solid #af824a;
+  }
+  .propertyLogin p.login span {
+    color: #af824a;
+    cursor: pointer;
+  }
+  .propertyLogin p.resend {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 26px !important;
+  }
+  .propertyLogin p.resend span {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #af824a;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+  .propertyLogin .otp input {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+    border: 1px solid #fafafa;
+    padding: 15px;
+    text-align: center;
+  
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #777;
+  }
+  
+  .propertyLocation h2 {
+    margin-bottom: 8px !important;
+  }
+  .propertyLocation p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #878787;
+    margin-bottom: 38px !important;
+  }
+  
+  .propertyLocation .css-t3ipsp-control,
+  .propertyLocation .css-13cymwt-control {
+    width: 100%;
+    border-radius: 0px !important;
+    height: 51px;
+    min-height: 51px !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.07px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* .propertyLocation .css-t3ipsp-control {
+    border-color: #bdbdbd !important;
+    box-shadow: 0 0 0 1px #bdbdbd !important;
+  } */
+  .propertyLogin .css-t3ipsp-control {
+    border-color: #efefef !important;
+    box-shadow: none !important;
+  }
+  .propertyLocation .css-1nmdiq5-menu .css-tr4s17-option,
+  .propertyLocation .css-1nmdiq5-menu .css-d7l1ni-option,
+  .propertyLocation .css-1nmdiq5-menu .css-10wo9uf-option {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.07px;
+    color: #878787;
+  }
+  
+  .propertyLocation input {
+    border: 1px solid #efefef;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #878787;
+    padding: 16px 22px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .propertyLocation .css-d7l1ni-option:active {
+    background-color: #fde8cd;
+  }
+  
+  .propertyLocation .verify {
+    margin-top: 34px;
+  }
+  .userBread {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+  }
+  .userBread nav h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #4c4a4a;
+    margin-bottom: 8px !important;
+  }
+  .userBread .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+  }
+  .userBread .breadcrumb .breadcrumb-item a {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #4c4a4a;
+  }
+  .userBread .breadcrumb .breadcrumb-item::before {
+    content: "";
+    display: none;
+  }
+  .userDashbordBG {
+    background-color: #f9f9f9;
+    padding: 25px 0;
+    position: relative;
+  }
+  .user-dash {
+    display: flex;
+    gap: 30px;
+    min-height: 584px;
+  }
+  
+  .user-dash .user-dash-left {
+    box-shadow: 0px 2px 4px 0px #00000040;
+    background-color: #ffffff;
+    width: 252px !important;
+    min-width: 252px;
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+    position: sticky;
+    top: 5px;
+  }
+  
+  .user-dash .user-dash-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-dash .user-dash-left ul li a {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 18px 25px;
+    border-bottom: 1px solid #f9f9f9;
+  }
+  
+  .user-dash .user-dash-left ul li a svg {
+    height: 25px;
+    width: 25px;
+  }
+  .user-dash .user-dash-left ul li a p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000000;
+  }
+  
+  .user-dash .user-dash-left ul li a.active {
+    background-color: #fff8f0;
+  }
+  .user-dash .user-dash-left ul li a.active p {
+    color: #af824a;
+    font-weight: 600;
+  }
+  
+  .user-dash .user-dash-left ul li a.active svg path {
+    stroke: #af824a;
+  }
+  
+  .user-dash .user-dash-right {
+    width: calc(100% - 252px);
+  }
+  
+  .hero .contain button.PropertySearch {
+    background-color: #af824a;
+    border-radius: 4px 4px 0px 0px;
+    border: none;
+    height: 25px;
+    width: 110px;
+  
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #fff;
+  }
+  
+  .modal.PropertySearch .modal-content {
+    /* background: linear-gradient(0deg, rgba(171, 171, 171, 0.25), rgba(171, 171, 171, 0.25)),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89)); */
+    border: 1px solid #ababab40;
+    border-radius: 6px;
+    background-color: #fff;
+  }
+  .modal.PropertySearch .modal-content ul.nav {
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 5px 7px;
+    flex-wrap: nowrap;
+  }
+  .modal.PropertySearch .modal-content ul.nav .nav-link {
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 4px;
+    width: 100%;
+    color: #555555;
+  }
+  .modal.PropertySearch .modal-content ul.nav li {
+    width: 100%;
+  }
+  .modal.PropertySearch .modal-content ul.nav .nav-link.active {
+    background-color: #af824a;
+    color: #fff;
+  }
+  
+  .modal.PropertySearch .tab-content h6.title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #555555;
+    margin-bottom: 10px;
+  }
+  
+  .modal.PropertySearch .accordion .accordion-item {
+    border: none;
+    margin-bottom: 16px;
+  }
+  .modal.PropertySearch .accordion .accordion-item .accordion-header {
+    margin-bottom: 18px;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px !important;
+    overflow: hidden;
+  }
+  .modal.PropertySearch .accordion .accordion-header .accordion-button {
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 10px 12px;
+  
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .modal.PropertySearch .accordion .accordion-body {
+    border: 1px solid #e6e6e6;
+    border-radius: 6px !important;
+    padding: 18px 14px;
+  
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #555555;
+  }
+  
+  .modal.PropertySearch .accordion .accordion-button {
+    position: relative;
+  }
+  .modal.PropertySearch .accordion .accordion-button::after {
+    background-image: url("../src/assets/images/FilterAccordianArrow.png");
+    background-size: 12px;
+    transition: none;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+  .modal.PropertySearch .accordion .accordion-button:not(.collapsed)::after {
+    top: 3px;
+    right: 17px;
+  }
+  .modal.PropertySearch .accordion .accordion-header .accordion-button:focus {
+    box-shadow: none;
+  }
+  
+  .modal.PropertySearch .accordion .accordion-body h3.title {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #555555;
+    margin-bottom: 16px !important;
+  }
+  
+  .modal.PropertySearch .accordion .accordion-body .btn-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+    column-gap: 10px;
+  }
+  .modal.PropertySearch .accordion .accordion-body hr {
+    border-top: 1px solid #b7b5b5;
+  }
+  .modal.PropertySearch .accordion .accordion-body .btn-group button.propertyBtn {
+    border: 1px solid #efefef;
+    border-radius: 14px;
+    height: 24px;
+    width: 100%;
+    background-color: transparent;
+    padding: 0 25px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #555555;
+  }
+  .modal.PropertySearch .accordion .accordion-body .btn-group-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .modal.PropertySearch
+    .accordion
+    .accordion-body
+    .btn-group-2
+    button.propertyBtn {
+    width: max-content;
+    height: 40px;
+    padding: 0 15px;
+  }
+  .modal.PropertySearch .accordion .accordion-body .submit {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+  }
+  .modal.PropertySearch .accordion .accordion-body .submit .reset {
+    border: 1px solid #af824a;
+    color: #c18f53;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    width: 80px;
+    height: 28px;
+    background: transparent;
+  }
+  .modal.PropertySearch .accordion .accordion-body .submit .done {
+    background: linear-gradient(180deg, #c49255 0%, #b0834a 100%);
+    color: #ffffff;
+  }
+  
+  .modal.PropertySearch .accordion .accordion-body label {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #555555;
+    margin-bottom: 10px;
+  }
+  .modal.PropertySearch
+    .accordion
+    .accordion-body
+    .AreaPriceDropdownSingle
+    .select__input-container {
+    height: 40px;
+  }
+  .modal.PropertySearch .keyword-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+  }
+  .modal.PropertySearch .keyword-group .keyword-list {
+    padding: 5px 8px 5px 8px;
+    border-radius: 100px;
+    background-color: #f5f5f5;
+  
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #555555;
+  
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .modal.PropertySearch input.keyword {
+    border: 1px solid #cfcfcf;
+    height: 45px;
+    border-radius: 8px;
+  
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #939393;
+    padding: 23px 15px;
+  
+    width: 100%;
+  }
+  
+  .modal.PropertySearch .location h6.title {
+    margin-top: 20px;
+    margin-bottom: 10px !important;
+  }
+  .modal.PropertySearch .location .input {
+    position: relative;
+  }
+  .modal.PropertySearch .modal-content .modal-body .btn-close {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 15px;
+  }
+  .modal.PropertySearch
+    .location
+    .input
+    .AreaPriceDropdownSingle
+    .select__single-value.css-1dimb5e-singleValue,
+  .modal.PropertySearch
+    .location
+    .input
+    .AreaPriceDropdownSingle
+    .select__input-container,
+  .modal.PropertySearch
+    .location
+    .input
+    .AreaPriceDropdownSingle
+    .css-1jqq78o-placeholder {
+    margin-left: 30px !important;
+  }
+  .modal.PropertySearch .location .input svg {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+  }
+  .modal.PropertySearch .location .AreaPriceDropdownSingle {
+    margin-bottom: 18px;
+  }
+  .modal.PropertySearch button.search {
+    box-shadow: 0px 3px 3px 0px #09172c40;
+    background: linear-gradient(180deg, #af824a 0%, #c79557 100%);
+    border-radius: 4px;
+    height: 35px;
+    width: 140px;
+    border: none;
+  
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fff;
+  
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .bannerinputmain .icon-input {
+    width: 100%;
+    height: 37px;
+  }
+  
+  .bannerinputmain .icon-input {
+    border: 1px solid #e3e3e3 !important;
+  }
+  .bannerinputmain .icon-input .searchLocation {
+    background-color: transparent;
+  }
+  .bannerinputmain .icon-input .searchLocation svg.SearchLocationDownArrow {
+    display: none;
+  }
+  .bannerinputmain .icon-input .searchLocation .css-166bipr-Input {
+    width: 100%;
+    max-width: 230px;
+  }
+  .addRoomDrop .dropdown-menu {
+    padding: 0;
+    width: 250px;
+    border-radius: 4px;
+    box-shadow: 2px 4px 6px 2px rgba(0, 0, 0, 0.1),
+      0 12px 11px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d6d6d6;
+    position: absolute;
+    top: 38px;
+    left: 0;
+  }
+  .addRoomDrop button.btn:active,
+  .addRoomDrop button.btn {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    white-space: nowrap;
+    height: 37px;
+    border: 1px solid #e3e3e3 !important;
+    border-radius: 6px !important;
+  }
+  .addRoomDrop .dropdown-menu .addRoomDropHeader {
+    border-bottom: 1px solid #eee;
+    margin: 0 16px;
+  
+    align-items: stretch;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .addRoomDrop .dropdown-menu .addRoomDropHeader .right,
+  .addRoomDrop .dropdown-menu .addRoomDropHeader .left {
+    width: 50%;
+    color: #333;
+    padding: 18px 0 14px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+  }
+  .addRoomDrop .dropdown-menu .addRoomDropBody {
+    margin: 16px 16px 0 16px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .addRoomDrop .dropdown-menu .addRoomDropBody .right,
+  .addRoomDrop .dropdown-menu .addRoomDropBody .left {
+    width: 50%;
+  }
+  
+  .addRoomDrop .dropdown-menu .addRoomDropBody .left span {
+    font-size: 14px;
+    color: #222;
+  }
+  
+  .addRoomDrop .dropdown-menu .addRoomDropBody .right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .addRoomDrop .dropdown-menu .addRoomDropBody .right button {
+    background-color: #fff;
+    border: 1px solid #b5b5b5;
+    border-radius: 2px;
+    font-size: 20px;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .addRoomDrop .dropdown-menu .addRoomDropFooter {
+    border-top: 1px solid #eee;
+    background-color: #fff;
+    margin: 0 16px;
+    padding: 8px 0 !important;
+    /* user-select: none; */
+    display: flex;
+    align-items: center;
+  }
+  
+  .addRoomDrop .dropdown-menu .addRoomDropFooter .left,
+  .addRoomDrop .dropdown-menu .addRoomDropFooter .right {
+    width: 50%;
+  }
+  .addRoomDrop .dropdown-menu .addRoomDropFooter button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    color: #222;
+    outline: none;
+    padding: 10px 0 14px;
+    width: 100%;
+  
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  
+  .bannerinputmain .rmdp-container .rmdp-input {
+    margin: 0;
+    border: 1px solid #e3e3e3;
+    height: 37px;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #000000;
+  
+    width: 175px;
+    cursor: pointer;
+  }
+  .bannerinputmain .rmdp-container .rmdp-input:focus {
+    box-shadow: none;
+  }
+  .bannerinputmain {
+    flex-wrap: nowrap;
+    max-width: 750px;
+  }
+  .bannerinputmain .icon-input {
+    display: flex;
+    position: relative;
+    padding: 0;
+    border: none;
+  }
+  .bannerinputmain .icon-input .AreaPriceDropdownSingle .select__control {
+    border-radius: 6px !important;
+  }
+  .bannerinputmain .icon-input .AreaPriceDropdownSingle .select__input-container {
+    height: 30px;
+  }
+  .bannerinputmain .icon-input .img-fluid {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+  .holidaysearch {
+    height: 37px;
+    width: 105px;
+    min-width: 105px;
+    border: none;
+    border-radius: 6px !important;
+    box-shadow: 0px 3px 3px 0px #09172c40;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    transition: 0.2s ease-in-out !important;
+  }
+  .bannerinputmain .rmdp-day.rmdp-range span {
+    color: #fff;
+  }
+  .bannerinputmain .rmdp-week-day {
+    color: #af824a;
+  }
+  .bannerinputmain
+    .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden)
+    span:hover {
+    background-color: #af824a;
+  }
+  .bannerinputmain .rmdp-arrow-container:hover,
+  .bannerinputmain .rmdp-day.rmdp-today span {
+    background-color: #af824a;
+  }
+  .bannerinputmain .rmdp-range {
+    background-color: #af824a;
+    box-shadow: 0 0 3px #edbf86;
+  }
+  .bannerinputmain .rmdp-arrow {
+    border-color: #af824a;
+  }
+  .productgridcard .nav button {
+    border: 1px solid transparent;
+  }
+  .holidayHomes .btn-close {
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    cursor: pointer;
+    opacity: 1;
+  }
+  .holidayHomes ul.categori-list {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 0;
+    margin-bottom: 50px;
+  
+    display: flex;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 35px;
+    flex-wrap: wrap;
+  }
+  .holidayHomes ul.categori-list li.categori-item {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #fff;
+    /* margin-right: 35px; */
+    padding-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    /* margin-bottom: 15px; */
+  }
+  .holidayHomes ul.categori-list li.categori-item.active::after {
+    content: "";
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+  }
+  .holidayHomes .swiper-thumbs,
+  .holidayHomes .swiper-thumbs .swiper-wrapper,
+  .holidayHomes .swiper-thumbs .swiper-wrapper .swiper-slide,
+  .holidayHomes .swiper-thumbs .swiper-wrapper .swiper-slide img {
+    height: 150px !important;
+  }
+  .holidayHomes .swiper-thumbs .swiper-wrapper .swiper-slide {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .holidayHomes
+    .swiper-thumbs
+    .swiper-wrapper
+    .swiper-slide.swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  .holidayHomes .modal {
+    background-color: #001529e8;
+  }
+  .holidayHomes .photos-grid-modal .modal-dialog .modal-content {
+    height: calc(100vh - 20px);
+    padding: 50px 0;
+    width: 80%;
+    max-width: 1250px;
+  }
+  .holidayHomes .swiper-thumbs .swiper-wrapper .swiper-slide img {
+    width: 100%;
+  }
+  
+  .photos-grid-modal .mySwiper .swiper-button-prev,
+  .photos-grid-modal .mySwiper .swiper-button-next,
+  .holidayHomes .mySwiper2 .swiper-button-prev,
+  .holidayHomes .mySwiper2 .swiper-button-next {
+    height: 48px !important;
+    width: 48px !important;
+    background-color: transparent;
+    border-radius: 100px;
+  }
+  
+  .photos-grid-modal .mySwiper .swiper-button-prev::after,
+  .holidayHomes .mySwiper2 .swiper-button-prev::after {
+    content: "";
+    background-image: url("../src/assets/images/sliderLeft.png");
+    height: 48px;
+    width: 48px;
+    border-radius: 100px;
+    background-size: cover;
+  }
+  .photos-grid-modal .mySwiper .swiper-button-next::after,
+  .holidayHomes .mySwiper2 .swiper-button-next::after {
+    content: "";
+    background-image: url("../src/assets/images/sliderRight.png");
+    height: 48px;
+    width: 48px;
+    border-radius: 100px;
+    background-size: cover;
+  }
+  .holidayHomes .mySwiper2 .swiper-wrapper .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .holidayHomes .mySwiper2 .swiper-wrapper .swiper-slide {
+    padding: 0 100px;
+  }
+  .holidayHomes .galleryThumb {
+    height: 150px;
+    position: relative;
+  }
+  .holidayHomes .galleryThumb .leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    left: 0;
+    cursor: pointer;
+  }
+  .holidayHomes .galleryThumb .rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    right: 0;
+    cursor: pointer;
+  }
+  .holidayHomes .galleryThumb .mySwiper {
+    width: 90% !important;
+    padding-top: 20px;
+  }
+  .holidayHomes .deviderr {
+    padding-bottom: 5px;
+    padding-top: 25px;
+  }
+  .holidayHomes .deviderr h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #fff;
+    text-align: center;
+  
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .holidayHomes .deviderr h2::after,
+  .holidayHomes .deviderr h2::before {
+    border-bottom: 1px solid #fff;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .holidayHomes .deviderr h2::after {
+    margin-right: -100%;
+    padding-right: 100%;
+  }
+  .holidayHomes .deviderr h2::before {
+    margin-left: -100%;
+    padding-left: 100%;
+  }
+  .card.cstm-card-main .cstm-card-img {
+    max-height: 150px;
+  }
+  @media (min-width: 991px) {
+    .HH-details {
+      position: sticky;
+      top: 0;
+      z-index: 99999;
+      background-color: #fff;
+      padding: 15px 0;
+    }
+  }
+  .HH-details .bannerinputmain {
+    max-width: 1000px;
+    padding: 0;
+    gap: 15px;
+  }
+  /* .searchLocation .dropdown.css-b62m3t-container,
+  .searchLocation .css-1fdsijx-ValueContainer,
+  .searchLocation .css-hlgwow,
+  .searchLocation .css-166bipr-Input {
+    width: calc(100% - 40px) !important;
+  } */
+  .propertyslider .gallery {
+    height: 25px;
+    line-height: 14px;
+    top: 17px;
+  }
+  /* .searchLocation .multi_select {
+    width: calc(100% - 40px) !important;
+  } */
+  .searchLocation .multi_select .css-3w2yfm-ValueContainer {
+    flex-wrap: nowrap;
+  }
+  .searchLocation .multi_select_label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 2px;
+    margin: 2px;
+    padding: 3px;
+    min-width: 60px;
+  }
+  .searchLocation .css-1dimb5e-singleValue {
+    color: #000000;
+  }
+  .searchLocation .css-166bipr-Input,
+  .searchLocation .css-1dimb5e-singleValue,
+  .HH-details .searchLocation .css-1dimb5e-singleValue {
+    font-size: 12px;
+    width: calc(100% - 25px);
+  }
+  /* .HH-details .searchLocation div, */
+  .HH-details .searchLocation {
+    width: 100%;
+  }
+  .HH-details .holidaysearch,
+  .HH-details .addRoomDrop button.btn,
+  .HH-details .bannerinputmain .rmdp-container .rmdp-input,
+  .HH-details .bannerinputmain .icon-input {
+    height: 45px;
+  }
+  .HH-details .bannerinputmain .icon-input .img-fluid {
+    top: 10px;
+  }
+  .rentproperty .propertyslider .cs-main {
+    margin-top: 0;
+  }
+  .rentproperty .propertyslider .cs-main .cs-tab h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #4c4a4a;
+  }
+  .rentproperty .propertyslider .cs-main .cs-tab {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .rentproperty .propertyslider .cs-main .cs-tab p {
+    color: #5f5f5f;
+    font-weight: 600;
+  }
+  label.form-check-label {
+    font-size: 13px;
+  }
+  .rentproperty .carddeatil .apartment h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #4c4a4a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 8px !important;
+  }
+  .rentproperty .carddeatil .apartment h4 span {
+    background-color: #1ab64f;
+    height: 15px;
+    padding: 0 6px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: max-content;
+    margin-top: 5px;
+  }
+  .rentproperty .carddeatil .apartment p {
+    font-weight: 400;
+    margin-bottom: 13px !important;
+  }
+  .rentproperty .carddeatil .apartment .downtown {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #4c4a4a;
+  }
+  .rentproperty .carddeatil .apartment .bathdetail .bathdetailitems {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .rentproperty .carddeatil .apartment .bathdetail .bathdetailitems .more {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #af824a;
+  }
+  .rentproperty .carddeatil .swiper {
+    height: 100%;
+  }
+  .rentproperty .carddeatil .apartment {
+    margin-left: -10px;
+  }
+  .rentproperty .carddeatil .apartment .sendIcon {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+  }
+  .rentproperty .carddeatil .apartment button {
+    height: 30px;
+    min-width: 91px;
+    padding: 7px;
+    border-radius: 8px;
+    background: #af824f;
+    color: #fff;
+    transition: none;
+    transition: 0.2s ease-in-out !important;
+  }
+  .rentproperty .carddeatil .apartment button a {
+    color: #fff;
+  }
+  .rentproperty .carddeatil .apartment button.ViewDetails {
+    background: transparent;
+    border: 1px solid #717171;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #6b6b6b;
+    transition: 0.2s ease-in-out !important;
+  }
+  .carddeatil .apartment button {
+    border: 1px solid transparent;
+  }
+  /* .carddeatil .apartment button:hover {
+    border: 1px solid #af824a;
+    color: #af824a;
+    background: transparent;
+  } */
+  .rentproperty .carddeatil .apartment .bathdetail .bathdetailitems span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #0f0f0f;
+  }
+  .rentproperty .propertyslider .tab-content {
+    margin-bottom: 65px;
+  }
+  
+  .breadcrumb {
+    gap: 13px;
+  }
+  .breadcrumb .breadcrumb-item:before {
+    display: none;
+  }
+  .breadcrumb li a {
+    color: #4c4a4a;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .breadcrumb i {
+    font-size: 10px;
+    padding-top: 7px;
+  }
+  .card.cstm-card-main {
+    height: 100%;
+  }
+  .card.cstm-card-main.cstm-card-main-cs .pro-img {
+    height: 180px;
+  }
+  .cstm-card-body-main p.title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #2a323c;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-body.cstm-card-body-main .card-title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #737d8c;
+    white-space: inherit;
+  
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-body.cstm-card-body-main .house-main span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #737d8c;
+  }
+  .cstm-card-body-main .btn-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-top: 12px;
+    margin-top: 8px;
+    border-top: 1px solid #dde0e5;
+  }
+  .cstm-card-body-main .btn-main button {
+    height: 30px;
+    width: 100%;
+    padding: 0;
+    border-radius: 4px;
+    background: #af824f;
+    border: 1px solid transparent;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #ffffff;
+    transition: 0.1s ease-in-out !important;
+  }
+  .cstm-card-body-main .btn-main button.outline {
+    background: transparent;
+    border: 1px solid #717171;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #6b6b6b;
+    transition: 0.1s ease-in-out !important;
+  }
+  .cstm-card-body-main .btn-main button.outline {
+    background-color: #ebeef2;
+    border: transparent;
+  }
+  .cstm-card-body-main .btn-main button:hover {
+    color: #af824a;
+    border: 1px solid #af824a;
+    background: transparent;
+  }
+  .cstm-card-body-main .btn-main button.outline:hover {
+    color: #af824a;
+    border: 1px solid #af824a;
+    background-color: transparent;
+  }
+  .notitle .filterproperty {
+    height: 35px;
+    padding: 0;
+    margin: 0;
+  }
+  .notitle .forrent nav .breadcrumb-item a {
+    line-height: 35px;
+  }
+  .notitle .forrent nav .breadcrumb-item,
+  .notitle .forrent nav,
+  .notitle .forrent {
+    height: 35px;
+  }
+  .holidayHomes .holidayHomesTitle {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .holidayHomes .holidayHomesTitle .left h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 5px !important;
+  }
+  .holidayHomes .holidayHomesTitle .left h1 span {
+    background-color: #8fc402;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+    color: #ffffff;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 2px 2px 0px 0px;
+  }
+  .holidayHomes .holidayHomesTitle .left .location {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #747474;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .holidayHomes .holidayHomesTitle .left .breakfast {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #f40000;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    background-color: #ffebeb;
+    border: 1px dotted #f40000;
+    width: max-content;
+    border-radius: 9px;
+    padding: 5px 10px;
+    margin-bottom: 26px;
+  }
+  .holidayHomes .holidayHomesTitle .right .price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000000;
+  }
+  .holidayHomes .holidayHomesTitle .right .share {
+    border-radius: 9px;
+    border: 0.5px solid #bebebe;
+    background: #f6f6f6;
+    padding: 8px 12px;
+    margin-top: 16px;
+    cursor: pointer;
+    width: max-content;
+  
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #595959;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .getstarted-main ul li.list-button button.nav-link {
+    background-color: #ffffff;
+    border: 1px solid #cacaca;
+    color: #717171;
+    border-radius: 100px;
+    height: 34px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .getstarted-main ul li.list-button button.nav-link:focus {
+    box-shadow: none;
+  }
+  .getstarted-main ul li.list-button button.nav-link.active {
+    background-color: #af824a;
+    border: 1px solid #af824a;
+    color: #fff;
+  }
+  .getstart-tabbutton button {
+    margin-bottom: 0;
+  }
+  .getstart-tabbutton {
+    margin-bottom: 25px;
+  }
+  .basic-multi-select {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #efefef;
+    padding: 0 22px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #878787;
+  }
+  .propertylistprofile .profilepage .propertytitle{
+    margin: 26px 0 33px 0 !important;
+  }
+  .propertylistprofile .profilepage .selectbhk {
+    padding: 3px 34px;
+  }
+  .propertylistprofile .profilepage .active {
+    color: #af824a;
+  }
+  .propertylistprofile .profilepage .profilehomepage p {
+    color: #686868;
+    font-weight: 400;
+  }
+  .propertylistprofile .profilepage .profilehomepage .floorplaninput {
+    width: 107px;
+  }
+  .propertylistprofile .profilepage .profilehomepage .floorplaninput,
+  .propertylistprofile .profilepage .profilehomepage .thiyo-btn {
+    height: 35px;
+    border-radius: 10px !important;
+  }
+  .checkoutText {
+    padding-left: 24px;
+    padding-right: 35px;
+  }
+  .checkoutText h2 {
+    max-width: 190px;
+  }
+  .holidayhomestitle {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 40px !important;
+  }
+  .readmorepart {
+    height: 300px;
+    padding-top: 60px;
+  }
+  .readmorepart h5 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #2b2f4a;
+  }
+  .section-header-main .exploredescription {
+    font-size: 12px;
+    line-height: 16.34px;
+  }
+  .cstm-tab-content-feature-home {
+    padding-top: 30px;
+  }
+  .feature-home-main .cstm-card-body-main .viewmore button {
+    height: 23px;
+    border-radius: 4px;
+    border: 1px solid #717171;
+    width: 100%;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #6b6b6b;
+  }
+  .feature-home-main .cstm-card-body-main .viewmore button.Book {
+    background-color: #af824f;
+    color: #fff;
+    border: 1px solid #af824f;
+  }
+  .feature-home-main .cstm-card-body-main .viewmore button:hover {
+    color: #af824a;
+    border: 1px solid #af824a;
+    background: transparent;
+  }
+  .feature-home-main .cstm-card-body-main .viewmore button.Book:hover {
+    color: #fff;
+    background: linear-gradient(180deg, #af824a 0%, #cf9c5b 100%);
+  }
+  .carddeatil .mySwiper6 {
+    max-height: 280px;
+  }
+  .homeholidaycheck {
+    margin-top: 35px;
+  }
+  .homeholidaycheck .checkholiday-right .check-pagedetail img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+  }
+  .homeholidaycheck .checkholiday-right .check-pagedetail h3.title {
+    margin-top: 23px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000000;
+  }
+  .homeholidaycheck .checkholiday-right .check-pagedetail h6.subtitle {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #5f5f5f;
+  }
+  .homeholidaycheck .checkholiday-right .check-pagedetail .rating {
+    gap: 12px;
+  }
+  .homeholidaycheck .checkholiday-right .check-pagedetail .rating .greenrating {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .homeholidaycheck .checkholiday-right .check-pagedetail ul li h3,
+  .homeholidaycheck .checkholiday-right .check-pagedetail ul li h6,
+  .homeholidaycheck .checkholiday-right .check-pagedetail h6.dates,
+  .homeholidaycheck .checkholiday-right .check-pagedetail .Classic,
+  .homeholidaycheck .checkholiday-right .check-pagedetail h6.ratings {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #5f5f5f;
+  }
+  .homeholidaycheck .checkholiday-right .check-pagedetail ul li h6.Payable,
+  .homeholidaycheck .checkholiday-right .check-pagedetail ul li h3,
+  .homeholidaycheck .checkholiday-right .check-pagedetail .Classic {
+    color: #020202;
+  }
+  .homeholidaycheck .checkholiday-right .check-pagedetail .icons {
+    height: 23px;
+    width: 23px;
+  }
+  .homeholidaycheck .checkholiday-right .check-pagedetail {
+    width: 340px;
+    padding: 20px;
+  }
+  .homeholidaycheck .checkholiday-left {
+    width: calc(100% - 340px);
+  }
+  .holidaychecout .homeholidaycheck .card .enteremail {
+    padding: 15px 22px;
+  }
+  .holidaychecout .homeholidaycheck .card .enteremail h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000000;
+  }
+  .holidaychecout .homeholidaycheck .card .enteremail.active {
+    border: 1px solid #deaa62;
+    background-color: #ffedd3;
+  }
+  .holidaychecout .homeholidaycheck .card .enteremail.active span {
+    background-color: #deaa62;
+  }
+  .holidaychecout .homeholidaycheck .card .enteremail.green {
+    border: none;
+    background-color: transparent;
+  }
+  .holidaychecout .homeholidaycheck .card .enteremail.green span {
+    background-color: #e3f6ea;
+    color: #3ab780;
+  }
+  .holidaychecout .homeholidaycheck .card .emailaddform h6 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #5f5f5f;
+  }
+  .holidaychecout .homeholidaycheck .card .emailaddform input {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #d0d0d0;
+  }
+  .holidaychecout .homeholidaycheck .card .emailaddform .passcode {
+    display: flex;
+    align-self: center;
+    gap: 8px;
+  }
+  .holidaychecout .homeholidaycheck .card .emailaddform .passcode input {
+    height: 50px;
+    width: 50px;
+    padding: 0 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .homeholidaycheck
+    .checkholiday-left
+    .paymentmethod
+    .paymenttype
+    .paynow
+    .paynowdetail,
+  .homeholidaycheck
+    .checkholiday-left
+    .paymentmethod
+    .paymenttype
+    .paynow
+    .payathotel {
+    margin-top: 0;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  .holidaychecout .homeholidaycheck .card .emailaddform .sendcode {
+    max-width: 250px;
+  }
+  .holidaychecout .homeholidaycheck .card .emailaddform .input-group {
+    flex-wrap: nowrap;
+  }
+  .user-dash {
+    position: relative;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link p {
+    gap: 8px !important;
+    height: 20px;
+  }
+  .header .navbar-nav .nav-item .dropdown-menu {
+    width: max-content;
+    padding: 0 16px;
+  }
+  .header .navbar .lan {
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #4c4a4a;
+  }
+  /* .holidaybanner{
+    max-width: 1424px;
+    margin: auto;
+  } */
+  .holidaybannerbg {
+    /* background: linear-gradient(93.32deg, #CFDDE0 -4.58%, rgba(207, 221, 224, 0) 66.98%); */
+    background: linear-gradient(270.77deg, #856139 0.66%, #cea67e 197.21%);
+  }
+  .rmdp-calendar .rmdp-day-picker {
+    gap: 15px;
+  }
+  .holiday-checkoutmain {
+    margin-right: 10px;
+  }
+  .holiday-checkoutmain:last-child {
+    margin: 0;
+  }
+  .checkout-img-content {
+    gap: 10px;
+  }
+  .readmorepart h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #0b4a73;
+    max-width: 360px;
+  }
+  .readmorepart button {
+    background: #0b4a73;
+  }
+  .readmorepart {
+    border-radius: 13px;
+  }
+  .popularvaction .populardestination img.popular {
+    /* width: 216px; */
+    width: 100%;
+    height: 150px;
+  }
+  .popularvaction .populardestination img.popular1 {
+    /* width: 216px; */
+    width: 100%;
+    height: 220px;
+  }
+  .popularvaction .populardestination img.popular2 {
+    /* width: 216px; */
+    width: 100%;
+    height: 205px;
+  }
+  .popularvaction .populardestination img.popular3 {
+    /* width: 216px; */
+    width: 100%;
+    height: 162px;
+  }
+  .popularvaction .vacationpart2,
+  .popularvaction .vacationpart1 {
+    width: 50%;
+  }
+  .cstm-card-body-main .house-main .viewmore {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #deaa62;
+    margin-top: 0;
+  }
+  /* .cs-main{
+    flex-wrap: nowrap;
+  } */
+  .cs-main .cs-filter-option .popularmain {
+    max-width: 160px;
+  }
+  .cs-main .cs-filter-option .productgridcard .nav,
+  .cs-main .cs-filter-option {
+    flex-wrap: nowrap;
+  }
+  .propertyslider .gallery {
+    right: inherit;
+    left: 15px;
+  }
+  .propertyslider img {
+    object-fit: cover;
+  }
+  
+  .rentproperty .carddeatil .apartment button:hover {
+    background: linear-gradient(180deg, #af824a 0%, #cf9c5b 100%);
+    color: #fff;
+  }
+  .rentproperty .carddeatil .apartment button.ViewDetails:hover {
+    color: #af824a;
+    border: 1px solid #af824a;
+    background: transparent;
+  }
+  button {
+    transition: none !important;
+  }
+  .holidaysearch {
+    background: #af824a !important;
+    background-color: transparent;
+  }
+  .holidaysearch:hover {
+    color: #af824a;
+    border: 1px solid #af824a;
+    background: transparent !important;
+  }
+  .user-dash .profileform .profileformgrid .detail input:focus {
+    box-shadow: none;
+  }
+  .react-tel-input input.form-control {
+    padding-left: 50px !important;
+  }
+  .propertylistsidebar .sidebar .sidebarstep button.editBtn {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    border: none;
+    color: #af824a;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .propertylistsidebar .sidebarstepline .pendingstep {
+    border: 1px solid #af824a;
+  }
+  .propertylistprofile .profilepage .profilehomepage .areaInput {
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 48px;
+    display: flex;
+  }
+  .propertylistprofile .profilepage .profilehomepage .areaInput input {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #717171;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    outline: none;
+    padding: 13px 16px;
+    border: none;
+  }
+  .propertylistprofile .profilepage .profilehomepage .areaInput div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .propertylistprofile .profilepage .profilehomepage .areaInput select {
+    width: max-content;
+    border: none;
+    height: auto;
+    margin-right: 5px;
+  }
+  .propertylistprofile .profilepage .profilehomepage .areaInput .line {
+    height: 32px;
+    width: 1px;
+    background-color: #dedede;
+  }
+  .propertylistprofile .profilepage .profilehomepage {
+    margin-bottom: 20px;
+  }
+  .propertylistprofile .profilepage .profilehomepage a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #af824a;
+  }
+  .propertylistprofile .profilepage .Furnished {
+    box-shadow: 0px 1px 4px 0px #00000012;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .propertylistprofile .profilepage .Furnished .title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #929292;
+    margin-bottom: 14px;
+  }
+  .propertylistprofile .profilepage .Furnished .items-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .propertylistprofile .profilepage .Furnished .items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .propertylistprofile .profilepage .Furnished .items .items-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #717171;
+    width: 90px;
+  }
+  .propertylistprofile .profilepage .Furnished .items .items-btn .text {
+    width: 17px;
+    text-align: center;
+  }
+  .propertylistprofile .profilepage .Furnished .items .value {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #717171;
+  }
+  .propertylistprofile .profilepage .Furnished .items .items-btn button {
+    border: 1px solid #eaeaea;
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .propertylistprofile .profilepage .Furnished .items.checkbox .value {
+    margin-left: -30px;
+  }
+  .propertylistprofile
+    .profilepage
+    .Furnished
+    .items.checkbox
+    .value
+    .form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .propertylistprofile
+    .profilepage
+    .Furnished
+    .items.checkbox
+    .value
+    .form-check-input {
+    height: 20px;
+    width: 20px;
+  }
+  .propertylistprofile
+    .profilepage
+    .Furnished
+    .items.checkbox
+    .value
+    .form-check-label {
+    cursor: pointer;
+  }
+  .propertylistprofile .profilepage .roomdetail .roomdetail_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #717171;
+  }
+  .propertylistprofile .profilepage .roomdetail .roomdetail_value {
+    width: 17px;
+    text-align: center;
+  }
+  .propertylistprofile .profilepage .roomdetail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .propertylistprofile .profilepage .roomdetail button {
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #686868;
+  }
+  .propertylistprofile .profilepage .profilehomepage .selectotherrrom button {
+    padding: 0 15px;
+  }
+  button.thiyo-btn-outline {
+    border: 1px solid #af824a;
+    background: #fff;
+    color: #af824a !important;
+  }
+  .profilehomepage .price_details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .profilehomepage .price_text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #b1b1b1;
+  }
+  .profilehomepage .price_details input.form-control {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #717171;
+    padding: 14px;
+  }
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #af824a;
+  }
+  .price_label {
+    color: #717171;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    cursor: pointer;
+  }
+  .additional .title span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #717171;
+    margin-left: 10px;
+  }
+  .additional .select {
+    border: 1px solid #dedede;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .additional .select div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+  }
+  .additional .select div .line {
+    border-left: 1px solid #dedede;
+    height: 32px;
+    width: 1px;
+  }
+  .additional .select select {
+    width: max-content;
+    margin-right: 10px;
+  }
+  .additional .select select,
+  .additional .select input {
+    border: none;
+  }
+  .additional .form-control {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #717171;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  textarea:focus {
+    border: 1px solid #af824a;
+  }
+  .listing_grid {
+    display: flex;
+    gap: 90px;
+  }
+  .listing_grid .listing_grid_left {
+    width: 325px;
+    min-width: 325px;
+  }
+  .listing_grid .listing_grid_right {
+    width: 100%;
+  }
+  /* .propertylistprofile button{
+    padding: 0 15px;
+  } */
+  
+  .feature-home-main {
+    padding: 70px 0;
+  }
+  .cstm-tab-pane {
+    height: calc(100vh - 373px) !important;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  /* .rentproperty .propertyslider .tab-content {
+    height: calc(100vh - 371px);
+    overflow-y: auto;
+  } */
+  .dhruv > div {
+    min-height: calc(100vh - 373px) !important;
+  }
+  .carddetail-map-view .apartment p.downtown {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .carddetail-map-view .apartment div > div > div p em {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .profileform .custmInput {
+    display: flex;
+  }
+  .profileform .custmInput .form-control {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .profileform .custmInput .update button {
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #434343;
+    padding: 6px;
+    border: 1px solid #dee2e6;
+  }
+  .profileform .custmInput .update button:focus {
+    border-color: #af824a;
+  }
+  .profileform .error {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: red;
+  }
+  .header .navbar-nav .nav-item .dropdown-menu {
+    z-index: 999999;
+    padding: 8px 0;
+  }
+  .rentproperty.filter {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .rentproperty.filter .left {
+    width: 240px;
+  }
+  .rentproperty.filter .right {
+    width: calc(100% - 240px);
+  }
+  .holidaybannerbg .addRoomDrop button.btn:active,
+  .holidaybannerbg .addRoomDrop button.btn,
+  .holidaybannerbg .bannerinputmain .rmdp-container .rmdp-input,
+  .holidaybannerbg .holidaysearch,
+  .holidaybannerbg .bannerinputmain .icon-input {
+    height: 46px;
+  }
+  .holidaybannerbg .bannerinputmain .icon-input .img-fluid {
+    top: 10px;
+  }
+  .holidaybannerbg .holidaysearch:hover {
+    border-color: #fff;
+    color: #fff;
+  }
+  .holidaybannerbg .addRoomDrop button.btn {
+    background-color: #fff;
+  }
+  .holidaymainpage {
+    position: relative;
+  }
+  .CheckItOutIcon svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .CheckItOutIcon2 svg {
+    position: absolute;
+    right: 13px;
+    bottom: -23px;
+  }
+  .myBg {
+    background-color: #02224d;
+    padding: 45px 0;
+  }
+  .section-header-main {
+    max-width: 800px;
+    margin: auto;
+  }
+  .header .navbar-nav .nav-item {
+    border-left: 1px solid #d7d7d7;
+    padding-left: 10px;
+  }
+  
+  .listing_grid-cs {
+    gap: 25px;
+  }
+  
+  .listing_grid-cs .listing_grid_right,
+  .listing_grid-cs .listing_grid_left {
+    width: 50%;
+  }
+  .listing_grid-cs .listing_grid_left .propertylistsidebar {
+    margin: auto;
+  }
+  
+  @media (min-width: 1440px) {
+    .popularvaction .populardestination img.popular3,
+    .popularvaction .populardestination img.popular {
+      height: 205px;
+    }
+    .popularvaction .populardestination img.popular1,
+    .popularvaction .populardestination img.popular2 {
+      height: 255px;
+    }
+  }
+  @media (min-width: 1440px) {
+    .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    .main-gallery .img-gallery {
+      height: 250px !important;
+    }
+    .listing_grid .listing_grid_right {
+      width: calc(70% - 325px);
+    }
+  }
+  @media (max-width: 1024px) {
+    .property-detail-search .property-detail-search-top {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .property-detail-search .property-detail-search-bottom {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .property-detail-search
+      .property-detail-search-top
+      .rentdropdownitem
+      .dropdown
+      > button {
+      width: 76px !important;
+    }
+    .property-detail-search
+      .property-detail-search-top
+      .dropdownlistproperty
+      .dropdown
+      > button {
+      width: 155px !important;
+    }
+    .pdetails .pdetails-details .pdetails-disc p {
+      font-size: 12px;
+    }
+    .property-detail-search
+      .property-detail-search-bottom
+      .AreaPriceDropdownSingle {
+      width: 143px !important;
+    }
+    .property-detail-search .property-detail-search-top button svg {
+      display: none;
+    }
+    .property-detail-search .property-detail-search-top .searchLocation > svg {
+      display: none;
+    }
+    .property-detail-search .searchLocation {
+      width: 294px;
+    }
+    .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .auth--content {
+      max-width: 100%;
+    }
+    .primary-tabs .nav-pills .nav-item .nav-link.active {
+      width: 117px;
+      padding: 0;
+      height: 25px;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+  }
+  @media (min-width: 991px) {
+    .hero .contain button.PropertySearch {
+      display: none;
+    }
+    .holidayhomedetail .row .col-lg-4 .card {
+      position: sticky;
+      top: 0;
+    }
+    .main-gallery .img-gallery {
+      height: 160px !important;
+    }
+  }
+  @media (max-width: 991px) {
+    .popularvaction .vacationpart2,
+    .popularvaction .vacationpart1 {
+      width: 100%;
+    }
+  
+    .rentproperty.filter {
+      display: block;
+    }
+    .rentproperty.filter .right {
+      width: 100%;
+    }
+    .listing_grid {
+      display: block;
+    }
+    .listing_grid .listing_grid_right {
+      width: 100%;
+    }
+    .checkoutText h2 {
+      max-width: 100%;
+    }
+    .popularvaction .vacationpart2 h3,
+    .checkoutText {
+      text-align: center;
+    }
+    .hero .contain .primary-tabs {
+      display: none;
+    }
+    .hero .contain {
+      justify-content: end !important;
+      align-items: center;
+    }
+  
+    .blog .blog-content {
+      flex-direction: column;
+    }
+    .blog .blog-content .rightSidebar,
+    .blog .blog-content .leftContent {
+      width: 100%;
+    }
+    .blog .rightSidebar .card {
+      margin-bottom: 24px;
+    }
+    .blod-details .blod-details-info .card {
+      padding: 29px 21px;
+    }
+    .blod-details .blod-details-info .card h1 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 11px !important;
+    }
+    .blod-details .blod-details-info .card .auther p {
+      font-size: 10px;
+      line-height: 13.62px;
+    }
+    .blod-details .blod-details-info .card .auther svg {
+      height: 18px;
+      width: 18px;
+    }
+    .blod-details .blod-details-info .card .blod-details-content ul {
+      padding-left: 15px;
+    }
+    .blod-details .blod-details-info .card .blod-details-content ul li,
+    .blod-details .blod-details-info .card .blod-details-content p {
+      font-size: 10px;
+      line-height: 13.62px;
+    }
+    .blod-details .blod-details-info .card .blod-details-content h4 {
+      font-size: 14px;
+      line-height: 19.07px;
+    }
+    .blod-details .blod-details-info .card {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .blod-details .blod-details-info .blod-details-img {
+      height: 200px;
+    }
+    .bannerinputmain {
+      flex-wrap: wrap;
+    }
+    .holidayHomes .mySwiper2 .swiper-wrapper .swiper-slide {
+      padding: 0 50px;
+    }
+    .holidayHomes .mySwiper2 .swiper-button-prev {
+      left: 0;
+    }
+    .holidayHomes .mySwiper2 .swiper-button-next {
+      right: 0;
+    }
+    .holidayHomes .mySwiper2 .swiper-button-prev::after,
+    .holidayHomes .mySwiper2 .swiper-button-next::after {
+      width: 30px;
+      height: 30px;
+    }
+    .holidayHomes .photos-grid-modal .modal-dialog .modal-content {
+      width: calc(100% - 32px);
+    }
+    .holidayHomes ul.categori-list li.categori-item {
+      font-size: 14px;
+    }
+    .holidayHomes ul.categori-list {
+      gap: 10px;
+    }
+    .rentproperty .propertyslider .cs-main {
+      margin-top: 28px;
+    }
+    .holidayHomes .holidayHomesTitle {
+      flex-direction: column;
+      margin-bottom: 35px;
+      gap: 5px;
+    }
+    .holidayHomes .holidayHomesTitle .left .breakfast {
+      margin-bottom: 5px;
+    }
+    .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .holidayhomestitle {
+      font-size: 18px;
+    }
+    footer .social h5 {
+      margin-top: 25px;
+    }
+    .homeholidaycheck {
+      flex-direction: column-reverse;
+    }
+    .homeholidaycheck .checkholiday-right .check-pagedetail {
+      width: 100%;
+    }
+    .holidaychecout .homeholidaycheck .card .emailaddform .passcode {
+      margin-bottom: 35px;
+    }
+  
+    .user-dash .user-dash-left {
+      position: absolute;
+      right: -368px;
+      left: inherit !important;
+      z-index: 9;
+      top: -25px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      -webkit-transition: all 0.2s ease-in-out;
+    }
+    .userDashbordBG {
+      overflow: hidden;
+    }
+    .user-dash .user-dash-left.active {
+      right: -112px;
+    }
+    .popularvaction .destinationselect {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      /* padding-left: 15px;
+      padding-right: 15px; */
+      padding: 0;
+      max-width: calc(100% - 32px);
+    }
+    .photos-grid-container {
+      grid-template-columns: 1fr;
+    }
+    .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card-body.cstm-card-body-main .card-title {
+      font-size: 10px;
+    }
+    .rentproperty .propertyslider .cs-main {
+      flex-wrap: wrap;
+    }
+    .sellhome .property .cta-info .thiyo-btn {
+      width: 120px !important;
+      height: 36px !important;
+      font-size: 12px !important;
+    }
+  }
+  @media (max-width: 575px) {
+  }
+  @media (max-width: 350px) {
+    .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .sellhome .property .cta-info .thiyo-btn {
+      width: 72px !important;
+      height: 18px !important;
+      font-size: 8px !important;
+      padding: 0 !important;
+    }
+  }
+  @media (min-width: 1800px) {
+    .photos-grid-container .img-box {
+      padding-top: 60%;
+    }
+  }
+  
+  /* Admin Panel style */
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  .admin_logo {
+    line-height: 1;
+  }
+  
+  @media (min-width: 1200px) {
+    .admin_logo {
+      width: 280px;
+    }
+  }
+  
+  .admin_logo img {
+    max-height: 26px;
+    margin-right: 6px;
+  }
+  
+  .admin_logo span {
+    font-size: 26px;
+    font-weight: 700;
+    color: #012970;
+  }
+  
+  .admin_header {
+    transition: all 0.5s;
+    z-index: 997;
+    height: 60px;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    background-color: #fff;
+    padding-left: 20px;
+    /* Toggle Sidebar Button */
+    /* Search Bar */
+  }
+  
+  .admin_header .toggle-sidebar-btn {
+    font-size: 32px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #012970;
+  }
+  
+  .admin_header .header-nav ul {
+    list-style: none;
+  }
+  
+  .admin_header .header-nav > ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .admin_header .header-nav .nav-icon {
+    font-size: 22px;
+    color: #012970;
+    margin-right: 25px;
+    position: relative;
+  }
+  
+  .admin_header .header-nav .nav-profile {
+    color: #012970;
+  }
+  
+  .admin_header .header-nav .nav-profile img {
+    max-height: 36px;
+  }
+  
+  .admin_header .header-nav .nav-profile span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .admin_header .header-nav .profile {
+    min-width: 240px;
+    padding-bottom: 0;
+    top: 8px !important;
+  }
+  
+  .admin_header .header-nav .profile .dropdown-header h6 {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #444444;
+  }
+  
+  .admin_header .header-nav .profile .dropdown-header span {
+    font-size: 14px;
+  }
+  
+  .admin_header .header-nav .profile .dropdown-item {
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  .admin_header .header-nav .profile .dropdown-item span.icon svg {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 0;
+    height: 18px;
+    width: 18px;
+  }
+  
+  .admin_header .header-nav .profile .dropdown-item:hover {
+    background-color: #f6f9ff;
+  }
+  
+  /* Dropdown menus */
+  .admin_dropdown .dropdown-menu {
+    border-radius: 4px;
+    padding: 10px 0;
+    animation-name: dropdown-animate;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
+  }
+  
+  .admin_dropdown .dropdown-menu .dropdown-divider {
+    color: #a5c5fe;
+    margin: 0;
+  }
+  
+  .admin_dropdown .dropdown-menu .dropdown-header,
+  .admin_dropdown .dropdown-menu .dropdown-footer {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+  
+  @keyframes dropdown-animate {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  
+    0% {
+      opacity: 0;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Sidebar
+  --------------------------------------------------------------*/
+  .admin_sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+    background-color: #fff;
+  }
+  
+  @media (max-width: 1199px) {
+    .admin_sidebar {
+      left: -300px;
+    }
+  }
+  
+  .admin_sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+  }
+  
+  .admin_sidebar::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+  }
+  
+  @media (min-width: 1200px) {
+    #main,
+    #footer {
+      margin-left: 300px;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .toggle-sidebar .admin_sidebar {
+      left: 0;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .toggle-sidebar .sidebar {
+      left: 0;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer {
+      margin-left: 0;
+    }
+  
+    .toggle-sidebar .admin_sidebar {
+      left: -300px;
+    }
+  }
+  
+  .admin_sidebar .sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .admin_sidebar .sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-item {
+    margin-bottom: 5px;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-heading {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #899bbd;
+    font-weight: 600;
+    margin: 10px 0 5px 15px;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #4154f1;
+    transition: 0.3;
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
+  
+  .admin_sidebar .sidebar-nav li.active {
+    background: #f6f9ff;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-link span.icon {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #4154f1;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-link.collapsed {
+    color: #012970;
+    background: #fff;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-link.collapsed span.icon {
+    color: #899bbd;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-link:hover {
+    color: #4154f1;
+    background: #f6f9ff;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-link:hover span.icon {
+    color: #4154f1;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-link span.leftArrow {
+    margin-right: 0;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-link:not(.collapsed) span.leftArrow {
+    transform: rotate(180deg);
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-content {
+    padding: 5px 0 0 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-content a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #012970;
+    transition: 0.3;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  .admin_sidebar .sidebar-nav .nav-content a span.icon {
+    font-size: 6px;
+    margin-right: 8px;
+    line-height: 0;
+    border-radius: 50%;
+  }
+  
+  /*--------------------------------------------------------------
+  # Main
+  --------------------------------------------------------------*/
+  #main {
+    margin-top: 60px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+  }
+  .social-btn {
+    width: 100%;
+  }
+  @media (max-width: 1199px) {
+    #main {
+      padding: 20px;
+    }
+    .social-btn {
+      width: 204px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #main {
+      margin-left: 300px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .toggle-sidebar #main {
+      margin-left: 0;
+    }
+  
+    .toggle-sidebar .admin_sidebar {
+      left: -300px;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Page Title
+  --------------------------------------------------------------*/
+  .admin_pagetitle {
+    margin-bottom: 10px;
+  }
+  
+  .admin_pagetitle h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #012970;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .admin_pagetitle h1 svg {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+  }
+  
+  /* Card */
+  .card.admin_card {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  }
+  
+  .admin_card .card-title {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #012970;
+  }
+  
+  .admin_card .card-body {
+    padding: 0 20px 20px 20px;
+  }
+  
+  table.table thead tr th.icon {
+    width: 50px;
+  }
+  
+  .search-form {
+    width: 300px;
+  }
+  .search-form input {
+    border: 0;
+    font-size: 14px;
+    color: #012970;
+    border: 1px solid rgba(1, 41, 112, 0.2);
+    padding: 4px 38px 4px 8px;
+    border-radius: 3px;
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  .search-form input:focus,
+  .search-form input:hover {
+    outline: none;
+    box-shadow: 0 0 10px 0 rgba(1, 41, 112, 0.15);
+    border: 1px solid rgba(1, 41, 112, 0.3);
+  }
+  
+  .search-form button {
+    border: 0;
+    padding: 0;
+    margin-left: -30px;
+    background: none;
+  }
+  
+  .search-form button svg {
+    color: #012970;
+    height: 16px;
+    width: 16px;
+  }
+  
+  #main .btn.icon {
+    font-size: 14px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #main table button svg {
+    height: 18px;
+    width: 18px;
+  }
+  #main table button svg path {
+    stroke: #fff;
+  }
+  #main label {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  #main .form-control {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  #main .profileImg {
+    width: 250px;
+  }
+  #main .Admin_profile_img {
+    width: 100px;
+  }
+  .mxh-150 {
+    max-height: 150px;
+  }
+  .mxw-750 {
+    max-width: 750px;
+  }
+  
+  #main .form-select {
+    min-width: max-content;
+  }
+  
+  #main p {
+    color: #212529;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  #main p.description {
+    display: -webkit-box;
+    max-width: 400px;
+    min-width: 200px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: wrap;
+  }
+  
+  thead,
+  tbody,
+  tfoot,
+  tr,
+  td,
+  th {
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  #main table thead th {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .admin_login {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .admin_login .card {
+    padding: 40px;
+  }
+  
+  .admin_login .login form {
+    min-width: 300px;
+    max-width: 400px;
+    height: 100%;
+    margin: auto;
+  }
+  
+  .selectrole input[type="text"] {
+    max-width: 400px;
+  }
+  
+  .selectrole input[type="checkbox"] {
+    accent-color: #012970;
+  }
+  
+  .selectrole label {
+    font-weight: 500 !important;
+    margin: 0 !important;
+  }
+  
+  #datez {
+    position: relative;
+  }
+  #dates {
+    position: relative;
+  }
+  input[type="Date"]#datez::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+  }
+  [type="date"]#datez {
+    background: #fff
+      url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
+      97% 50% no-repeat;
+    max-width: 180px;
+  }
+  
+  .card-count {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    min-height: 135px;
+  }
+  
+  /* ===== Scrollbar CSS ===== */
+  
+  .table-responsive::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  .table-responsive::-webkit-scrollbar-thumb {
+    background-color: #012970;
+    border-radius: 10px;
+  }
+  
+  #main .adminselect {
+    width: max-content;
+    min-width: 300px;
+  }
+  #main .adminselect .css-t3ipsp-control,
+  #main .adminselect .basic-multi-select {
+    padding: 0;
+    height: 100%;
+    min-height: 40px;
+  }
+  #main .adminselect .css-3w2yfm-ValueContainer {
+    padding: 0;
+  }
+  #main .adminselect .css-1nmdiq5-menu .css-d7l1ni-option {
+    line-height: 19px;
+  }
+  #main .adminselect .css-t3ipsp-control,
+  #main .adminselect .css-13cymwt-control {
+    border: none !important;
+    width: 100%;
+    border-radius: 4px !important;
+    height: 100%;
+    min-height: 35px !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 0 10px !important;
+    padding: 0;
+  }
+  #main .custm-drop .custm-drop-area {
+    display: flex;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+  }
+  #main .custm-drop .custm-drop-area .form-control {
+    border: transparent;
+  }
+  #main .custm-drop .custm-drop-area .form-select {
+    width: max-content;
+    border: transparent;
+    border-left: 1px solid #dee2e6;
+    border-start-start-radius: 0;
+    border-end-start-radius: 0;
+  }
+  .propertyslider .tab-content .PropertyGridView-cs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .carddeatil-sm {
+    display: flex;
+    gap: 25px;
+    height: 194px;
+  }
+  .carddeatil-sm .carddeatil-sm-left {
+    width: 300px;
+  }
+  .carddeatil-sm .carddeatil-sm-right {
+    width: calc(100% - 300px);
+  }
+  .carddeatil-sm .carddeatil-sm-right .apartment {
+    height: 100%;
+  }
+  
+  .cstm-card-main-cs .apartment {
+    position: absolute;
+    top: inherit;
+    left: 8px;
+    bottom: 8px;
+  }
+  
+  .carddeatil-sm .carddeatil-sm-left .card-like {
+    right: 12px;
+    top: 8px;
+  }
+  .carddeatil-sm .carddeatil-sm-left .gallery {
+    right: 38px;
+    left: inherit;
+    top: 10px;
+  }
+  .carddeatil-sm .carddeatil-sm-left .verified span {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    height: 25px;
+    width: 71px;
+    z-index: 99;
+    padding: 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #000;
+    line-height: 14px;
+  }
+  .cstm-card-main-cs .verified span {
+    box-shadow: 0px 2px 2px 0px rgba(42, 50, 60, 0.2);
+    top: 6px;
+    left: 8px;
+    position: absolute;
+    height: 25px;
+    width: 71px;
+    z-index: 99;
+    padding: 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #000;
+    line-height: 14px;
+  }
+  .cstm-card-main-cs .gallery {
+    right: 38px;
+    left: inherit;
+    top: 10px;
+  }
+  .cstm-card-main-cs .card-like {
+    right: 8px;
+    top: 6px;
+  }
+  .carddeatil-sm .carddeatil-sm-right .apartment {
+    margin: 0;
+  }
+  /* .rentproperty .carddeatil .apartment button,
+  .carddeatil-sm .carddeatil-sm-right .apartment button.Book {
+    line-height: 15px;
+  } */
+  .holiday-homes-grid-map .holiday-homes-grid-map-right {
+    width: 50% !important;
+  }
+  
+  .property-detail-search .property-detail-search-top .css-1dyz3mf {
+    padding: 0;
+  }
+  .property-detail-search .property-detail-search-top .css-9jq23d {
+    color: #939393;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .sm-filter-canvas .offcanvas-header {
+    padding: 20px 30px;
+    border-bottom: 1px solid #ededed;
+  }
+  .sm-filter-canvas .offcanvas-header .btn-close {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    box-sizing: border-box;
+    line-height: 30px;
+    display: inline-block;
+    background-size: 12px;
+    border: 1px solid #ededed;
+  }
+  /* .primary-dropdown .btn.show,
+  .primary-dropdown button:active {
+    border-color: transparent !important;
+  } */
+  .primary-dropdown .nav-pills .nav-item .nav-link {
+    min-width: 75px !important;
+    max-width: 100% !important;
+  }
+  
+  .holidayhomedetail .continuebook button,
+  .selectproperty .search,
+  .rentproperty .carddeatil .apartment button,
+  .selectproperty button {
+    transition: none !important;
+  }
+  .carddeatil .apartment .whatsapp:hover {
+    border: 1px solid #1db171;
+  }
+  .cs-filter-option select.form-select {
+    padding: 5px 33px 5px 28px;
+  }
+  
+  .header .navbar .navbar-nav .nav-item:first-child {
+    border: none;
+  }
+  
+  .css-1n6sfyn-MenuList .css-d7l1ni-option:active,
+  .css-1n6sfyn-MenuList .css-tr4s17-option:active,
+  .css-1n6sfyn-MenuList .css-tr4s17-option {
+    background-color: #fde8cd;
+    cursor: pointer;
+    line-height: 16px;
+    color: #b48e5d;
+  }
+  
+  .property-detail-search-top .dropdown.primary-dropdown button p,
+  .searchLayout .searchLayoutBottom .dropdown.primary-dropdown button p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+    text-align: start;
+  }
+  .form-switch .form-check-input:focus {
+    border-color: #dee2e6;
+  }
+  .form-switch .form-check-input:active {
+    filter: none;
+  }
+  .form-switch .form-check-input:checked:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }
+  .form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+  }
+  .form-switch .form-check-input:checked {
+    border-color: #dee2e6;
+  }
+  
+  .card-body.cstm-card-body-main .card-title {
+    width: 100%;
+  }
+  
+  .pdetails .pdetails-details .pdetails-left {
+    padding-top: 0 !important;
+  }
+  .pdetails .pdetails-details .pdetails-right .card form label.form-check-label {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #505050;
+  }
+  input {
+    accent-color: #af824a;
+  }
+  
+  .card.cstm-card-main .holiday-card-img {
+    height: 180px;
+  }
+  
+  .profileform .custmInput .update button {
+    font-size: 10px;
+  }
+  .holidayHomes .holidayHomesTitle {
+    flex-wrap: wrap;
+  }
+  
+  .holidayhomedetail .date-detail {
+    padding: 8px;
+    padding-bottom: 0 !important;
+    margin-bottom: -4px;
+  }
+  
+  .saving .inclusive {
+    color: #979797 !important;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .homeholidaycheck .checkholiday-right {
+    margin-bottom: 50px;
+  }
+  .homeholidaycheck .checkholiday-right .check-pagedetail {
+    width: 100%;
+  }
+  
+  .propertylistprofile-cs .profilehomepage-text {
+    color: #af824a;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+  }
+  
+  .propertylistprofile-cs {
+    max-width: 550px;
+    margin: auto;
+  }
+  .propertylistprofile-cs .addanotherdetail-cs input {
+    width: 100% !important;
+  }
+  
+  .primary-dropdown-cs .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 113px;
+    text-transform: capitalize;
+  }
+  
+  .area.keyword .css-t3ipsp-control,
+  .area.keyword .css-13cymwt-control {
+    background-color: transparent;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px !important;
+    min-height: 45px !important;
+  
+    padding: 0px 15px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+    text-align: start;
+  }
+  .area.keyword .css-t3ipsp-control {
+    border-color: #efefef !important;
+    box-shadow: 0 0 0 1px #efefef !important;
+  }
+  .area.keyword .css-wsp0cs-MultiValueGeneric {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+  }
+  .area.keyword .css-3w2yfm-ValueContainer {
+    padding: 0;
+  }
+  
+  .property-detail-search
+    .property-detail-search-bottom
+    .area
+    .areaInput.areaInput-cs
+    .basic-multi-select {
+    margin-bottom: 0;
+  }
+  
+  .cs-filter-option .sm-filter {
+    border: 1px solid #ececec;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .carddeatil-sm .carddeatil-sm-left .verified span,
+  .cstm-card-main-cs .verified span {
+    background: #ffffff9e;
+  }
+  
+  .property-detail-search
+    .property-detail-search-top
+    .searchLocation
+    svg.SearchLocationDownArrow {
+    display: none;
+  }
+  .property-detail-search
+    .property-detail-search-top
+    .primary-dropdown-cs
+    p.ellipsis {
+    max-width: calc(100% - 10px);
+  }
+  
+  .selectotherrrom .active {
+    color: #af824a;
+  }
+  .profilehomepage .thiyo-btn {
+    height: 45px !important;
+  }
+  .areaInput.areaInput-cs input.form-control {
+    border-radius: 8px;
+    border: 0.5px solid #cfcfcf;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #939393;
+  }
+  .rentproperty .accordion .accordion-body .filterPrice .multi-range-slider {
+    padding: 20px 15px;
+  }
+  .rentproperty .propertyslider .cs-main .cs-tab p {
+    white-space: nowrap;
+  }
+  .completion-product-view-tab ul.nav {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+  /* .rentproperty .propertyslider .cs-main {
+    flex-wrap: wrap;
+  } */
+  .rentproperty .carddeatil .swiper .swiper-wrapper .swiper-slide .productslider,
+  .rentproperty
+    .carddeatil
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .productslider
+    img {
+    height: 230px !important;
+  }
+  
+  .card.cstm-card-main .position-relative,
+  .card.cstm-card-main.cstm-card-main-cs .pro-img {
+    height: 180px;
+  }
+  
+  .PropertySearch .modal-dialog .modal-body .location .searchLocation {
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 3px 12px;
+    height: 36px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #555555;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px !important;
+  }
+  
+  .PropertySearch .modal-dialog .modal-body .location .searchLocation svg {
+    height: 12px;
+    width: 12px;
+    min-width: 12px;
+  }
+  
+  .PropertySearch
+    .modal-dialog
+    .modal-body
+    .location
+    .searchLocation
+    svg.SearchLocationDownArrow {
+    display: none;
+  }
+  
+  .PropertySearch
+    .modal-dialog
+    .modal-body
+    .AreaPriceDropdownSingle
+    .basic-multi-select {
+    padding: 0;
+    height: 40px;
+    border-radius: 14px;
+  }
+  .PropertySearch
+    .modal-dialog
+    .modal-body
+    .AreaPriceDropdownSingle
+    .select__control {
+    padding: 0 15px;
+    height: 40px;
+    border-radius: 14px;
+    border: 1px solid transparent;
+  }
+  
+  .photos-grid-modal.modal {
+    background-color: #001529e8;
+  }
+  .photos-grid-modal .btn-close {
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 10px;
+    opacity: 1;
+  }
+  
+  .photos-grid-modal .btn-close {
+    padding: 0 100px;
+  }
+  .photos-grid-modal .mySwiper .swiper-wrapper .swiper-slide {
+    padding: 0;
+  }
+  .photos-grid-modal .mySwiper .swiper-wrapper .swiper-slide .modalImage {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .rentproperty .carddeatil .apartment button {
+    min-width: max-content;
+    padding: 7px 10px;
+  }
+  
+  .dashboardhome .dashboardprogress .progressbaar-main .CircularProgressbar {
+    height: 125px !important;
+    width: 125px !important;
+  }
+  
+  /* .form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  } */
+  /* .dashboardhome .dashboardprogress .progressbaar-main .CircularProgressbar .CircularProgressbar-path {
+    stroke-width: 20px;
+  } */
+  
+  /* .searchLocation .css-t3ipsp-control,
+  .searchLocation .css-13cymwt-control .css-1dyz3mf {
+    padding: 0;
+    font-size: 12px;
+  } */
+  
+  .searchLocation .multi_select .dropdown .css-t3ipsp-control {
+    height: auto;
+  }
+  
+  .rentproperty
+    .propertyslider
+    .cs-main
+    .cs-tab
+    .completion-product-view-tab
+    .nav
+    li
+    button {
+    text-transform: uppercase;
+  }
+  
+  .header .navbar form .dropdown .useractive .btnlogin:hover {
+    color: #af824a;
+  }
+  
+  .card.cstm-card-main .position-relative {
+    overflow: hidden;
+  }
+  .card.cstm-card-main .position-relative img {
+    transition: all ease-in-out 0.5s;
+  }
+  .card.cstm-card-main .position-relative img:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .cstm-card-main-cs .gallery {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+  }
+  .cstm-card-main-cs .gallery:hover {
+    transition: all ease-in-out 0.2s;
+    opacity: 1;
+  }
+  
+  .vector .col-lg-4 .sellhomedescription {
+    max-width: 320px;
+    margin: auto;
+  }
+  .sellhome .property .cta-info h3 {
+    color: #000000;
+  }
+  .sellhome .property .cta-info .thiyo-btn {
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.5s;
+    width: 198px;
+    padding: 0;
+    height: 45px;
+  }
+  .sellhome .property .cta-info .thiyo-btn:hover {
+    color: #af824a;
+    border: 1px solid #af824a;
+    background: transparent;
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .rentproperty .carddeatil .apartment button {
+    line-height: 9px;
+  }
+  
+  #main .holidayhomedetail .row .col-lg-4 .card {
+    top: 80px;
+  }
+  
+  #main .holidayhomedetail .description {
+    background-color: transparent;
+  }
+  
+  .holidayhomedetail .chooseroom .card .classic .homeimg {
+    height: 120px;
+  }
+  .bg-footer .social-icon-list li:hover img {
+    z-index: 1;
+  }
+  .bg-footer .social-icon-list li {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bg-footer .social-icon-list li img {
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    left: 5px;
+  }
+  .bg-footer .social-icon-list li .linkdin {
+    left: 6px;
+    width: 18px;
+  }
+  .bg-footer .social-icon-list li .twitter{
+    width: 19px;
+  }
+  /* .bg-footer .social-icon-list li svg {
+    width: 14px;
+  } */
+  /* footer .social .social-icon-list li svg:hover path {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    fill: #af824a;
+  } */
+  
+  /* footer .social .social-icon-list li.item-02 svg:hover path {
+    fill: #4267b2;
+  }
+  
+  footer .social .social-icon-list li.item-03 svg:hover path {
+    fill: #1da1f2;
+  }
+  
+  footer .social .social-icon-list li.item-04 svg:hover path {
+    fill: #1da1f2;
+  } */
+  
+  .primary-tabs
+    .tab-content
+    .tab-pane
+    .searchLayout
+    .searchLocation
+    .SearchLocationDownArrow {
+    display: none;
+  }
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .constrtuctiuonbtn
+    button {
+    text-transform: capitalize;
+  }
+  .rentproperty .carddeatil .apartment p.prod-location {
+    margin-bottom: 0px !important;
+  }
+  .modal.PropertySearch
+    .accordion
+    .accordion-body
+    .btn-group
+    button.propertyBtn.active {
+    background-color: #fde8cd !important;
+    color: #b48e5d;
+    border: 1px solid #fde8cd;
+  }
+  .css-13cymwt-control,
+  .css-t3ipsp-control {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .rentproperty .carddeatil .apartment .sendIcon svg:hover path {
+    stroke: #b48e5d;
+  }
+  
+  /* ul.pagination .page-item .page-link{
+  
+  } */
+  ul.pagination .page-item .page-link.previous-link,
+  ul.pagination .page-item .page-link.next-link {
+    background-color: #c5c5c5;
+  }
+  ul.pagination .page-item.disabled .page-link {
+    background-color: #f8f8f8;
+  }
+  ul.pagination .page-item.active .page-link {
+    background-color: #af824a;
+    color: #fff;
+  }
+  
+  .calender {
+    width: 550px;
+  }
+  
+  /* .titledescription {
+    width: calc(100% - 550px);
+  } */
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .floorPlans
+    .titledescription
+    textarea,
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .floorPlans
+    .titledescription
+    input {
+    width: 100%;
+  }
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .floorPlans
+    .titledescription
+    textarea {
+    height: 180px;
+  }
+  .pdetails .virtulmeet select {
+    border: 1px solid #af824a;
+  }
+  .calender .rmdp-shadow {
+    filter: drop-shadow(0px 20px 50px rgba(44, 63, 88, 0.15));
+    box-shadow: none;
+  }
+  .calender .rmdp-arrow-container {
+    border-radius: 10px !important;
+    background-color: #f8f8f8;
+    width: 34px;
+    height: 34px;
+    align-items: center;
+  }
+  .calender .rmdp-arrow {
+    margin-top: 1px;
+    border-color: #af824a;
+  }
+  .calender .rmdp-arrow-container:hover {
+    background-color: #af824a;
+    box-shadow: none;
+  }
+  
+  .calender .rmdp-week-day {
+    color: #8a9099;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .calender .rmdp-header-values span {
+    color: #3f434a;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .calender .rmdp-day,
+  .calender .rmdp-week-day {
+    color: #3f434a;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .calender .rmdp-day-picker .rmdp-day span {
+    border-radius: 10px !important;
+    width: 34px;
+    height: 34px;
+    align-items: center;
+  }
+  
+  .calender .rmdp-week,
+  .calender .rmdp-ym {
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .calender .rmdp-day:not(.rmdp-disabled, .rmdp-day-hidden) span:hover,
+  .calender .rmdp-day.rmdp-today span {
+    background-color: #af824a;
+  }
+  
+  .calender .rmdp-year-picker .rmdp-day,
+  .calender .rmdp-month-picker .rmdp-day {
+    margin: 0;
+  }
+  .calender .rmdp-year-picker .rmdp-ym,
+  .calender .rmdp-month-picker .rmdp-ym {
+    height: 35px;
+  }
+  .calender .rmdp-day.rmdp-selected span:not(.highlight),
+  .calender .rmdp-year-picker .rmdp-day.rmdp-selected span:not(.highlight),
+  .calender .rmdp-month-picker .rmdp-day.rmdp-selected span:not(.highlight) {
+    background-color: #af824a !important;
+    box-shadow: none;
+  }
+  .Similar_Listings {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .dudhat {
+    height: 350px;
+  
+    /* width: calc(100vw - 6px);
+    margin-left: -110px; */
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .dudhat::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.51);
+  }
+  .dudhat .tour-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .dudhat .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .dudhat .content .PlayBtn {
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+  }
+  .dudhat .content h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .virtualModal .modal-content {
+    height: 500px;
+    width: 100% !important;
+    margin: 0 !important;
+    display: inline-block !important;
+  }
+  .virtualModal .modal-body {
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .virtualModal .btn-close {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    z-index: 9;
+    background-color: #ffffff;
+    height: 30px;
+    width: 30px;
+  }
+  .propertylistprofile .profilepage .profilehomepage .roomdetail {
+    position: relative;
+  }
+  .propertylistprofile .profilepage .profilehomepage .roomdetail .roomselection {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    position: relative;
+  }
+  .propertylistprofile
+    .profilepage
+    .profilehomepage
+    .roomdetail
+    .roomselection
+    input {
+    position: absolute;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    opacity: 0;
+  }
+  .propertylistprofile
+    .profilepage
+    .profilehomepage
+    .roomdetail
+    .roomselection
+    label {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #eaeaea;
+    border-radius: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .propertylistprofile
+    .profilepage
+    .profilehomepage
+    .roomdetail
+    .roomselection
+    label.active {
+    background-color: #af824a;
+    color: #ffffff;
+  }
+  
+  .listing-dropdown {
+    position: relative;
+  }
+  .listing-dropdown svg {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+  }
+  @media (min-width: 1440px) {
+    /* .carddeatil-sm .carddeatil-sm-left {
+      width: 400px;
+    } */
+    .carddeatil-sm .carddeatil-sm-right {
+      width: calc(100% - 400px);
+    }
+    .sellhome .property .col-6 img {
+      max-height: 350px;
+      object-fit: contain;
+      max-width: 550px;
+      margin-left: auto;
+    }
+  
+    .container {
+      max-width: 1440px;
+    }
+    .hero .container {
+      position: relative;
+    }
+    .hero {
+      background: linear-gradient(
+        98.64deg,
+        #cfdde0 -2.67%,
+        rgba(207, 221, 224, 0) 130.65%
+      ) !important;
+    }
+    .vector.buy-rent-sell-mmain img {
+      width: 280px;
+      height: 260px;
+    }
+  }
+  @media (min-width: 1340px) {
+    .pdetails .pdetails-details .pdetails-left {
+      width: calc(100% - 280px);
+    }
+    .pdetails .pdetails-details .pdetails-right {
+      width: 280px;
+    }
+    .pdetails .pdetails-details .pdetails-right .card .contact button {
+      height: 28px !important;
+      padding: 0 15px !important;
+      font-size: 10px !important;
+    }
+    .pdetails .pdetails-details .pdetails-right .card form .form-check span,
+    .pdetails .pdetails-details .pdetails-right .card form label.form-check-label,
+    .pdetails .pdetails-details .pdetails-right .card form select,
+    .pdetails .pdetails-details .pdetails-right .card form input {
+      font-size: 14px !important;
+    }
+    .outline-button-light-sm {
+      height: 24px;
+    }
+    .property-detail-search
+      .property-detail-search-bottom
+      .area
+      .areaButton
+      button,
+    .area.keyword .css-wsp0cs-MultiValueGeneric,
+    .AreaPriceDropdownSingle .select__single-value.css-1dimb5e-singleValue {
+      font-size: 14px !important;
+    }
+    .propertylistprofile-cs {
+      max-width: 100%;
+      margin: auto;
+      margin-left: 0;
+    }
+    .section-header-main .exploredescription {
+      font-size: 14px;
+      line-height: 20.34px;
+    }
+    .primary-tabs .nav-pills .nav-item .nav-link {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .primary-dropdown button:active,
+    .primary-dropdown button:hover,
+    .primary-dropdown button {
+      font-size: 12px !important;
+      line-height: 16px !important;
+    }
+    .searchLocation .css-1cfo1cf,
+    .searchLocation .css-166bipr-Input,
+    .searchLocation .css-19bb58m:after,
+    .searchLocation .css-qbdosj-Input:after,
+    .searchLocation .css-1jqq78o-placeholder,
+    .searchLocation .multi_select_label,
+    .searchLocation .css-wsp0cs-MultiValueGeneric {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .property-detail-search .property-detail-search-top .css-9jq23d {
+      font-size: 14px;
+      line-height: 20px;
+      color: #555555;
+    }
+    .property-detail-search-top .dropdown.primary-dropdown button p,
+    .searchLayout .searchLayoutBottom .dropdown.primary-dropdown button p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .primary-dropdown .nav-pills .nav-item .nav-link {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    .outline-button-light {
+      font-size: 10px !important;
+      line-height: 12px !important;
+    }
+    .css-t3ipsp-control,
+    .css-13cymwt-control {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .carddeatil-sm .carddeatil-sm-right .apartment span {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .primary-dropdown .dropdown-menu.show {
+      max-width: 290px !important;
+    }
+  }
+  @media (max-width: 1200px) and (min-width: 991px) {
+    .container {
+      max-width: calc(100% - 100px);
+    }
+    .rentproperty .rentproperty-left {
+      width: 230px;
+    }
+    .rentproperty .rentproperty-right {
+      width: calc(100% - 230px);
+    }
+  }
+  @media (max-width: 1200px) {
+    .navbar-brand {
+      width: 100px;
+    }
+    .navbar-brand img {
+      width: 100px;
+      height: auto;
+    }
+    .header .navbar .navbar-nav {
+      padding-left: 0;
+    }
+    .header .navbar .navbar-nav .nav-item a p {
+      font-size: 12px;
+    }
+    .header .navbar-nav .nav-item {
+      padding-left: 7px;
+    }
+    /* .header .navbar .listproperty button {
+      padding: 5px;
+    } */
+    .navbar-expand-lg .navbar-nav .nav-link {
+      height: 10px;
+    }
+    /* .rentproperty .propertyslider .cs-main .cs-tab {
+      flex-direction: column;
+      align-items: start;
+    } */
+    /* .cs-main {
+      align-items: end;
+    } */
+    .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .property-detail-search .property-detail-search-top {
+      /* grid-template-columns: repeat(3, 1fr); */
+    }
+    .property-detail-search .property-detail-search-bottom {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 991px) {
+    .rentproperty-main {
+      flex-direction: column;
+    }
+    .rentproperty .rentproperty-left {
+      width: 100%;
+    }
+    .rentproperty .rentproperty-right {
+      width: 100%;
+      padding-top: 10px;
+      padding-left: 0px;
+    }
+    .social-btn {
+      width: 100%;
+    }
+    .rentproperty.filter .left {
+      width: 100%;
+    }
+    .auth .left--img img {
+      max-height: 400px;
+    }
+    .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .holidayhomedetail .hotelpolicy .checkinout::after {
+      display: none;
+    }
+    .holidayHomes .holidayHomesTitle {
+      flex-direction: row;
+    }
+    .listing_grid .listing_grid_left {
+      width: 100%;
+      margin-bottom: 20px;
+      min-width: 100%;
+    }
+    .propertylistprofile-cs {
+      max-width: 100%;
+    }
+    .countryFilter .countryGroup {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .rentproperty .propertyslider .cs-main {
+      margin-top: 0;
+    }
+    .photos-grid-modal .btn-close,
+    .photos-grid-modal .mySwiper .swiper-wrapper .swiper-slide {
+      padding: 0 50px;
+    }
+    .photos-grid-modal .modal-dialog .modal-content {
+      width: 100%;
+    }
+    .header .navbar .navbar-nav .Real_Estate {
+      height: 100%;
+    }
+    .header .navbar-nav .nav-item .dropdown-menu {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      padding-left: 12px;
+    }
+    .header .navbar .navbar-nav .nav-item a p {
+      line-height: 24px;
+    }
+    .header .navbar .dropdown .dropdown-menu li a {
+      padding: 0;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000000f2;
+    }
+    .header .navbar .navbar-nav .Real_Estate a.nav-link {
+      height: 16px;
+    }
+    .pdetails .pdetails-details .pdetails-left {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .user-dash .user-dash-left.active {
+      right: -15px;
+    }
+    .carddeatil-sm {
+      gap: 15px;
+    }
+  }
+  @media (max-width: 678px) {
+    .carddeatil-sm {
+      flex-direction: column;
+      gap: 0;
+    }
+    .carddeatil-sm .carddeatil-sm-left {
+      width: 100%;
+    }
+    .carddeatil-sm .carddeatil-sm-right {
+      width: 100%;
+    }
+    .carddeatil-sm .carddeatil-sm-right .apartment {
+      margin: 0;
+      padding-left: 15px;
+    }
+    .property-detail-search .property-detail-search-top {
+      /* grid-template-columns: repeat(2, 1fr); */
+    }
+    .property-detail-search .property-detail-search-bottom {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .countryFilter .countryGroup {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 450px) {
+    .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .propertylistprofile .profilepage .Furnished .items-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .propertylistprofile .profilepage .roomdetail-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .countryFilter .countryGroup {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .cs-tab {
+      flex-wrap: wrap;
+    }
+  }
+  @media (max-width: 500px) {
+    .property-detail-search .property-detail-search-bottom .area .areaInput {
+      flex-direction: column;
+    }
+    .property-detail-search .property-detail-search-bottom .area.selectproperty {
+      width: 100%;
+      padding: 0;
+      font-size: 12px;
+    }
+    .property-detail-search
+      .property-detail-search-bottom
+      .area.selectproperty
+      button {
+      width: 100%;
+    }
+    .completion-product-view-tab ul.nav {
+      flex-wrap: wrap;
+    }
+  }
+  @media (min-width: 991px) {
+    /* .header .navbar .listproperty .listnew {
+      font-size: 8px;
+      height: 20px;
+      width: 30px;
+    } */
+    /* .listproperty-banner {
+      height: 80vh;
+      min-height: 80vh;
+    } */
+  }
+  @media (max-width: 680px) {
+    .carddeatil-sm {
+      height: auto;
+    }
+  }
+  @media (max-width: 600px) {
+    .property-detail-search-bottom .moredataproperty {
+      bottom: -40px !important;
+    }
+    .countryFilter {
+      margin: 50px 0;
+    }
+  }
+  @media (max-width: 450px) {
+    .completion-product-view-tab .nav-link {
+      padding: 8px 10px;
+      font-size: 11px;
+    }
+  }
+  @media (min-width: 1600px) {
+    .col-xxxl-3 {
+      flex: 0 0 auto;
+      width: 25%;
+    }
+    .rentproperty
+      .carddeatil
+      .swiper
+      .swiper-wrapper
+      .swiper-slide
+      .productslider,
+    .rentproperty
+      .carddeatil
+      .swiper
+      .swiper-wrapper
+      .swiper-slide
+      .productslider
+      img {
+      height: 250px !important;
+    }
+  }
+  .selectlocationerr {
+    color: red;
+  }
+  .mobilerent button {
+    border: 1px solid #c49255;
+    font-size: 12px;
+    font-weight: 400;
+    width: 110px;
+    border-radius: 16px;
+  }
+  .mobilerent .btn-group .active {
+    color: #c49255;
+  }
+  .logoutmodal .modal-footer .btn-group {
+    border-radius: 10px;
+    background: #af824a;
+    color: #ffffff;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #af824a;
+  }
+  
+  .logoutmodal .modal-footer .btn-group:hover {
+    background: linear-gradient(180deg, #af824a, #cf9c5b);
+    border: 1px solid #af824a;
+  }
+  
+  .logoutmodal .modal-footer .notlogout {
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #af824a;
+    color: #af824a;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .logoutmodal .modal-footer .notlogout:hover{
+    background-color: #af824a;
+    color: #ffffff;
+  } */
+  
+  .logoutmodal .btn-close {
+    font-size: 12px !important;
+  }
+  
+  .property-detail-search-bottom .moredataproperty {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+  }
+  .text-red {
+    color: red;
+    font-size: 13px;
+  }
+  .errorhigh{
+    height: 30px;
+  }
+  

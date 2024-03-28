@@ -1,0 +1,3688 @@
+/* header css */
+/* ========== */
+.button {
+    font-size: 12px;
+    font-weight: 600;
+    background: none;
+    border: 0;
+    line-height: 16px;
+    color: var(--grey-dark);
+  }
+  
+  p {
+    font-weight: 600;
+    margin-bottom: 0 !important;
+  }
+  
+  .header {
+    height: 80px;
+  }
+  
+  .header .navbar {
+    padding: 18px 0 21px 0;
+  }
+  
+  .header .navbar .navbar-nav {
+    gap: 9px;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .header .navbar .navbar-toggler {
+    border: 0;
+  }
+  
+  .header .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .header .navbar .navbar-nav .nav-item a img {
+    margin-left: 10px;
+  }
+  
+  .header .navbar .navbar-nav .Real_Estate,
+  .header .navbar .navbar-nav .Real_Estate a.nav-link {
+    height: 20px;
+  }
+  
+  @media (max-width: 1200px) {
+    .header .navbar .navbar-nav .Real_Estate,
+    .header .navbar .navbar-nav .Real_Estate a.nav-link {
+      height: 10px;
+    }
+  }
+  
+  .header .navbar .navbar-nav .nav-item a p {
+    color: var(--grey-color);
+  }
+  
+  .header .navbar-nav .nav-item {
+    width: auto;
+  }
+  
+  .header .navbar .navbar-nav .nav-item a:hover {
+    color: var(--primary) !important;
+  }
+  
+  .header .navbar form .dropdown .useractive img {
+    margin-right: 6px;
+  }
+  
+  .header .navbar .dropdown .dropdown-menu li a {
+    font-size: 14px;
+    transition: all;
+  }
+  
+  .header .navbar .nav-item .dropdown-menu li a:hover {
+    text-decoration: underline !important;
+    background: none;
+  }
+  
+  .header .navbar .navbar-nav .dropdown .show i {
+    transform: rotate(180deg);
+    transition: all;
+  }
+  
+  .header .navbar form .dropdown .useractive {
+    color: var(--grey-color);
+    margin-left: 14px;
+  }
+  
+  .header .navbar .listproperty .listnew {
+    right: 6px;
+    top: -10px;
+    text-transform: uppercase;
+    color: var(--header-light);
+    background-color: var(--badge-red);
+    font-size: 6px;
+    border-radius: 8px;
+    font-weight: 600;
+    height: 18px;
+    width: 27px;
+  }
+  .gradient-hover-effect {
+    /* transition: background-color 0.6s; */
+    background: linear-gradient(180deg, #af824a, transparent) #c89757;
+  }
+  .gradient-hover-effect:hover {
+    background: transparent;
+    color: var(--primary) !important;
+  }
+  .header .navbar .listproperty button {
+    color: var(--header-light);
+    padding: 9px 15px;
+    border-radius: 8px;
+    height: 34px;
+    border: 1px solid #af824a;
+    place-content: center;
+  }
+  
+  /* .header .navbar .listproperty button:hover {
+    color: var(--header-light);
+    border: 1px solid #af824a;
+  } */
+  
+  .header .navbar form .userlist {
+    border-radius: 9px;
+    margin-top: 18px;
+    left: -150px;
+    width: 280px;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: -1px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .header .navbar form .userlist .viewprofile {
+    color: #0078de;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  
+  .header .navbar form .userlist .viewprofile:hover {
+    background-color: transparent;
+  }
+  
+  .header .navbar form .userlist .myprofile {
+    gap: 11px;
+    margin-bottom: 16px;
+  }
+  
+  .header .navbar form .userlist .myprofile h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #323232;
+  }
+  
+  .header .navbar form .userlist .myprofile p {
+    color: var(--secondary);
+    font-size: 12px;
+  }
+  
+  .header .navbar .navbar-nav .dropdown .show svg {
+    transform: rotate(180deg);
+    transition: all;
+  }
+  .auth--logo {
+    margin-bottom: 61px;
+  }
+  /* header css */
+  /* ========== */
+  
+  /* footer css */
+  .bg-footer {
+    background-color: #02224d;
+    /* background-color: #00478f; */
+    padding: 50px 0 30px;
+  }
+  
+  .bg-footer .morelink {
+    cursor: pointer;
+  }
+  
+  .footer-link li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+  
+  .footer-link li svg {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .footer-link li:hover svg {
+    opacity: 1;
+  }
+  
+  .footer-link a {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    transition: all 0.6s;
+    margin-left: -30px;
+  }
+  
+  .footer-link li a:hover {
+    margin-left: -10px;
+    color: #ffbd6b;
+  }
+  
+  footer .social p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    max-width: 270px;
+  }
+  
+  footer .social h5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: left;
+    color: #fff;
+    letter-spacing: 0.02em;
+    margin: 40px 0 16px 0 !important;
+  }
+  
+  .footer-alt {
+    color: #c0c0c0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  
+  .footer-heading {
+    color: #fedd07;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    letter-spacing: 0.05em;
+  }
+  
+  footer .copyright p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--header-light);
+  }
+  
+  footer .copyright a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--header-light);
+  }
+  
+  /* footer css */
+  
+  /* Feature home css */
+  
+  .feature-home-main .featurehome {
+    letter-spacing: 3px;
+    padding-bottom: 14px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .feature-home-main .cstm-card-body-main .viewmore {
+    margin-top: 12px;
+  }
+  
+  .feature-home-main .nav-pills .nav-link {
+    border-radius: 0 !important;
+  }
+  
+  .section-header-main h2 {
+    padding-bottom: 10px;
+  }
+  
+  .section-header-main h2 {
+    padding-bottom: 10px;
+  }
+  
+  .section-header-main .exploredescription {
+    color: var(--secondary-light);
+    padding-bottom: 20px;
+    font-weight: 400;
+  }
+  
+  /* .section-header-main h6 {
+    max-width: 840px;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 16px;
+    font-size: 12px;
+    color: var(--secondary-light);
+  } */
+  
+  .tabcountry .nav-pills {
+    justify-content: center;
+    background-color: var(--header-light);
+    color: var(--secondary-light);
+    border-bottom: 1px solid #d0d0d0;
+  }
+  
+  .tabcountry .nav-fill .nav-item,
+  .nav-fill > .nav-link {
+    flex: inherit;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tabcountry .nav-link {
+    background-color: var(--header-light);
+    color: var(--secondary-light);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* border-bottom: 1px solid #D0D0D0; */
+    border-radius: 0;
+    padding: 6px 20px;
+    line-height: 16px;
+  }
+  
+  .tabcountry .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: var(--header-light);
+    color: var(--secondary-light);
+    border-bottom: 1px solid var(--primary);
+    border-radius: 0;
+    margin-bottom: -1px;
+  }
+  
+  .tabcountry .nav-link:focus,
+  .tabcountry .nav-link:hover {
+    color: var(--primary);
+  }
+  
+  .cstm-tab-content-feature-home {
+    padding-top: 20px;
+  }
+  
+  .card.cstm-card-main {
+    border: 0;
+    box-shadow: 0px 2px 3px 0px #242d3c33;
+    background-color: var(--header-light);
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .cstm-tab-content-feature-home .countryfeaturehome {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  .card-body.cstm-card-body-main h6 {
+    font-weight: 600;
+    color: var(--secondary-dark);
+  }
+  
+  .card-body.cstm-card-body-main .card-title {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    color: var(--secondary);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .house-main {
+    padding-bottom: 10px;
+  }
+  
+  .house-main-02 {
+    height: 52px;
+    align-items: baseline !important;
+  }
+  
+  .card-btn {
+    background-color: var(--bg-btn);
+    border: 1px solid var(--bg-btn);
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: var(--secondary-dark);
+    font-weight: 400;
+    font-size: 10px;
+    height: 21px;
+    padding: 5px 7px;
+  }
+  
+  .card-like-sale {
+    position: absolute;
+    display: flex;
+  }
+  
+  .cstm-card-img {
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  .card-badage {
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    background: var(--header-light);
+    color: var(--secondary-dark);
+    border-radius: 4px;
+    font-size: 10px;
+    padding: 1px 6px;
+    font-weight: 600;
+    /* height: 15px;  */
+    line-height: 15px;
+    z-index: 1;
+  }
+  
+  .cstm-card-body-main {
+    padding: 16px !important;
+  }
+  
+  .card-like {
+    position: absolute;
+    right: 7px;
+    top: 3px;
+    z-index: 1;
+  }
+  
+  span {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    font-size: 12px;
+    color: var(--secondary);
+  }
+  
+  /* Feature home css */
+  
+  /* buy-sell-rent css */
+  
+  .buy-rent-sell-mmain {
+    margin-bottom: 70px;
+  }
+  
+  .sellhome .looking-sell-para {
+    color: var(--secondary-light);
+    line-height: 21px;
+  }
+  
+  .vector .thiyo-title {
+    letter-spacing: 3px;
+    padding-bottom: 14px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .vector .helpcon {
+    margin-bottom: 10px !important;
+  }
+  
+  .vector h2 {
+    margin-bottom: 10px;
+  }
+  
+  .vector p {
+    padding-bottom: 42px;
+    font-weight: 400;
+  }
+  
+  .vector .sellhomedescription {
+    color: var(--secondary-light);
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  .cta .property {
+    box-shadow: 0px 4px 38px 15px #0000000a;
+    background-color: #f0daca;
+    padding: 0 40px;
+    border-radius: 20px;
+    margin-bottom: 105px;
+  }
+  
+  .thiyo-btn {
+    border: none;
+    border-radius: 100px;
+    background: linear-gradient(180deg, #af824a 0%, #f2b96e 145.55%);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    padding: 12px 15px;
+    width: max-content;
+    color: #ffffff;
+    /* height: 18px; */
+    transition: 0.1s ease-in-out !important;
+  }
+  
+  .cta .cta-img {
+    margin-top: -13px;
+  }
+  
+  /* .cta h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #000;
+  } */
+  /* .cta h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #000;
+  } */
+  .cta p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  
+  /* buy-sell-rent css */
+  
+  /* residetial css */
+  .main-gallery .residental {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding-bottom: 73px;
+  }
+  
+  .main-gallery .img-gallery {
+    height: 200px !important;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .main-gallery .img-gallery p {
+    color: #fff;
+    bottom: 16px;
+    z-index: 2;
+    position: absolute;
+    left: 20px;
+  }
+  
+  .img-gallery::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      0deg,
+      #000000 -13.73%,
+      rgba(244, 244, 244, 0) 74.35%
+    );
+    z-index: 1;
+  }
+  
+  .main-gallery .img-gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .main-gallery .img-gallery:hover img {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .main-gallery .img-gallery-info h5 {
+    color: var(--primary);
+  }
+  
+  .main-gallery .img-gallery-info p {
+    color: var(--secondary-light);
+  }
+  
+  .main-gallery .img-gallery-info .line {
+    width: 117.68px;
+    height: 1px;
+    background-color: #000;
+  }
+  
+  /* residetial css */
+  
+  /* property css */
+  .rentproperty {
+    margin-top: 34px !important;
+  }
+  
+  .rentproperty-main {
+    display: flex;
+    /* gap: 30px; */
+  }
+  
+  .rentproperty .rentproperty-left {
+    width: 300px;
+  }
+  
+  .rentproperty .rentproperty-right {
+    width: calc(100% - 300px);
+    padding-left: 20px;
+  }
+  
+  .rentproperty .completionstatus .selectsheet {
+    background-color: #f5f5f5;
+    border-radius: 13px;
+    padding: 10px;
+  }
+  
+  .rentproperty .completionstatus .selectsheet .card {
+    padding: 11px 8px;
+    border-radius: 13px;
+    border: 0;
+  }
+  
+  .rentproperty .selectsheet .selectcircle {
+    color: #434343;
+  }
+  
+  .rentproperty .completionstatus .selectsheet .verifed {
+    font-weight: 600;
+    border-radius: 2px;
+    background: #20ac3f;
+    padding: 3px 5px;
+    text-align: center;
+    width: 70px;
+    height: 23px;
+  }
+  
+  .rentproperty .completionstatus .selectsheet .card .accordion .accordion-item {
+    border: 0;
+    border-radius: 13px;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .selectoptionbtn {
+    color: #434343;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 13px;
+    border: 0;
+    background: none;
+    padding: 16px 12px;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .selectoptionbtn:focus {
+    box-shadow: none;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .aedbtn
+    button {
+    background-color: #565656;
+    padding: 4px 8px;
+    border: 0;
+    color: var(--header-light);
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 13px;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .constrtuctiuonbtn
+    button {
+    color: var(--selecttext-color);
+    background: none;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .nav-pills
+    li
+    button {
+    font-size: 12px;
+    color: var(--secondary);
+    font-weight: 600;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .nav-pills
+    li
+    .active {
+    background-color: transparent;
+    border-bottom: 1px solid var(--primary);
+    color: var(--primary);
+  }
+  
+  .image-preview .preview-item {
+    position: relative;
+    height: 200px;
+    width: 100%;
+  }
+  .image-preview .preview-item img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .image-preview .delete-button {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    background-color: #00000033;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border: 0;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .image-preview .delete-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-item
+    .accordion-body
+    .selectcircle
+    button {
+    background: none;
+    border-radius: 14px;
+    border: 1px solid #efefef;
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 12px;
+    width: 45%;
+    padding: 5px 8px;
+  }
+  
+  .rentproperty
+    .completionstatus
+    .selectsheet
+    .card
+    .accordion
+    .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none !important;
+  }
+  
+  .rentproperty .completionstatus .selectsheet .verifed i {
+    background-color: var(--header-light);
+    width: 16px;
+    border-radius: 100%;
+    color: #20ac3f;
+  }
+  
+  .carddeatil .apartment {
+    padding: 15px 15px 15px 0;
+  }
+  
+  .carddeatil .apartment p {
+    color: #a5a5a5;
+    font-size: 12px;
+  }
+  
+  .carddeatil .apartment .downtown {
+    color: #4c4a4a;
+    font-size: 14px;
+  }
+  
+  .carddeatil .apartment button {
+    border-radius: 8px;
+    background: linear-gradient(180deg, #af824a 0%, #cf9c5b 100%);
+    color: var(--header-light);
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 14px;
+    gap: 6px;
+  }
+  
+  .carddeatil .apartment .whatsapp {
+    background: #1db171 !important;
+  }
+  
+  .carddeatil {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 7px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .propertyslider img {
+    border-radius: 4px;
+  }
+  
+  .swiper-slide.swiper-slide-visible.swiper-slide-active {
+    padding-right: 5px;
+  }
+  
+  .propertyslider .carddeatil .swiper-button-prev,
+  .swiper-button-next {
+    background: white;
+    height: 18px !important;
+    width: 18px !important;
+    border-radius: 100%;
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    color: #69717e;
+    font-size: 10px !important;
+    font-weight: bolder;
+    top: 110px;
+  }
+  
+  .propertyslider .gallery {
+    right: 54px;
+    top: 11px;
+    z-index: 99;
+  }
+  
+  .propertyslider .card-like {
+    right: 17px;
+    top: 14px;
+    z-index: 99;
+  }
+  
+  .propertyslider .card-badage {
+    padding: 5px 8px;
+    border-radius: 13px;
+    z-index: 99;
+  }
+  
+  .propertyslider .hometype {
+    padding: 5px 8px;
+    border-radius: 13px;
+    z-index: 99;
+    background-color: white;
+    bottom: 12px;
+    top: inherit;
+  }
+  
+  .filterproperty {
+    background-color: #f4f4f4;
+    padding: 9px 0 8px 50px;
+    margin-bottom: 41px;
+    height: 35px;
+  }
+  
+  .filterproperty .forrent h5 {
+    color: var(--text-color);
+    margin-bottom: 7px !important;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  
+  .filterproperty .forrent .breadcrumb {
+    gap: 13px;
+  }
+  
+  .filterproperty .forrent .breadcrumb .breadcrumb-item:before {
+    display: none;
+  }
+  
+  .filterproperty .forrent .breadcrumb li a {
+    color: #4c4a4a;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .filterproperty .forrent .breadcrumb i {
+    font-size: 10px;
+    padding-top: 7px;
+  }
+  
+  /* select css */
+  .selectproperty .select {
+    row-gap: 19px;
+    column-gap: 12px;
+    margin-bottom: 26px;
+  }
+  
+  .selectproperty .rentselect {
+    width: 76px;
+  }
+  
+  .selectproperty select {
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    height: 45px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #939393;
+    width: 155px;
+  }
+  
+  .selectproperty .valuedit {
+    width: 143px;
+  }
+  
+  .selectproperty .entervalue {
+    width: 292px;
+  }
+  
+  .selectproperty input {
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    height: 45px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--selecttext-color);
+  }
+  
+  .selectproperty .moretypefilter {
+    right: 0;
+  }
+  
+  .selectproperty .moretypefilter p {
+    color: #939393;
+  }
+  
+  .selectproperty .moretypefilter span {
+    background-color: #d9d9d98a;
+    height: 21px;
+    width: 21px;
+    border-radius: 6px;
+  }
+  
+  .selectproperty .select label {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .selectproperty .search {
+    background: linear-gradient(180deg, #af824a 0%, #cf9c5b 100%);
+    color: var(--header-light);
+  }
+  
+  .selectproperty .search:hover {
+    background: transparent;
+    border: 1px solid #af824a;
+    color: #af824a;
+  }
+  
+  .selectproperty button {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    width: 144px;
+    height: 45px;
+    background-color: var(--header-light);
+    transition: 0.2s ease-in-out !important;
+  }
+  
+  .selectproperty button:hover {
+    background: linear-gradient(180deg, #af824a 0%, #cf9c5b 100%);
+    color: var(--header-light);
+    border: 1px solid #af824a;
+  }
+  
+  .diffselcountry {
+    padding-top: 26px;
+    margin-bottom: 32px;
+  }
+  
+  .diffselcountry h4 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+  }
+  
+  .diffselcountry .collection {
+    max-width: 744px;
+    border-radius: 7px;
+    border: 1px solid #ececec;
+    background: var(--header-light);
+    padding: 14px 20px;
+    margin-bottom: 32px;
+  }
+  
+  .diffselcountry .collection button {
+    color: var(--primary);
+    background: none;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .diffselcountry .collection button span {
+    color: #939393;
+    font-size: 12px;
+  }
+  
+  /* property css */
+  
+  /* property listing */
+  .propertylistsidebar .sidebarstepline span {
+    border: 1px solid var(--primary);
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    font-size: 14px;
+    color: #878787;
+    background-color: #f6f6f6;
+  }
+  
+  .propertylistsidebar .sidebarstepline .pendingstep {
+    border: 1px solid #595959;
+  }
+  
+  .propertylistsidebar .sidebarstepline .stepactive::after {
+    position: absolute;
+    content: "";
+    background-color: var(--primary);
+    top: 1px;
+    left: 1px;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+  }
+  
+  .propertylistsidebar .sidebarstepline .stepcomplte {
+    background-color: var(--primary);
+  }
+  
+  .propertylistsidebar {
+    background-color: var(--dropdown-bg);
+    border-radius: 35px;
+    height: 555px;
+    width: 324px;
+    padding-left: 30px;
+  }
+  
+  .propertylistsidebar .sidebarstep .editref {
+    background-color: transparent;
+    border: 0;
+    color: #af824a;
+    font-size: 12px;
+  }
+  
+  .propertylistsidebar .sidebar .sidebarstep {
+    margin-bottom: 34px;
+  }
+  
+  .propertylistsidebar .sidebar .sidebarstep a {
+    color: var(--primary);
+  }
+  
+  .propertylistsidebar .sidebar .sidebarstep h5 {
+    color: #585858;
+    margin-bottom: 3px;
+  }
+  
+  .propertylistsidebar .sidebar {
+    z-index: 99;
+  }
+  
+  .propertylistsidebar .sidebar::after {
+    position: absolute;
+    content: "";
+    border-left: 1px solid #c19054;
+    height: 92%;
+    width: 100%;
+    left: 9px;
+    top: 8px;
+    z-index: -1;
+  }
+  
+  .propertylistprofile .profilepage .addanotherdetail {
+    color: #686868;
+    margin-bottom: 12px !important;
+  }
+  
+  .propertylistprofile button {
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 14px;
+    color: #717171;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+  }
+  
+  .propertylistprofile .profilepage .roomdetail button {
+    padding: 11px;
+    height: 43px;
+    width: 43px;
+  }
+  
+  .selectotherrrom button {
+    min-width: 132px;
+    height: 35px;
+  }
+  
+  .selectotherrrom .active {
+    border: 1px solid #af824a;
+  }
+  
+  .propertylistprofile select {
+    font-size: 14px;
+    font-weight: 400;
+    color: #717171;
+    padding: 8px 17px;
+    height: 48px;
+    width: 212px;
+    border-radius: 10px;
+    border: 1px solid #dedede;
+  }
+  
+  .propertylistprofile .profilepage .input-group span {
+    background-color: transparent;
+  }
+  
+  .princinorder .selectprice input {
+    width: auto;
+    height: auto;
+  }
+  
+  .princinorder .selectprice label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #717171;
+  }
+  
+  .princinorder textarea {
+    height: 146px;
+    width: 420px;
+    border-radius: 10px;
+    padding: 17px 22px;
+    color: #717171;
+    border: 1px solid #dedede;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .propertylistprofile .floorplaninput {
+    height: 48px !important;
+    border-radius: 10px;
+    width: 212px;
+    border: 1px solid #dedede;
+    padding: 0 18px;
+    font-size: 14px;
+  }
+  
+  .propertylistprofile .profilepage .selectbhk {
+    padding: 8px 34px;
+    width: auto !important;
+  }
+  
+  .propertylistprofile .profilepage .active {
+    border: 1px solid #af824a;
+  }
+  
+  .profilehomepage {
+    margin-bottom: 27px;
+  }
+  
+  .profilehomepage .edit-button {
+    width: 80px !important;
+    border-radius: 4px !important;
+    margin-left: 20px !important;
+  }
+  
+  .uploadphothos p {
+    color: #494949;
+  }
+  
+  .uploadphothos .uploadimages .uploadcard {
+    background-color: #fff8f0;
+    border: 1px solid #af824a;
+    padding: 35px 25px;
+    border-radius: 10px;
+  }
+  
+  .uploadphothos label {
+    cursor: pointer;
+    color: #af824a;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #af824a;
+    width: 80%;
+    padding: 7px;
+  }
+  
+  .princinorder .profilehomepage .ownership {
+    background-color: #ededed;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+  }
+  
+  .uploadphothos #upload-photo {
+    display: none;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .profilehomepage .description {
+    color: #717171;
+  }
+  
+  /* property listing */
+  
+  /* holiday home css */
+  .popularvaction {
+    margin: 70px 0;
+  }
+  
+  .popularvaction .destinationselect {
+    gap: 20px;
+  }
+  
+  .popularvaction .card {
+    padding: 22px;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 0px 7px 28px 6px rgba(0, 0, 0, 0.04);
+    border: 0;
+  }
+  
+  .popularvaction .vacationpart1 {
+    gap: 10px;
+    width: 40%;
+  }
+  
+  .popularvaction .vacationpart2 a {
+    color: #797979;
+    font-size: 12px;
+    font-weight: 400;
+    float: right;
+  }
+  
+  .popularvaction .vacationpart2 {
+    width: 60%;
+  }
+  
+  .popularvaction .populardestination {
+    gap: 14px;
+    width: 100%;
+  }
+  
+  .popularvaction .vacationpart2 h3 {
+    margin-bottom: 33px !important;
+  }
+  
+  .popularvaction .countryname1:last-child {
+    margin-left: 54px;
+  }
+  
+  .popularvaction .countryname1 p {
+    margin-left: 13px;
+    color: #323b45;
+    font-weight: 400;
+  }
+  
+  .readmorepart {
+    background-image: url(../assets/images/background.1b68db61.png);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 88px 0 0px 36px;
+    background-position: center;
+    border-radius: 8px;
+  }
+  
+  .readmorepart h5 {
+    line-height: 20px;
+  }
+  
+  .readmorepart button {
+    border-radius: 4px;
+    background: #5a5d71;
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0;
+    padding: 8px 17px;
+    margin-top: 22px;
+  }
+  
+  .readmorepart button:hover {
+    background: #185d8a;
+  }
+  
+  .holidaysubscribe {
+    border-radius: 20px;
+    background: rgba(196, 196, 196, 0.13);
+    /* background: #C4C4C4; */
+    color: #fff;
+    /* background: #fbf4eb; */
+    padding: 45px 47px 30px 47px;
+    position: relative;
+    /* margin-bottom: 84px; */
+    z-index: 1;
+  }
+  
+  .holidaysubscribe svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .holidaysubscribe .subscribe input {
+    width: 320px;
+    padding: 10px 10px 14px 40px;
+    border-radius: 5px;
+    height: 37px;
+    border: 0;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .holidaysubscribe .subscribe svg {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+  .holidaysubscribe button {
+    padding: 10px 33px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 37px;
+    font-weight: 700;
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    border: 1px solid transparent;
+  }
+  
+  .holidaysubscribe button:hover {
+    color: #af824a;
+    border: 1px solid #af824a;
+    background: transparent !important;
+  }
+  
+  .holidaysubscribe h3 {
+    padding-bottom: 30px !important;
+  }
+  
+  .holidaysubscribe p {
+    color: #fff;
+    /* color: #5e6282; */
+    max-width: 730px;
+  }
+  
+  .holidaysubscribe a {
+    color: #fff;
+    /* color: #5e6282; */
+    text-decoration: underline !important;
+    margin: 0 3px;
+  }
+  
+  .user-dash {
+    position: relative;
+  }
+  
+  .user-dash .profile {
+    text-align: center;
+    margin-bottom: 36px;
+    padding-top: 29px;
+  }
+  
+  .user-dash .menuicon {
+    width: 30px;
+  }
+  
+  .user-dash .profile p {
+    color: #636363;
+    margin-top: 10px;
+  }
+  
+  .user-dash .profile .profileimg {
+    height: 94px;
+    margin: auto;
+    border-radius: 100%;
+    width: 94px;
+    background-color: #d9d9d9;
+  }
+  
+  .user-dash .profile img {
+    object-fit: cover;
+  }
+  
+  /* holiday home css */
+  
+  /* dashboard css */
+  .dashboardhome {
+    margin-bottom: 76px;
+  }
+  
+  .dashboardhome .completeprofile h3 {
+    font-size: 16px;
+  }
+  
+  .dashboardhome .card {
+    border-radius: 26px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+  }
+  
+  .dashboardhome .completeprofile {
+    padding: 14px 20px 20px 22px;
+  }
+  
+  .CircularProgressbar {
+    width: 80% !important;
+    vertical-align: middle;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke: #fdb765 !important;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: #686868 !important;
+  }
+  
+  .progressbaar-main {
+    max-width: 15%;
+  }
+  
+  .dashboardhome .progress-bar {
+    width: 25%;
+    background-color: #fdb765;
+  }
+  
+  .dashboardhome .dashboardprogress {
+    gap: 52px;
+    padding: 0 20px 19px 32px;
+  }
+  
+  .dashboardhome p {
+    color: #6f6f6f;
+    margin-bottom: 18px !important;
+    font-size: 12px;
+  }
+  
+  .dashboardhome .booking {
+    gap: 18px;
+  }
+  
+  .dashboardhome .booking h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000 !important;
+    margin-top: -10px;
+  }
+  
+  .dashboardhome .booking .bookingdash {
+    background: #fbfbfb;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+  }
+  
+  .dashboardhome .booking .bookingdash .bookignhead h3 {
+    font-size: 11px;
+  }
+  
+  .dashboardhome .booking .bookingdash .bookignhead {
+    border-radius: 20px 20px 0px 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 8px 46px 8px 22px;
+  }
+  
+  .dashboardhome .booking .bookingdash .bookingdate {
+    padding: 8px 46px 0px 22px;
+    margin-bottom: 16px !important;
+  }
+  
+  .dashboardhome .booking .bookingdash .bookingdate p {
+    font-size: 11px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0px !important;
+  }
+  
+  .dashboardhome .booking .bookingdash .view {
+    color: #af824a;
+    font-size: 8px;
+    font-weight: 400;
+    margin-bottom: 0 !important;
+    padding-right: 10px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .dashboardhome .booking .traveller {
+    border-radius: 20px;
+    background: #af824a;
+    padding: 11px 19px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    width: 160px;
+    margin: auto;
+  }
+  
+  .dashboardhome .booking .traveller:active {
+    background-color: #af824a;
+  }
+  
+  .dashboardhome .booking .travvleaddmodal .modal-dialog {
+    min-width: 684px;
+  }
+  
+  .dashboardhome .booking .travvleaddmodal .modal-content {
+    border-radius: 26px;
+    width: 684px;
+  }
+  
+  .dashboardhome .booking .travvleaddmodal .modal-body h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .dashboardhome .booking .travvleaddmodal .modal-body p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .dashboardhome .booking .travvleaddmodal .modal-body .basicinfo {
+    padding-bottom: 20px;
+  }
+  
+  .dashboardhome .booking .travvleaddmodal .modal-body .basicinfo input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0 20px;
+  }
+  
+  .dashboardhome .booking .travvleaddmodal .modal-body .basicinfo select {
+    font-size: 10px;
+    font-weight: 400;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .dashboardhome .booking .travvleaddmodal .modal-content .modal-footer .save {
+    border-radius: 4px;
+    background: linear-gradient(180deg, #af824a 0%, #c79557 100%);
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    width: 122px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .dashboardhome .booking .travvleaddmodal .modal-header {
+    margin-bottom: 32px;
+  }
+  
+  .dashboardhome .booking .travvleaddmodal .modal-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .dashboardhome .dashboardprogress .profilecomplete button {
+    padding: 12px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    border: 0;
+    width: 130px;
+    line-height: 17px;
+    border-radius: 22px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.03);
+    gap: 10px;
+    text-align: initial;
+  }
+  
+  .dashboardhome .dashboardprogress .profilecomplete .modal-content {
+    border-radius: 26px;
+    width: 352px;
+    margin: auto;
+    padding: 19px 25px 14px;
+  }
+  
+  .dashboardhome
+    .dashboardprogress
+    .profilecomplete
+    .modal-content
+    .modal-body
+    input {
+    height: 40px;
+    width: 100%;
+    font-size: 12px;
+    padding: 0 10px;
+    color: #878787;
+    font-weight: 400;
+    border: 1px solid #ebebeb;
+  }
+  
+  .dashboardhome .dashboardprogress .profilecomplete .modal-footer button {
+    width: 103px;
+    box-shadow: none;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 31px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #af824a 0%, #c79557 100%);
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+  }
+  
+  .dashboardhome .dashboardprogress .profilecomplete .modal-footer .cancel {
+    background: none;
+    color: #af824a;
+    border: 1px solid #af824a !important;
+    box-shadow: none;
+  }
+  
+  .dashboardhome .dashboardprogress .profilecomplete .modal-footer .submit {
+    background-color: #148dfa;
+  }
+  
+  .dashboardhome .dashboardprogress .profilecomplete .modal-body .youraddress {
+    width: 145px !important;
+  }
+  
+  .dashboardhome .dashboardprogress .profilecomplete .addemailid {
+    background: linear-gradient(77deg, #fdb765 47.6%, #ffe485 107%);
+  }
+  
+  .dashboardhome .dashboardprogress .profilecomplete .verify {
+    background: linear-gradient(77deg, #4ad994 47.6%, #57f998 107%);
+    width: 144px;
+  }
+  
+  .dashboardproperty select {
+    background-color: #f5f5f5;
+    border-radius: 9px;
+    width: 110px;
+    border: 0;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .dashboardproperty .allproperty {
+    padding: 35px 17px 54px 17px;
+  }
+  
+  .dashboardproperty .allproperty select option:hover {
+    background-color: transparent;
+  }
+  
+  .dashboardproperty .allproperty select option {
+    color: #af824a;
+  }
+  
+  .dashboardproperty .showproperty {
+    gap: 23px;
+  }
+  
+  .dashboardproperty p {
+    margin-right: 10px;
+    color: #8d8d8d;
+  }
+  
+  .dashboardproperty .showproperty select {
+    width: 72px;
+  }
+  
+  .dashboardproperty .propertycard {
+    padding: 31px 17px;
+    background-color: #efefef;
+    border: 1px solid #efefef;
+    position: relative;
+  }
+  
+  .dashboardproperty .propertycard .favproperty {
+    position: absolute;
+    right: 11px;
+    top: 8px;
+    z-index: 1;
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dashboardproperty .propertycard .dashboardpropertycard {
+    margin-left: 21px;
+    width: 100%;
+    margin-right: 50px;
+  }
+  .dashboardproperty .propertycard .dashboardpropertycard .prod-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #4c4a4a;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 8px !important;
+  }
+  .propertyview {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+  
+  .propertyview a {
+    cursor: pointer;
+  }
+  
+  .dashboardproperty .propertycard ul {
+    min-width: 90px;
+    padding: 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+  }
+  
+  .dashboardproperty .propertycard .propertyview ul li {
+    border-bottom: 1px solid #f4f4f4;
+    height: 34px;
+  }
+  
+  .dashboardproperty .propertycard .propertyview ul li a {
+    padding: 0 16px;
+    line-height: 34px;
+    font-size: 12px;
+  }
+  
+  .dashboardproperty .propertycard .propertyview ul li a:hover {
+    background: transparent;
+  }
+  
+  .dashboardproperty .propertycard .dashboardpropertycard .statuspro .status {
+    background-color: #ff0f0f;
+    width: 74px;
+    color: white;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 13px;
+    height: 20px;
+  }
+  
+  .dashboardproperty .propertycard .dashboardpropertycard .statuspro .statusdone {
+    background-color: #14a122;
+  }
+  
+  .savesearchdash {
+    padding: 68px 0;
+    border-radius: 24px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
+  }
+  
+  .savesearchdash .searchsavetitle {
+    padding: 11px 25px;
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    border-left: 2px solid #af824a;
+    border-right: 2px solid #af824a;
+  }
+  
+  .savesearchdash .propertyview {
+    position: inherit;
+  }
+  
+  .savesearchdash .searchsavetitle button {
+    background: none;
+    border: 0;
+    font-size: 14px;
+    color: #939393;
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .savesearchdash .searchsavetitle button span {
+    background-color: #d9d9d98a;
+    height: 21px;
+    width: 21px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  
+  .savesearchdash .savedata {
+    border: 1px solid #efefef;
+    background: #fbfbfb;
+  }
+  
+  .savesearchdash .savedata .savesearchdetail .saverent {
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    /* width: 100px; */
+    padding: 6px;
+    font-size: 12px;
+    font-weight: 400;
+    height: 40px;
+  }
+  
+  .savesearchdash .savedata .savesearchdetail .location {
+    /* width: 240px; */
+    margin-right: 10px;
+  }
+  
+  .savesearchdash .savedata .saveproperty {
+    padding: 14px 22px 0 24px;
+    background: #fbfbfb;
+    flex-wrap: wrap;
+  }
+  
+  .savesearchdash .savedata .saveproperty .savedate {
+    margin-left: auto;
+  }
+  
+  .savesearchdash .savedata .saveproperty .savedate #dropdownMenuButton1 svg {
+    height: 12px;
+  }
+  
+  .savesearchdash .savedata .savesearchdetail {
+    padding: 25px;
+  }
+  
+  .savesearchdash .searchsavetitle h3 {
+    margin-bottom: 8px !important;
+  }
+  
+  .savesearchdash p {
+    color: #4c4a4a;
+  }
+  
+  .savesearchdash .nodata {
+    background-color: #fff8f0;
+    padding: 14px 25px;
+    margin-top: 28px;
+  }
+  
+  /* .dashboardhome .radialProgressBar {
+    border-radius: 50%;
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+    width: 100px;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ddd;
+    margin: 20px;
+    float: left;
+  }
+  .dashboardhome .radialProgressBar .overlay {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    padding-top: 30%;
+  }
+  
+  .dashboardhome .progress-10 {
+    background-image: -webkit-linear-gradient(36deg, #ddd 50%, transparent 50%),
+      -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+    background-image: linear-gradient(54deg, #ddd 50%, transparent 50%),
+      linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+  } */
+  
+  /* .card .percent {
+    position: relative;
+  }
+  
+  .card svg {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    transform: rotate(-90deg);
+  }
+  
+  .card svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #f0f0f0;
+    strokeWidth: 10;
+    strokeLinecap: round;
+  }
+  
+  .card svg circle:last-of-type {
+    stroke-dasharray: 625px;
+    stroke: #3498db;
+    stroke-dashoffset: 60%;
+  }
+  
+  .card .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card:nth-child(1) svg circle:last-of-type {
+    stroke: #f39c12;
+  } */
+  
+  .pdetails .closemoal {
+    position: absolute;
+    top: -20px;
+    z-index: 99;
+    right: -10px;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: transparent;
+  }
+  
+  .pdetails .virtulmeet .date {
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    height: 40px;
+    width: 154px;
+    font-size: 12px;
+  }
+  
+  .pdetails .virtulmeet .virtualdateselect {
+    width: 170px;
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+    height: 43px;
+    padding: 7px;
+  }
+  
+  .pdetails .virtulmeet select {
+    width: 70%;
+    height: 50px;
+    border: 1px solid #f2b96e;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .pdetails .virtulmeet button {
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+  }
+  
+  .pdetails .virtulmeet .active {
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+  }
+  
+  .pdetails .virtulmeet .date select {
+    width: 70%;
+    height: 40px;
+  }
+  
+  .pdetails .pdetails-details .pdetails-left .card .floorPlans label {
+    color: #8a9099;
+  }
+  
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .floorPlans
+    .titledescription
+    input {
+    border: 1px solid #8a9099;
+    padding: 11px 16px;
+    border-radius: 16px;
+    width: 240px;
+  }
+  
+  .pdetails .pdetails-details .pdetails-left .card .floorPlans .createbtn {
+    width: 110px;
+    border-radius: 14px;
+    margin-top: 37px;
+  }
+  
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .floorPlans
+    .titledescription
+    textarea {
+    border: 1px solid #8a9099;
+    padding: 11px 16px;
+    border-radius: 16px;
+    width: 240px;
+    height: 240px;
+  }
+  
+  .pdetails .pdetails-details .pdetails-left .card .floorPlans select {
+    height: 42px;
+    padding: 0 10px;
+    border-radius: 14px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .pdetails
+    .pdetails-details
+    .pdetails-left
+    .card
+    .floorPlans
+    .accordion-header
+    .pdsizedetail {
+    color: #4a4a4a;
+    font-size: 12px;
+    width: max-content;
+  }
+  
+  .getstarted-container .getstarted-main input {
+    height: 40px;
+    border-radius: 6px;
+    width: 100%;
+    border: 1px solid #cacaca;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 10px;
+    margin-bottom: 3px;
+  }
+  
+  .getstarted-container .getstarted-startnow-main {
+    margin-top: 28px;
+  }
+  
+  /* holiday checkout css */
+  .homeholidaycheck {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .homeholidaycheck .checkholiday-left {
+    width: 80%;
+  }
+  
+  .homeholidaycheck .checkholiday-right {
+    width: 40%;
+  }
+  
+  .homeholidaycheck .checkholiday-right .check-pagedetail {
+    padding: 17px 36px 25px 19px;
+  }
+  
+  .homeholidaycheck .checkholiday-right .check-pagedetail .rating .raingbtn {
+    background-color: #b3d961;
+    color: white;
+    height: 27px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .homeholidaycheck .checkholiday-right .check-pagedetail .rating span {
+    height: 8px;
+    width: 8px;
+    background-color: #676767;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .homeholidaycheck .checkholiday-right .check-pagedetail ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+  
+  .homeholidaycheck .checkholiday-right .check-pagedetail ul span {
+    width: 100%;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: 600;
+    color: #5f5f5f;
+    justify-content: start;
+  }
+  
+  .homeholidaycheck .checkholiday-right .check-pagedetail ul li h3 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .holidaychecout .modifybook {
+    margin-bottom: 36px;
+  }
+  
+  .holidaychecout .homeholidaycheck .card {
+    border-radius: 9px;
+    border: 1px solid #ececec;
+    background: #fff;
+  }
+  
+  .holidaychecout .homeholidaycheck .card .enteremail {
+    border-radius: 9px;
+    border: 1px solid #ececec;
+    background: #fafafa;
+    padding: 17px 22px;
+  }
+  
+  .holidaychecout .homeholidaycheck span {
+    border-radius: 5px;
+    background: #d9d9d9;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    height: 21px;
+    width: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .holidaychecout .homeholidaycheck .card .emailaddform {
+    padding: 37px 49px 64px 28px;
+  }
+  
+  .holidaychecout .homeholidaycheck .card .emailaddform label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 11px;
+    color: #000;
+  }
+  
+  .holidaychecout .homeholidaycheck .card .emailaddform .input-group {
+    border-radius: 9px;
+    border: 1px solid #ececec;
+    background: #fff;
+  }
+  
+  .holidaychecout .homeholidaycheck .card .emailaddform .input-group input {
+    padding: 0 20px;
+    border: 0;
+    width: auto;
+  }
+  
+  .holidaychecout .homeholidaycheck .card .emailaddform .input-group button {
+    color: #000000;
+    border: 0;
+    border-right: 1px solid #ececec;
+    z-index: 99;
+  }
+  
+  /* .btn-check:checked + .btn,
+  :not(.btn-check) + .btn:active,
+  .btn:first-child:active,
+  .btn.active,
+  .btn.show {
+    background-color: transparent;
+  } */
+  .holidaychecout
+    .homeholidaycheck
+    .card
+    .emailaddform
+    .input-group
+    button:hover {
+    background-color: transparent;
+    color: #000000;
+  }
+  
+  .holidaychecout .homeholidaycheck .card .emailaddform .input-group input:focus {
+    box-shadow: none !important;
+  }
+  
+  .holidaychecout .homeholidaycheck .card .emailaddform input {
+    border-radius: 9px;
+    border: 1px solid #ececec;
+    background: #fff;
+    width: 100%;
+    height: 44px;
+    padding: 0 20px;
+  }
+  
+  .holidaychecout .homeholidaycheck .card .emailaddform .sendcode {
+    background-color: #676767;
+    border-radius: 9px;
+    width: 100%;
+    height: 44px;
+    border: 0;
+    color: #d0d0d0;
+  }
+  
+  .holidaychecout .filldetail {
+    border-radius: 9px;
+    border: 1px solid #deaa62;
+    padding: 17px 22px;
+    background: #ffedd3;
+  }
+  
+  .checkoutfilldetail .filldetail span {
+    background: #deaa62;
+  }
+  
+  .holidaychecout .Continue {
+    background-color: #af824a;
+    border-radius: 9px;
+    width: 182px;
+    height: 44px;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 41px;
+    font-weight: 700;
+  }
+  
+  .homeholidaycheck .checkholiday-right .check-pagedetail .rating .greenrating {
+    background-color: #1ab64f;
+  }
+  
+  .holidaychecout .afterloginemail span {
+    background-color: #e3f6ea;
+    color: #3ab780;
+  }
+  
+  .homeholidaycheck .checkholiday-left .paymentmethod h3 {
+    padding: 16px 0 16px 22px;
+  }
+  
+  .homeholidaycheck .checkholiday-left .paymentmethod .secure {
+    background-color: #ececec;
+    padding: 6px 0 8px 36px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6c6c6c;
+  }
+  
+  .homeholidaycheck .checkholiday-left .paymentmethod .paymenttype {
+    padding: 17px 17px 18px 33px;
+  }
+  
+  .homeholidaycheck .checkholiday-left .paymentmethod .paymenttype p {
+    margin-top: 12px;
+    color: #969696;
+  }
+  
+  .homeholidaycheck .checkholiday-left .paymentmethod .paymenttype button {
+    background-color: #1ab64f;
+    margin-top: 38px;
+    width: 289px;
+    height: 44px;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 9px;
+  }
+  
+  .homeholidaycheck .checkholiday-left .paymentmethod .paymenttype .paynow {
+    padding: 37px 0;
+  }
+  
+  .homeholidaycheck
+    .checkholiday-left
+    .paymentmethod
+    .paymenttype
+    .paynow
+    .payathotel {
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 0px 7px 28px 6px rgba(0, 0, 0, 0.04);
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 9px;
+    width: 193px;
+    height: 68px;
+    padding: 0;
+  }
+  
+  .homeholidaycheck
+    .checkholiday-left
+    .paymentmethod
+    .paymenttype
+    .paynow
+    .paynowdetail {
+    border-radius: 9px;
+    border: 1px solid #f1e8e8;
+    background: #fff;
+    color: #757575;
+    width: 193px;
+    height: 68px;
+    padding: 0;
+    margin-left: 18px;
+  }
+  
+  .holidayhomedetail .inclusivetax .tax {
+    padding-left: 26px;
+  }
+  
+  .holidayhomedetail .inclusivetax {
+    margin-bottom: 26px;
+  }
+  
+  .holidayhomedetail .date-detail span:first-child {
+    border-right: 1px solid #b6b6b6;
+  }
+  
+  .holidayhomedetail .continuebook {
+    padding: 12px 20px 0 19px;
+  }
+  
+  .holidayhomedetail .continuebook .classic {
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    width: 110px;
+    padding: 6px;
+    margin-bottom: 20px;
+    height: 40px;
+  }
+  
+  .holidayhomedetail .continuebook .saving ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  
+  .holidayhomedetail .continuebook .saving ul p {
+    color: #5f5f5f;
+    font-weight: 600;
+  }
+  
+  .holidayhomedetail .continuebook .saving ul li span {
+    color: #000000;
+  }
+  
+  .holidayhomedetail .continuebook button {
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 18px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+  }
+  
+  .holidayhomedetail .continuebook .continue:hover {
+    border: 1px solid #af824a !important;
+    color: #af824a !important;
+    background: transparent !important;
+  }
+  
+  .holidayhomedetail .continuebook .saving .cancel {
+    color: #989898;
+    /* margin-bottom: 10px !important; */
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .holidayhomedetail {
+    padding: 23px 15px 14px 19px;
+  }
+  
+  .holidayhomedetail .cancelpolicy {
+    font-weight: 600 !important;
+    color: #ee2e24 !important;
+  }
+  
+  .holidayhomedetail .similar-listing .similarcard .carddeatil {
+    margin-bottom: 16px;
+  }
+  
+  .holidayhomedetail .description {
+    background-color: #fcfcfc;
+    margin-bottom: 22px;
+  }
+  
+  .holidayhomedetail .description p {
+    color: #626262;
+    font-weight: 400;
+  }
+  
+  .holidayhomedetail .fetures {
+    /* margin-bottom: 22px; */
+  }
+  
+  .holidayhomedetail .fetures button {
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    color: #4a4a4a;
+    font-size: 12px;
+    border: 0;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    padding: 6px 20px;
+    line-height: 20px;
+    align-items: center;
+  }
+  
+  .holidayhomedetail .fetures button svg {
+    width: 20px;
+  }
+  
+  .holidayhomedetail .hotelpolicy .card {
+    padding: 17px 33px 23px 25px;
+  }
+  
+  .holidayhomedetail .hotelpolicy .checkinout {
+    margin: 26px 0;
+    position: relative;
+  }
+  
+  .holidayhomedetail .hotelpolicy .checkinout::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: #a6a6a633;
+    top: 0;
+    left: 126px;
+  }
+  
+  .holidayhomedetail .hotelpolicy .checkinout button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #af824a;
+    width: 103px;
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid #a6a6a633;
+    margin-top: 11px;
+  }
+  
+  .holidayhomedetail .hotelpolicy .checkinout span {
+    color: #4c4a4a;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .holidayhomedetail .duringstay .thirdpart {
+    margin: 20px 0 0 0;
+  }
+  
+  .holidayhomedetail .duringstay .thirdpart .breakfast {
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
+  }
+  
+  .holidayhomedetail .duringstay .thirdpart .breakfast span {
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .holidayhomedetail .duringstay .thirdpart h4 {
+    background-color: #ffe2ba;
+    font-size: 14px;
+    font-weight: 600;
+    color: #834c07;
+    border-right: 1px solid #b3b3b3;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .holidayhomedetail .duringstay .thirdpart .select {
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 4px 20px;
+    border: 0;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    color: #2293fa;
+  }
+  
+  .holidayhomedetail .chooseroom .card .classic {
+    padding: 13px 21px 19px;
+    border-bottom: 1px solid #74747428;
+  }
+  
+  .holidayhomedetail .chooseroom .card .classic .homeimg {
+    width: 170px;
+    object-fit: cover;
+  }
+  
+  .holidayhomedetail .chooseroom .moredetailitem {
+    font-size: 14px;
+    padding: 12px;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    color: #6d787d;
+    top: 30px;
+    width: 583px;
+    font-weight: 700;
+    z-index: 1;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .hovermore:hover .moredetailitem {
+    display: block;
+  }
+  
+  .holidayhomedetail .chooseroom .card .classic .gallery {
+    right: 0;
+  }
+  
+  .holidayhomedetail .chooseroom .card .classic p {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .holidayhomedetail .chooseroom .card .selectroom {
+    padding: 16px 19px;
+  }
+  
+  .holidayhomedetail .chooseroom .card .selectroom .price {
+    color: #6d787d;
+  }
+  
+  .holidayhomedetail .chooseroom .card .selectroom button {
+    background-color: #dddddd;
+    border-radius: 4px;
+    height: 44px;
+    width: 180px;
+    border: 0;
+    color: #727272;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  
+  .holidayhomedetail .chooseroom .card .classic .moreclassic {
+    color: #deaa62;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .holidayhomedetail .chooseroom .selectedcategory {
+    background: linear-gradient(90deg, #797f9d 0%, #d1ced8 106.75%);
+    padding: 4px 18px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+  }
+  
+  .holidayhomedetail .duringstay {
+    margin-top: 35px;
+  }
+  
+  /* user profile css */
+  .dash-profile {
+    background: #f8f8f8;
+    box-shadow: 0px -1px 14px 3px rgba(0, 0, 0, 0.06);
+  }
+  
+  .dash-profile .userdashprofile {
+    background: #fff;
+    padding: 19px 33px;
+  }
+  
+  .dash-profile .userdashprofile .profilehesder {
+    width: 70px;
+    height: 70px;
+    margin-right: 18px;
+    position: relative;
+  }
+  
+  .dash-profile .userdashprofile .profilehesder img {
+    z-index: 10;
+  }
+  
+  .dash-profile .userdashprofile .profilehesder .userprofile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .dash-profile .userdashprofile .profilehesder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+  
+  .user-dash .profileform {
+    padding: 30px 36px 43px;
+  }
+  
+  /* .user-dash .profileform .profileformgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    column-gap: 33px;
+    row-gap: 28px;
+  } */
+  .user-dash .profileform .profileformgrid .detail label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6f6f6f;
+  }
+  
+  .user-dash .profileform .profileformgrid .detail input {
+    height: 40px;
+    /* border: 0; */
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 22px;
+    width: 100%;
+  }
+  
+  .user-dash .profileform .profileformgrid .detail input:focus {
+    box-shadow: none;
+  }
+  
+  .user-dash .profileform .profileformgrid .detail a {
+    color: #2367c4;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+    margin-bottom: 6px !important;
+    cursor: pointer;
+  }
+  
+  .user-dash .profileform .update button {
+    border-radius: 8px;
+    background: linear-gradient(180deg, #af824a 0%, #c89757 100%);
+    width: 116px;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 43px;
+  }
+  
+  /* user dash css */
+  .dash-profile {
+    background-color: #fff;
+  }
+  
+  .dash-profile .dash-profileheader {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 17px 48px 0 48px;
+  }
+  
+  .dash-profile .dash-profileheader ul li button {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px;
+  }
+  
+  .dash-profile .dash-profileheader ul li .active {
+    color: #af824a;
+    font-weight: 700;
+    background-color: transparent;
+    border-bottom: 1px solid #af824a;
+    border-radius: 0;
+  }
+  
+  .dash-profile .dash-profileheader .user-dashaccess input {
+    border: 1px solid #8f8f8f;
+    height: 32px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #8f8f8f;
+    width: 161px;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .dash-profile .dash-profileheader .user-dashaccess {
+    padding-bottom: 20px;
+  }
+  
+  .dash-profile .dash-profileheader .user-dashaccess button {
+    border-radius: 5px;
+    background: linear-gradient(180deg, #af824a 0%, #f2b96e 145.55%);
+    height: 32px;
+    width: 37px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dash-profile .profiletyabdetail {
+    padding: 47px;
+  }
+  
+  .dash-profile .profiletyabdetail .card {
+    padding: 20px 30px;
+    margin-bottom: 32px;
+  }
+  
+  .dash-profile .profiletyabdetail .card h3 {
+    font-size: 16px;
+  }
+  
+  .dash-profile .profiletyabdetail .card .viewbookinglist li {
+    color: #707070;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0 12px;
+  }
+  
+  .dash-profile .profiletyabdetail .card .viewbookinglist li:first-child {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  
+  .dash-profile .profiletyabdetail button {
+    width: 141px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #af824a 0%, #c79557 100%);
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    border: 0;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dash-profile .profiletyabdetail .card .dash-in {
+    padding-bottom: 14px;
+  }
+  
+  .dash-profile .profiletyabdetail .card .bookingchecoutin {
+    padding: 19px 0px 4px 0px;
+  }
+  
+  .dash-profile .profiletyabdetail .card .bookingchecoutin .checkin h2 {
+    color: #707070;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  
+  .dash-profile .profiletyabdetail .card .bookingchecoutin .checkin h6 {
+    color: #1f1f1f;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 8px;
+    line-height: 16px;
+  }
+  
+  .dash-profile .profiletyabdetail .card .bookingchecoutin .checkin p {
+    color: #da9c4f;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 8px;
+    line-height: 13px;
+  }
+  
+  .dash-profile .profiletyabdetail .card .bookingchecoutin .checout p {
+    color: #595959;
+  }
+  
+  .dash-profile .profiletyabdetail .card .bookingchecoutin .selectshift h3 {
+    color: #0078de;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    line-height: 13px;
+    gap: 4px;
+  }
+  
+  .dash-profile .profiletyabdetail .card .bookingchecoutin .selectshift p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1f1f1f;
+    line-height: 13px;
+    margin-top: 8px;
+  }
+  
+  .dash-profile .profiletyabdetail .upcoming h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    line-height: 27px;
+  }
+  
+  .dash-profile .profiletyabdetail .upcoming p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+    margin-top: 10px;
+  }
+  
+  .dash-profile .profiletyabdetail .upcoming button {
+    margin-top: 33px;
+  }
+  
+  .dash-profile .profiletyabdetail .card .bookingchecoutin .border-bottomleft {
+    border-bottom: 0;
+  }
+  
+  /* no data css */
+  
+  .nodatafound .card {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 300px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin: 1rem; */
+    margin-bottom: 30px;
+    /* height: 200px; */
+  }
+  
+  .nodatafound .card-img {
+    /* padding-bottom: 56.25%; */
+    position: relative;
+    width: 50%;
+  }
+  
+  .nodatafound .card-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .nodatafound .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nodatafound .card-title {
+    font-size: 1.25rem;
+    line-height: 1.33;
+    font-weight: 700;
+  }
+  
+  .nodatafound .card-title.skeleton {
+    min-height: 14px;
+    border-radius: 4px;
+    /* margin-bottom: 20px !important; */
+  }
+  
+  .nodatafound .card-intro {
+    /* margin-top: 0.75rem; */
+    line-height: 1.5;
+  }
+  
+  .nodatafound .card-intro.skeleton {
+    min-height: 20px;
+    border-radius: 4px;
+    /* margin-bottom: 20px !important; */
+    min-width: 47%;
+  }
+  
+  .nodatafound p {
+    margin: 0;
+  }
+  
+  .nodatafound .card-button {
+    min-height: 40px !important;
+    margin-top: 0;
+  }
+  
+  .nodatafound .skeleton {
+    background-color: #e2e5e7;
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0)
+    );
+    background-size: 40px 100%;
+    background-repeat: no-repeat;
+    background-position: left -40px top 0;
+    -webkit-animation: shine 1s ease infinite;
+    animation: shine 1s ease infinite;
+  }
+  
+  .nodatafound .sendicon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .feturesdescription {
+    font-size: 12px;
+  }
+  
+  .staffform .error {
+    color: red;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  
+  .staffform input {
+    margin-bottom: 0 !important;
+  }
+  
+  .errormsgtoast {
+    background-color: #f7471c !important;
+  }
+  
+  .errormsg {
+    font-size: 14px;
+    color: white;
+  }
+  
+  .successmsgtoast {
+    background-color: #519f2e !important;
+  }
+  
+  .successmsg {
+    font-size: 14px;
+    color: white;
+  }
+  
+  @-webkit-keyframes shine {
+    to {
+      background-position: right -40px top 0;
+    }
+  }
+  
+  @keyframes shine {
+    to {
+      background-position: right -40px top 0;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .holidayhomedetail .duringstay .thirdpart .breakfast span {
+      font-size: 12px !important;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    /* .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(3, 1fr);
+    } */
+    .feature-home-main {
+      padding: 30px 0 40px 0 !important;
+    }
+    .dashboardproperty .propertycard .dashboardpropertycard {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    /* header css */
+    .header .navbar .navbar-nav {
+      background-color: #f6f9fb;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      /* width: 200px; */
+      top: 14px;
+      padding: 8px 8px 8px 10px;
+      z-index: 999;
+      position: relative;
+    }
+  
+    .dropdown-toggle::after {
+      display: none !important;
+    }
+  
+    .header .navbar-nav .nav-item {
+      width: 100%;
+    }
+  
+    .propertylistsidebar {
+      width: 100% !important;
+    }
+    .dashboardhome .dashboardprogress {
+      padding: 0 10px 19px 10px;
+    }
+    .header .navbar .mobilelogin {
+      background-color: var(--primary);
+      font-size: 8px;
+      border-radius: 8px;
+      color: var(--header-light);
+      height: 16px;
+      margin-left: 0;
+      width: 80px;
+    }
+  
+    .header .navbar .listproperty button {
+      font-size: 8px;
+      height: 16px;
+    }
+  
+    .header .navbar .listproperty .listnew {
+      width: 20px;
+      height: 12px;
+      font-size: 4px;
+      top: -6px;
+    }
+  
+    .header .navbar .navbar-brand img {
+      width: 70px;
+    }
+  
+    .savesearchdash .savedata .savesearchdetail {
+      padding: 16px !important;
+    }
+  
+    .cta .property {
+      padding: 20px 20px;
+      margin-bottom: 80px;
+    }
+  
+    .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .homeholidaycheck {
+      flex-direction: column;
+    }
+  
+    .homeholidaycheck .checkholiday-left {
+      width: 100% !important;
+    }
+  
+    .homeholidaycheck .checkholiday-right {
+      width: 100% !important;
+    }
+  
+    .holidaychecout .homeholidaycheck .card .emailaddform {
+      padding: 20px !important;
+    }
+  
+    .user-dash .user-dash-right {
+      width: 100% !important;
+    }
+  
+    .user-dash {
+      flex-direction: column !important;
+    }
+  
+    .user-dash .user-dash-left {
+      left: -100% !important;
+    }
+  
+    .opensidebar {
+      right: -110px !important;
+      z-index: 1;
+      border-radius: 24px 0 0 24px !important;
+      width: 252px;
+    }
+  
+    .readmorepart {
+      padding: 54px 0 0px 28px;
+    }
+  
+    .holidaysubscribe .subscribe input {
+      width: 100%;
+    }
+  
+    .holidaysubscribe {
+      padding: 30px 36px;
+      /* margin-bottom: 60px; */
+    }
+  
+    .holidaysubscribe h3 {
+      padding-bottom: 20px !important;
+    }
+  
+    /* .property-detail-search .property-detail-search-top {
+      grid-template-columns: repeat(4, 1fr) !important;
+    }
+    .property-detail-search .property-detail-search-bottom {
+      grid-template-columns: repeat(2, 1fr) !important;
+    } */
+    .searchLocation {
+      width: 100% !important;
+    }
+  
+    /* .property-detail-search .property-detail-search-bottom .area .areaInput {
+      flex-wrap: wrap;
+    } */
+    .dashboardproperty .propertycard .dashboardpropertycard .statuspro .status {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+    }
+  
+    .pdetails .pdetails-details {
+      flex-wrap: wrap;
+    }
+  
+    /* header css  */
+  }
+  
+  @media (max-width: 767px) {
+    .main-gallery .residental {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+    .progressbaar-main{
+      max-width: 100%;
+    }
+    .main-gallery .residental {
+      padding-bottom: 34px;
+    }
+  
+    .cstm-tab-content-feature-home .countryfeaturehome {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .main-gallery .img-gallery {
+      height: 158px !important;
+    }
+  
+    .main-gallery .img-gallery-info {
+      height: 158px;
+    }
+  
+    .cta .property {
+      margin-bottom: 35px;
+    }
+  
+    .propertyLogin h2 {
+      font-size: 16px !important;
+    }
+  
+    .propertyLogin .CTPUT p {
+      font-size: 16px !important;
+    }
+  
+    .holidayhomedetail .chooseroom .card .selectroom button {
+      height: 30px !important;
+      width: 120px !important;
+    }
+  
+    .propertylistprofile .profilepage input {
+      width: 147px;
+      height: 33px;
+      font-size: 12px;
+    }
+  
+    .homeholidaycheck
+      .checkholiday-left
+      .paymentmethod
+      .paymenttype
+      .paynow
+      .paynowdetail {
+      margin-left: 0px !important;
+    }
+  
+    .homeholidaycheck .checkholiday-left .paymentmethod .paymenttype {
+      padding: 20px !important;
+    }
+  
+    .homeholidaycheck .checkholiday-left .paymentmethod .paymenttype .paynow {
+      padding: 10px 0 !important;
+    }
+  
+    .homeholidaycheck
+      .checkholiday-left
+      .paymentmethod
+      .paymenttype
+      .paynow
+      button {
+      width: 100% !important;
+    }
+  
+    .dashboardhome .booking .travvleaddmodal .modal-dialog {
+      min-width: 100% !important;
+    }
+  
+    .holidayhomedetail .hotelpolicy .checkinout::after {
+      display: none;
+    }
+  
+    .homeholidaycheck
+      .checkholiday-left
+      .paymentmethod
+      .paymenttype
+      .paynow
+      .payathotel {
+      margin-top: 10px !important;
+    }
+  
+    .uploadphothos .uploadimages .uploadcard {
+      padding: 20px 10px;
+    }
+  
+    .propertylistprofile .profilepage .selectbhk {
+      padding: 4px 24px;
+    }
+  
+    .propertylistprofile .profilepage .roomdetail button {
+      height: 22px;
+      width: 22px;
+    }
+  
+    .propertylistprofile .profilepage select {
+      width: 147px;
+      height: 33px;
+      font-size: 12px;
+    }
+  
+    .propertylistprofile .selectotherrrom button {
+      min-width: 82px;
+      height: 32px;
+      padding: 0 6px;
+      font-size: 12px;
+    }
+  
+    .princinorder textarea {
+      width: auto;
+    }
+  
+    .dash-profile .profiletyabdetail .card .viewbookinglist li {
+      line-height: 18px;
+    }
+  
+    .dash-profile .profiletyabdetail .card {
+      padding: 10px !important;
+    }
+  
+    .dash-profile .profiletyabdetail .card .bookingchecoutin .border-bottomleft {
+      border-bottom: 1px solid #e3e3e3 !important;
+    }
+  
+    .dash-profile .dash-profileheader ul li button {
+      font-size: 12px !important;
+    }
+  
+    .dash-profile .dash-profileheader ul li button {
+      padding-bottom: 10px !important;
+      padding: 4px 8px;
+    }
+  
+    .dash-profile .dash-profileheader {
+      padding: 6px 18px 0px 18px !important;
+    }
+  
+    .dash-profile .profiletyabdetail .upcoming h5 {
+      font-size: 14px !important;
+      line-height: 19px !important;
+    }
+  
+    .nodatafound .card {
+      flex-direction: column;
+    }
+  
+    .popularvaction .vacationpart1 {
+      width: 100%;
+    }
+  
+    .holidayhomedetail .chooseroom .card .classic .classicicon {
+      font-size: 10px;
+    }
+  
+    .holidayhomedetail .hotelpolicy .checkinout {
+      margin: 12px 0 !important;
+    }
+  
+    .holidayhomedetail .hotelpolicy ul li {
+      font-size: 12px;
+    }
+  
+    .holidayhomedetail .chooseroom .card .classic .serviceimg {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .holidayhomedetail .chooseroom .card .classic .serviceimg .homeimg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+    .popularvaction {
+      margin: 20px 0;
+    }
+  
+    .popularvaction .vacationpart2 {
+      width: 100%;
+    }
+  
+    .readmorepart {
+      padding: 20px;
+    }
+  
+    .readmorepart button {
+      padding: 4px 10px;
+      font-size: 12px;
+    }
+  
+    .property-detail-search .property-detail-search-top {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  
+    .property-detail-search .property-detail-search-bottom {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  
+    .holidaysubscribe {
+      padding: 20px;
+      /* margin-bottom: 30px; */
+    }
+  
+    .dashboardhome .dashboardprogress {
+      gap: 20px !important;
+      padding: 20px;
+    }
+  
+    .pdetails .pdetails-details .pdetails-left {
+      width: 100% !important;
+    }
+  
+    .dashboardproperty .allproperty {
+      padding: 20px;
+    }
+  
+    .dash-profile .profiletyabdetail button {
+      width: 89px !important;
+      font-size: 10px !important;
+      height: 24px !important;
+    }
+  
+    .dash-profile .profiletyabdetail {
+      padding: 21px 14px !important;
+    }
+  
+    .pdetails .pdetails-overview {
+      flex-direction: column;
+    }
+  
+    .pdetails .pdetails-overview .left {
+      width: 100% !important;
+    }
+  
+    .pdetails .pdetails-overview .right {
+      width: 100% !important;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .thiyo-btn {
+      font-size: 8px;
+    }
+    .tabcountry .nav-link {
+      font-size: 11px;
+    }
+    .propertyLogin h2 {
+      font-size: 14px !important;
+    }
+  
+    .propertyLogin .CTPUT p {
+      font-size: 14px !important;
+    }
+  
+    .rentproperty .carddeatil .apartment {
+      padding: 15px;
+    }
+  
+    .rentproperty .carddeatil .apartment button {
+      font-size: 10px;
+      padding: 2px 8px;
+      gap: 2px;
+    }
+  
+    .dashboardproperty .propertycard img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .dashboardproperty .propertycard {
+      padding-bottom: 20px;
+    }
+    .vector .sellhomedescription {
+      max-width: 280px;
+      margin: auto;
+    }
+  
+    .dashboardproperty .propertycard .productimg {
+      width: 100%;
+    }
+  
+    .dashboardproperty .propertycard .dashboardpropertycard {
+      margin-left: 0px;
+      width: 100%;
+    }
+  
+    .user-dash .profileform .profileformgrid {
+      grid-template-columns: repeat(1, 1fr) !important;
+    }
+  
+    .dash-profile .userdashprofile {
+      padding: 10px 13px !important;
+    }
+  
+    .user-dash .profileform {
+      padding: 20px 13px 20px !important;
+    }
+  
+    .cstm-tab-main-feature-home .nav-link {
+      padding: 4px 12px;
+    }
+  
+    .cstm-card-body-main {
+      padding: 9px 11px !important;
+    }
+  
+    .card-btn {
+      height: 17px;
+    }
+  
+    .pdetails .pdetails-details .pdetails-left .card .floorPlans {
+      padding: 10px !important;
+    }
+  
+    .pdetails
+      .pdetails-details
+      .pdetails-left
+      .card
+      .floorPlans
+      .accordion-button {
+      padding: 0 !important;
+      gap: 2px !important;
+    }
+  
+    .pdetails
+      .pdetails-details
+      .pdetails-left
+      .card
+      .floorPlans
+      .accordion-button
+      svg {
+      width: 10px !important;
+    }
+  
+    .pdetails
+      .pdetails-details
+      .pdetails-left
+      .card
+      .floorPlans
+      .accordion-header
+      .pdsizedetail {
+      width: auto !important;
+      min-width: 50px !important;
+      font-size: 8px !important;
+    }
+  
+    .pdetails
+      .pdetails-details
+      .pdetails-left
+      .card
+      .floorPlans
+      .accordion-button::after {
+      margin-left: inherit;
+      height: 0;
+      width: 0;
+    }
+  
+    .pdetails .pdetails-details .pdetails-left .card .additional-details,
+    .pdetails .pdetails-details .pdetails-left .card .details {
+      padding: 10px !important;
+    }
+  
+    .pdetails .pdetails-details .pdetails-left .card .details .aedLabel {
+      font-size: 8px !important;
+    }
+  
+    .pdetails .virtulmeet .virtualdateselect {
+      font-size: 12px;
+    }
+  
+    .pdetails
+      .pdetails-details
+      .pdetails-left
+      .card
+      .floorPlans
+      .titledescription
+      input {
+      width: 100% !important;
+    }
+  
+    .pdetails
+      .pdetails-details
+      .pdetails-left
+      .card
+      .floorPlans
+      .titledescription
+      textarea {
+      width: 100% !important;
+    }
+  }
+  
+  .carddetail-map-view {
+    /* max-width: 466px; */
+    /* position: relative;
+    top: 100px; */
+  }
+  
+  .dhruv {
+    position: sticky;
+    top: 100px;
+    /* top: 400px;
+    right: 0px;
+    left: 1461px; */
+  }
+  
+  .dhruv > div {
+    /* height: 500px !important;
+    min-height: 1000px !important; */
+    min-height: 100vh !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  
+  .cstm-tab-pane {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .loader {
+    border: 0.2em solid #fff;
+    border-top-color: #b98a4f;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    animation: 1s loader linear infinite;
+    position: relative;
+    padding: 0;
+  }
+  
+  .loader:before {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: -0.2em;
+    left: -0.2em;
+    border: 0.2em solid #b98a4f;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .thumb {
+    background-color: #af824a;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    top: -5px;
+  }
+  
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .thumb::before {
+    display: none;
+  }
+  
+  .rentproperty
+    .accordion
+    .accordion-body
+    .filterPrice
+    .multi-range-slider
+    .thumb
+    .caption
+    * {
+    margin-left: 10px;
+  }
+  .guestpolicy-content table th:last-child,td{
+    white-space: initial !important;
+  }
