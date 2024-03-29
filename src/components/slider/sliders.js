@@ -8,11 +8,10 @@ function Sliders() {
   const [search, setSearch] = useState("");
   const formik = useFormik({
     initialValues: {
-      search: ""
+      search: "",
     },
     validationSchema: Yup.object({
       search: Yup.string().trim().required("search  location is required"),
-
     }),
 
     onSubmit: (values, { setSubmitted }) => {
@@ -20,6 +19,14 @@ function Sliders() {
       setSubmitting(false);
     },
   });
+  const [dropdow, setDropdown] = useState("");
+  const onclike = (name) => {
+    console.log(name, "chckname----->>>>>");
+
+    setDropdown((pre) => {
+      return pre === name ? "" : name;
+    });
+  };
   return (
     <div>
       <section className="pagerent">
@@ -59,8 +66,9 @@ function Sliders() {
                         <div className="searchLayoutTop align-items-baseline">
                           <div className="dropdown primary-dropdown">
                             <button
-                              className="btn w-100 dropdown-toggle d-flex align-items-center gap-2"
+                              className="btn w-100 dropdown-toggle d-flex align-items-center gap-2 "
                               type="button"
+                              onClick={() => onclike(0)}
                             >
                               <svg
                                 width="12"
@@ -90,7 +98,115 @@ function Sliders() {
                               </svg>
                               Rent
                             </button>
-                            <div></div>
+                            <div>
+                              <ul
+                                className={`dropdown-menu show dropdown ${
+                                  dropdow === 0 ? "d-black" : "d-none"
+                                }`}
+                              >
+                                <div className="drop-title">Purpose</div>
+                                <ul
+                                  className="nav nav-pills mb-2"
+                                  id="pills-tab"
+                                  role="tablist"
+                                >
+                                  <li
+                                    className="nav-item w-50"
+                                    role="presentation"
+                                  >
+                                    <button
+                                      className="nav-link active"
+                                      id="pills-Buy-tab"
+                                      data-bs-toggle="pill"
+                                      data-bs-target="#pills-Buy"
+                                      type="button"
+                                      role="tab"
+                                      aria-controls="pills-Buy"
+                                      aria-selected="true"
+                                    >
+                                      Buy
+                                    </button>
+                                  </li>
+                                  <li
+                                    className="nav-item w-50"
+                                    role="presentation"
+                                  >
+                                    <button
+                                      className="nav-link false"
+                                      id="pills-Rent-tab"
+                                      data-bs-toggle="pill"
+                                      data-bs-target="#pills-Rent"
+                                      type="button"
+                                      role="tab"
+                                      aria-controls="pills-Rent"
+                                      aria-selected="false"
+                                    >
+                                      Rent
+                                    </button>
+                                  </li>
+                                </ul>
+                                <div
+                                  className="tab-content p-0"
+                                  id="pills-tabContent"
+                                >
+                                  <div
+                                    className="tab-pane fade show active"
+                                    id="pills-Buy"
+                                    role="tabpanel"
+                                    aria-labelledby="pills-Buy-tab"
+                                    tabIndex="0"
+                                  >
+                                    <div className="drop-title">
+                                      Completion Status
+                                    </div>
+                                    <div className="d-flex align-items-center gap-1 flex-wrap mb-2">
+                                      <button className="outline-button-light active">
+                                        All
+                                      </button>
+                                      <button className="outline-button-light false">
+                                        Ready
+                                      </button>
+                                      <button className="outline-button-light false">
+                                        Off-Plan
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div
+                                    className="tab-pane fade show false"
+                                    id="pills-Rent"
+                                    role="tabpanel"
+                                    aria-labelledby="pills-Rent-tab"
+                                    tabIndex="0"
+                                  >
+                                    <div className="drop-title">
+                                      Rent Frequency
+                                    </div>
+                                    <div className="d-flex align-items-center gap-1 flex-wrap mb-2">
+                                      <button className="outline-button-light false">
+                                        Monthly
+                                      </button>
+                                      <button className="outline-button-light false">
+                                        Weekly
+                                      </button>
+                                      <button className="outline-button-light false">
+                                        Daily
+                                      </button>
+                                      <button className="outline-button-light false">
+                                        Any
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="d-flex gap-2 mt-2 justify-content-between align-content-center">
+                                  <button className="outline-button border-0">
+                                    RESET
+                                  </button>
+                                  <button className="gradient-button border-0">
+                                    DONE
+                                  </button>
+                                </div>
+                              </ul>
+                            </div>
                           </div>
                           <div>
                             <div className="searchLocation">
@@ -128,7 +244,7 @@ function Sliders() {
                                       </div>
                                       <div
                                         className=" css-19bb58m"
-                                        data-value=""
+                                        defaultValue=""
                                       >
                                         <input
                                           className=""
@@ -197,12 +313,13 @@ function Sliders() {
                               </svg>
                             </div>
                           </div>
-                          <div className="dropdown primary-dropdown primary-dropdown-lg">
+                          <div className="dropdown primary-dropdown primary-dropdown-lg ">
                             <button
-                              className="btn w-100 dropdown-toggle d-flex align-items-center gap-2"
+                              className="btn w-100  dropdown-toggle d-flex align-items-center gap-2 show  border-0"
                               type="button"
                               data-bs-toggle="dropdown"
                               aria-expanded="false"
+                              onClick={() => onclike(1)}
                             >
                               <svg
                                 width="12"
@@ -221,71 +338,52 @@ function Sliders() {
                               </svg>
                               Property
                             </button>
-                            <ul className="dropdown-menu">
+                            <ul
+                              className={`dropdown-menu show ${
+                                dropdow === 1 ? "d-black" : "d-none"
+                              }`}
+                              style={{
+                                position: "absolute",
+                                inset: "0px auto auto 0px",
+                                margin: "0px",
+                                transform: "translate3d(0px, 35.2px, 0px)",
+                              }}
+                              data-popper-placement="bottom-start"
+                            >
                               <div className="drop-title">Residential</div>
                               <div className="property-group">
-                                <button
-                                  className="outline-button-light w-100 outline-button-light-sm text-center
-                           false"
-                                >
+                                <button className="outline-button-light w-100 outline-button-light-sm text-center false">
                                   Apartment
                                 </button>
-                                <button
-                                  className="outline-button-light w-100 outline-button-light-sm text-center
-                           false"
-                                >
+                                <button className="outline-button-light w-100 outline-button-light-sm text-center false">
                                   Villa
                                 </button>
-                                <button
-                                  className="outline-button-light w-100 outline-button-light-sm text-center
-                           false"
-                                >
+                                <button className="outline-button-light w-100 outline-button-light-sm text-center false">
                                   Townhouse
                                 </button>
-                                <button
-                                  className="outline-button-light w-100 outline-button-light-sm text-center
-                           false"
-                                >
+                                <button className="outline-button-light w-100 outline-button-light-sm text-center false">
                                   Penthouse
                                 </button>
-                                <button
-                                  className="outline-button-light w-100 outline-button-light-sm text-center
-                           false"
-                                >
+                                <button className="outline-button-light w-100 outline-button-light-sm text-center false">
                                   Hotel Apartment
                                 </button>
                               </div>
                               <hr />
                               <div className="drop-title">Commercial</div>
                               <div className="property-group">
-                                <button
-                                  className="outline-button-light w-100 outline-button-light-sm text-center
-                           false"
-                                >
+                                <button className="outline-button-light w-100 outline-button-light-sm text-center false">
                                   Office
                                 </button>
-                                <button
-                                  className="outline-button-light w-100 outline-button-light-sm text-center
-                           false"
-                                >
+                                <button className="outline-button-light w-100 outline-button-light-sm text-center false">
                                   Warehouse
                                 </button>
-                                <button
-                                  className="outline-button-light w-100 outline-button-light-sm text-center
-                           false"
-                                >
+                                <button className="outline-button-light w-100 outline-button-light-sm text-center false">
                                   Shop
                                 </button>
-                                <button
-                                  className="outline-button-light w-100 outline-button-light-sm text-center
-                           false"
-                                >
+                                <button className="outline-button-light w-100 outline-button-light-sm text-center false">
                                   Hotel
                                 </button>
-                                <button
-                                  className="outline-button-light w-100 outline-button-light-sm text-center
-                           false"
-                                >
+                                <button className="outline-button-light w-100 outline-button-light-sm text-center false">
                                   Mixed Use Land
                                 </button>
                               </div>
@@ -297,18 +395,88 @@ function Sliders() {
                             <button
                               className="btn w-100 dropdown-toggle d-flex align-items-center gap-2"
                               type="button"
+                              onClick={() => onclike(2)}
                             >
                               <p className="ellipsis">
                                 {" "}
                                 &nbsp;beds&nbsp; &nbsp;baths&nbsp;
                               </p>
                             </button>
-                            <div></div>
+                            <div>
+                              <ul
+                                className={`dropdown-menu show ${
+                                  dropdow === 2 ? "d-black" : "d-none"
+                                }`}
+                              >
+                                <div className="drop-title">beds</div>
+                                <div className="d-flex align-items-center gap-1 flex-wrap mb-2">
+                                  <button className="outline-button-light ">
+                                    Studio
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    1
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    2
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    3
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    4
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    5
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    6
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    7
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    8+
+                                  </button>
+                                </div>
+                                <hr />
+                                <div className="drop-title">baths</div>
+                                <div className="d-flex align-items-center gap-1 flex-wrap mb-2">
+                                  <button className="outline-button-light ">
+                                    1
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    2
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    3
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    4
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    5
+                                  </button>
+                                  <button className="outline-button-light ">
+                                    6+
+                                  </button>
+                                </div>
+                                <hr />
+                                <div className="d-flex justify-content-between align-content-center gap-2">
+                                  <button className="outline-button border-0">
+                                    Reset
+                                  </button>
+                                  <button className="gradient-button border-0">
+                                    Done
+                                  </button>
+                                </div>
+                              </ul>
+                            </div>
                           </div>
                           <div className="dropdown primary-dropdown ">
                             <button
                               className="01 btn w-100 dropdown-toggle dropdown-toggle-cs d-flex align-items-center gap-2"
                               type="button"
+                              onClick={() => onclike(3)}
                             >
                               <svg
                                 width="12"
@@ -332,12 +500,177 @@ function Sliders() {
                               </svg>
                               Area (Sq.ft.)
                             </button>
-                            <div></div>
+                            <div>
+                              <ul
+                                className={`dropdown-menu show ${
+                                  dropdow === 3 ? "d-black" : "d-none"
+                                }`}
+                              >
+                                <div className="d-flex justify-content-between align-content-center gap-2 mb-2">
+                                  <div className="w-100">
+                                    <p>Minimum</p>
+                                    <div className=" css-b62m3t-container">
+                                      <span
+                                        id="react-select-17-live-region"
+                                        className="css-7pg0cj-a11yText"
+                                      ></span>
+                                      <span
+                                        aria-live="polite"
+                                        aria-atomic="false"
+                                        aria-relevant="additions text"
+                                        className="css-7pg0cj-a11yText"
+                                      ></span>
+                                      <div className=" css-13cymwt-control">
+                                        <div className=" css-hlgwow">
+                                          <div className=" css-1dimb5e-singleValue"></div>
+                                          <div
+                                            className=" css-19bb58m"
+                                            defaultValue=""
+                                          >
+                                            <input
+                                              className=""
+                                              autoCapitalize="none"
+                                              autoComplete="off"
+                                              autoCorrect="off"
+                                              id="react-select-17-input"
+                                              spellCheck="false"
+                                              tabIndex="0"
+                                              aria-autocomplete="list"
+                                              aria-expanded="false"
+                                              aria-haspopup="true"
+                                              role="combobox"
+                                              type="text"
+                                              defaultValue=""
+                                              style={{
+                                                color: "inherit",
+                                                background: "0px center",
+                                                opacity: 1,
+                                                width: "100%",
+                                                gridArea: "1 / 2",
+                                                font: "inherit",
+                                                minWidth: "2px",
+                                                border: "0px",
+                                                margin: "0px",
+                                                outline: "0px",
+                                                padding: "0px",
+                                              }}
+                                            />
+                                          </div>
+                                        </div>
+                                        <div className=" css-1wy0on6">
+                                          <span className=" css-1u9des2-indicatorSeparator"></span>
+                                          <div
+                                            className=" css-1xc3v61-indicatorContainer"
+                                            aria-hidden="true"
+                                          >
+                                            <svg
+                                              height="20"
+                                              width="20"
+                                              viewBox="0 0 20 20"
+                                              aria-hidden="true"
+                                              focusable="false"
+                                              className="css-8mmkcg"
+                                            >
+                                              <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="w-100">
+                                    <p>Maximum</p>
+                                    <div className=" css-b62m3t-container">
+                                      <span
+                                        id="react-select-18-live-region"
+                                        className="css-7pg0cj-a11yText"
+                                      ></span>
+                                      <span
+                                        aria-live="polite"
+                                        aria-atomic="false"
+                                        aria-relevant="additions text"
+                                        className="css-7pg0cj-a11yText"
+                                      ></span>
+                                      <div className=" css-13cymwt-control">
+                                        <div className=" css-hlgwow">
+                                          <div className=" css-1dimb5e-singleValue"></div>
+                                          <div
+                                            className=" css-19bb58m"
+                                            defaultValue=""
+                                          >
+                                            <input
+                                              className=""
+                                              autoCapitalize="none"
+                                              autoComplete="off"
+                                              autoCorrect="off"
+                                              id="react-select-18-input"
+                                              spellCheck="false"
+                                              tabIndex="0"
+                                              aria-autocomplete="list"
+                                              aria-expanded="false"
+                                              aria-haspopup="true"
+                                              role="combobox"
+                                              type="text"
+                                              defaultValue=""
+                                              style={{
+                                                color: "inherit",
+                                                background: "0px center",
+                                                opacity: 1,
+                                                width: "100%",
+                                                gridArea: "1 / 2",
+                                                font: "inherit",
+                                                minWidth: "2px",
+                                                border: "0px",
+                                                margin: "0px",
+                                                outline: "0px",
+                                                padding: "0px",
+                                              }}
+                                            />
+                                          </div>
+                                        </div>
+                                        <div className=" css-1wy0on6">
+                                          <span className=" css-1u9des2-indicatorSeparator"></span>
+                                          <div
+                                            className=" css-1xc3v61-indicatorContainer"
+                                            aria-hidden="true"
+                                          >
+                                            <svg
+                                              height="20"
+                                              width="20"
+                                              viewBox="0 0 20 20"
+                                              aria-hidden="true"
+                                              focusable="false"
+                                              className="css-8mmkcg"
+                                            >
+                                              <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                            </svg>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="d-flex justify-content-between align-content-center gap-2">
+                                  <button
+                                    type="button"
+                                    className="outline-button border-0"
+                                  >
+                                    Reset
+                                  </button>
+                                  <button
+                                    type="button"
+                                    className="gradient-button border-0"
+                                  >
+                                    Done
+                                  </button>
+                                </div>
+                              </ul>
+                            </div>
                           </div>
                           <div className="dropdown primary-dropdown ">
                             <button
                               className="01 btn w-100 dropdown-toggle dropdown-toggle-cs d-flex align-items-center gap-2"
-                              type="button"
+                              type="button"  onClick={()=>onclike(4)}
                             >
                               <svg
                                 width="12"
@@ -361,7 +694,174 @@ function Sliders() {
                               </svg>
                               Price (AED)
                             </button>
-                            <div></div>
+                            <div>
+                              <div>
+                                <ul
+                                  className={`dropdown-menu show ${
+                                    dropdow === 4 ? "d-black" : "d-none"
+                                  }`}
+                                >
+                                  <div className="d-flex justify-content-between align-content-center gap-2 mb-2">
+                                    <div className="w-100">
+                                      <p>Minimum</p>
+                                      <div className=" css-b62m3t-container">
+                                        <span
+                                          id="react-select-17-live-region"
+                                          className="css-7pg0cj-a11yText"
+                                        ></span>
+                                        <span
+                                          aria-live="polite"
+                                          aria-atomic="false"
+                                          aria-relevant="additions text"
+                                          className="css-7pg0cj-a11yText"
+                                        ></span>
+                                        <div className=" css-13cymwt-control">
+                                          <div className=" css-hlgwow">
+                                            <div className=" css-1dimb5e-singleValue"></div>
+                                            <div
+                                              className=" css-19bb58m"
+                                              defaultValue=""
+                                            >
+                                              <input
+                                                className=""
+                                                autoCapitalize="none"
+                                                autoComplete="off"
+                                                autoCorrect="off"
+                                                id="react-select-17-input"
+                                                spellCheck="false"
+                                                tabIndex="0"
+                                                aria-autocomplete="list"
+                                                aria-expanded="false"
+                                                aria-haspopup="true"
+                                                role="combobox"
+                                                type="text"
+                                                defaultValue=""
+                                                style={{
+                                                  color: "inherit",
+                                                  background: "0px center",
+                                                  opacity: 1,
+                                                  width: "100%",
+                                                  gridArea: "1 / 2",
+                                                  font: "inherit",
+                                                  minWidth: "2px",
+                                                  border: "0px",
+                                                  margin: "0px",
+                                                  outline: "0px",
+                                                  padding: "0px",
+                                                }}
+                                              />
+                                            </div>
+                                          </div>
+                                          <div className=" css-1wy0on6">
+                                            <span className=" css-1u9des2-indicatorSeparator"></span>
+                                            <div
+                                              className=" css-1xc3v61-indicatorContainer"
+                                              aria-hidden="true"
+                                            >
+                                              <svg
+                                                height="20"
+                                                width="20"
+                                                viewBox="0 0 20 20"
+                                                aria-hidden="true"
+                                                focusable="false"
+                                                className="css-8mmkcg"
+                                              >
+                                                <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                              </svg>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div className="w-100">
+                                      <p>Maximum</p>
+                                      <div className=" css-b62m3t-container">
+                                        <span
+                                          id="react-select-18-live-region"
+                                          className="css-7pg0cj-a11yText"
+                                        ></span>
+                                        <span
+                                          aria-live="polite"
+                                          aria-atomic="false"
+                                          aria-relevant="additions text"
+                                          className="css-7pg0cj-a11yText"
+                                        ></span>
+                                        <div className=" css-13cymwt-control">
+                                          <div className=" css-hlgwow">
+                                            <div className=" css-1dimb5e-singleValue"></div>
+                                            <div
+                                              className=" css-19bb58m"
+                                              defaultValue=""
+                                            >
+                                              <input
+                                                className=""
+                                                autoCapitalize="none"
+                                                autoComplete="off"
+                                                autoCorrect="off"
+                                                id="react-select-18-input"
+                                                spellCheck="false"
+                                                tabIndex="0"
+                                                aria-autocomplete="list"
+                                                aria-expanded="false"
+                                                aria-haspopup="true"
+                                                role="combobox"
+                                                type="text"
+                                                defaultValue=""
+                                                style={{
+                                                  color: "inherit",
+                                                  background: "0px center",
+                                                  opacity: 1,
+                                                  width: "100%",
+                                                  gridArea: "1 / 2",
+                                                  font: "inherit",
+                                                  minWidth: "2px",
+                                                  border: "0px",
+                                                  margin: "0px",
+                                                  outline: "0px",
+                                                  padding: "0px",
+                                                }}
+                                              />
+                                            </div>
+                                          </div>
+                                          <div className=" css-1wy0on6">
+                                            <span className=" css-1u9des2-indicatorSeparator"></span>
+                                            <div
+                                              className=" css-1xc3v61-indicatorContainer"
+                                              aria-hidden="true"
+                                            >
+                                              <svg
+                                                height="20"
+                                                width="20"
+                                                viewBox="0 0 20 20"
+                                                aria-hidden="true"
+                                                focusable="false"
+                                                className="css-8mmkcg"
+                                              >
+                                                <path d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"></path>
+                                              </svg>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div className="d-flex justify-content-between align-content-center gap-2">
+                                    <button
+                                      type="button"
+                                      className="outline-button border-0"
+                                    >
+                                      Reset
+                                    </button>
+                                    <button
+                                      type="button"
+                                      className="gradient-button border-0"
+                                    >
+                                      Done
+                                    </button>
+                                  </div>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                           <div className="listpropertysearch">
                             <div className="listproperty d-none d-lg-block position-relative">
@@ -378,11 +878,13 @@ function Sliders() {
                                     fill="white"
                                   ></path>
                                 </svg>
-                                <Link className="searchaa" href="/properties"
-                                 onChange={formik.handleChange}
-                                 onBlur={formik.handleBlur}
-                                 value={formik.values.search}
-                                 onSubmit={formik.handleSubmit}
+                                <Link
+                                  className="searchaa"
+                                  href="/properties"
+                                  onChange={formik.handleChange}
+                                  onBlur={formik.handleBlur}
+                                  value={formik.values.search}
+                                  onSubmit={formik.handleSubmit}
                                 >
                                   Search
                                 </Link>

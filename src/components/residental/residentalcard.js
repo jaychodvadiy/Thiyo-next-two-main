@@ -90,7 +90,7 @@ function Residentalcard() {
                     the house price.
                   </p>
                   <div className="line">
-                    <Image src={vector} alt="vector" />
+                    {/* <Image src={vector} alt="vector" /> */}
                   </div>
                 </div>
               </div>
