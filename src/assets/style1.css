@@ -59,6 +59,9 @@
   z-index: 9;
   padding: 92px 0 82px;
 }
+/* .bderitem{
+  border: none;
+} */
 .contain {
   padding: 92px 0px 82px;
 }
@@ -493,8 +496,9 @@ h3 {
   line-height: 21px;
 } */
 .ctn {
-  position: relative;
-  top: 102px;
+  /* position: relative;
+  top: 102px; */
+  margin-top: 6pc;
 }
 
 /* TESTIMONIALSWhat our clients are saying */

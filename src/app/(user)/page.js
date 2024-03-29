@@ -6,7 +6,7 @@ import Customecard from "@/components/customercard/customecard";
 import Lookinghome from "@/components/lookinghoom/lookinghome";
 import Residentalcard from "@/components/residental/residentalcard";
 import Sliders from "@/components/slider/sliders";
-import Image from "next/image";
+// import Image from "next/image";
 // import styles from "./page.module.css";
 
 export default function Home() {

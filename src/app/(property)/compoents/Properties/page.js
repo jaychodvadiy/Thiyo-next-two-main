@@ -234,7 +234,6 @@ function Slider_Page() {
                           <div className=" css-13cymwt-control">
                             <div className=" css-hlgwow">
                               <div
-                                className=" css-1jqq78o-placeholder"
                                 id="react-select-2-placeholder"
                               >
                                 Property

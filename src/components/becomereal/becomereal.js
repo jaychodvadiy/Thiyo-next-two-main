@@ -17,7 +17,7 @@ function BecomeReal() {
                 </p>
                 <Link href="/register">
                   <button
-                    className="btn btncolornow btn-outline-secondary rounded-xl"
+                    className="btn btncolornow btn-outline-secondary rounded-xl "
                     type="submit"
                   >
                     REGISTER NOW
