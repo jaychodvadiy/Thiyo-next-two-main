@@ -6,12 +6,19 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 function Sliders() {
   const [search, setSearch] = useState("");
+  const [clickedButton, setClickedButton] = useState("");
   const formik = useFormik({
     initialValues: {
       search: "",
     },
+    // validationSchema: Yup.object({
+    //   search: Yup.string().trim().required("search  location is required"),
+    // }),
     validationSchema: Yup.object({
-      search: Yup.string().trim().required("search  location is required"),
+      search:
+        clickedButton !== "resendotp"
+          ? Yup.string().trim().required("search  location is required")
+          : "",
     }),
 
     onSubmit: (values, { setSubmitted }) => {
@@ -21,8 +28,7 @@ function Sliders() {
   });
   const [dropdow, setDropdown] = useState("");
   const onclike = (name) => {
-    console.log(name, "chckname----->>>>>");
-
+    // console.log(name, "chckname----->>>>>");
     setDropdown((pre) => {
       return pre === name ? "" : name;
     });
@@ -670,7 +676,8 @@ function Sliders() {
                           <div className="dropdown primary-dropdown ">
                             <button
                               className="01 btn w-100 dropdown-toggle dropdown-toggle-cs d-flex align-items-center gap-2"
-                              type="button"  onClick={()=>onclike(4)}
+                              type="button"
+                              onClick={() => onclike(4)}
                             >
                               <svg
                                 width="12"
@@ -888,11 +895,10 @@ function Sliders() {
                                 >
                                   Search
                                 </Link>
-                                {formik.touched.search &&
-                                formik.errors.search ? (
-                                  <div>{formik.errors.search}</div>
-                                ) : null}
                               </button>
+                              {formik.touched.search && formik.errors.search ? (
+                                <div style={{color:"red"}}>{formik.errors.search}</div>
+                              ) : null}
                             </div>
                           </div>
                         </div>
