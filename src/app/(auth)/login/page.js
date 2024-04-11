@@ -13,7 +13,7 @@ import * as Yup from "yup";
 
 function Loging() {
   const [clickedButton, setClickedButton] = useState("");
-  const [email, setEmail] =useState("")
+  const [email, setEmail] = useState("");
 
   const formik = useFormik({
     initialValues: {
@@ -33,11 +33,12 @@ function Loging() {
   console.log(formik.values); // Debug form values
   console.log(formik.errors); // Debug form errors
   console.log(formik.touched); // Debug touched fields
+  console.log(formik.false); // Debug touched fields
   return (
     <div>
       <div className="container-fluid">
-        <div className="row">
-          <div className="col-sm-6 h-full auth">
+        <div className="row auth">
+          <div class="col-lg-6 left--img">
             <div className="left--img">
               <div className="img">
                 <Image src={beautiful} alt="Beautiful Scene" />
@@ -45,8 +46,8 @@ function Loging() {
             </div>
           </div>
           <div className="col-sm-6 ">
-            <div className=" row auth--content">
-              <form onSubmit={formik.handleSubmit}>
+            <div className="row auth--content">
+              <form className="staffform" onSubmit={formik.handleSubmit}>
                 <div className="auth--logo d-flex justify-content-center my-5">
                   <Image
                     className="img-fluid"
@@ -54,14 +55,14 @@ function Loging() {
                     alt="ThiyoLogo"
                   />
                 </div>
-                <div className="col-12 mb-4 ">
+                {/* <div className="col-12 mb-4 ">
                   <label
                     htmlFor="exampleFormControlInput1"
-                    className="form-lalbe mb-3"
+                    className="form-label mb-3"
                   >
                     Email Address
                   </label>
-                  <div className="emailadder position-relative sendotp">
+                  <div className="position-relative sendOtp">
                     <input
                       className="form-controles"
                       id="email"
@@ -83,7 +84,26 @@ function Loging() {
                   {formik.touched.email && formik.errors.email ? (
                     <div style={{ color: "red" }}>{formik.errors.email}</div>
                   ) : null}
+                </div> */}
+                <div class="col-12 mb-3">
+                  <label for="email" class="form-label">
+                    Email Address
+                  </label>
+                  <div class="relative sendOtp">
+                    <input
+                      class="form-control"
+                      id="email"
+                      placeholder="Email Address"
+                      type="text"
+                      value=""
+                      name="email"
+                    />
+                    <button type="submit" class=" LockIcon">
+                      Send OTP
+                    </button>
+                  </div>
                 </div>
+
                 <div className="col-12 mb-3">
                   <label htmlFor="">Enter OTP, Recieved on your Email ID</label>
                   <br />

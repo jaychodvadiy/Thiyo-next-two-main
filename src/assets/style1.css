@@ -430,7 +430,7 @@ h3 {
   text-align: center !important;
   font-size: 9px;
 }
-.lastfree{
+.lastfree {
 }
 .navbar-collapse {
   flex-basis: 100%;
@@ -710,7 +710,6 @@ footer .social h5 {
   color: #a2aab8;
   height: 48px;
 }
-
 .form-control {
   display: block;
   width: 100%;
@@ -764,20 +763,22 @@ input {
   cursor: pointer;
   margin-bottom: 11px;
 }
-.LockIcon {
+.auth .sendOtp .LockIcon {
   background-color: #deaa62;
-  padding: 10px 10px;
+  padding: 0px 11px 0px 10px;
   border-radius: 4px;
   font-family: Open Sans;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 20px;
+  /* font-weight: 600; */
   line-height: 20px;
-  color: #fff;
-  top: 0px;
-  text-align: end;
-  right: 114px;
+  width: 158px;
+  color: #ffffff;
+  top: 0;
+  right: 0;
+  height: 48px;
   border: none;
-  position: absolute;
+  position: relative;
+  left: -10px;
 }
 .lockicon {
   background-color: #deaa62;
@@ -791,10 +792,11 @@ input {
   align-items: end;
   right: 0;
   border: none;
+  /* position: relative; */
+  height: 48px;
+  width: 118px;
   position: relative;
-  left: 35pc;
-  top: -47px;
-  height: 46px;
+  left: -10px;
 }
 
 .thiyoiconsa {
@@ -940,6 +942,7 @@ span {
 }
 
 /* Register */
+
 .auth label {
   font-size: 14px;
   font-weight: 600;
