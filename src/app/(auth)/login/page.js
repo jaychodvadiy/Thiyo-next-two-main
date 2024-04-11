@@ -37,7 +37,7 @@ function Loging() {
     <div>
       <div className="container-fluid">
         <div className="row auth">
-          <div className="col-lg-6 left--img">
+          <div class="col-lg-6 left--img">
             <div className="left--img">
               <div className="img">
                 <Image src={beautiful} alt="Beautiful Scene" />
@@ -84,20 +84,20 @@ function Loging() {
                     <div style={{ color: "red" }}>{formik.errors.email}</div>
                   ) : null}
                 </div> */}
-                <div className="col-12 mb-3">
-                  <label for="email" className="form-label">
+                <div class="col-12 mb-3">
+                  <label for="email" class="form-label">
                     Email Address
                   </label>
-                  <div className="relative sendOtp">
+                  <div class="relative sendOtp">
                     <input
-                      className="form-control"
+                      class="form-control"
                       id="email"
                       placeholder="Email Address"
                       type="text"
                       value=""
                       name="email"
                     />
-                    <button type="submit" className=" LockIcon">
+                    <button type="submit" class=" LockIcon">
                       Send OTP
                     </button>
                   </div>
