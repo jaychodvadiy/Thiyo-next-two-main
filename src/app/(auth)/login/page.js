@@ -33,6 +33,7 @@ function Loging() {
   console.log(formik.values); // Debug form values
   console.log(formik.errors); // Debug form errors
   console.log(formik.touched); // Debug touched fields
+  console.log(formik.false); // Debug touched fields
   return (
     <div>
       <div className="container-fluid">
