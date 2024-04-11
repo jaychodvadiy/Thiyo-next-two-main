@@ -318,6 +318,9 @@
   .auth .sendOtp input {
     padding-right: 120px;
   }
+  .sendOtp{
+    display: flex;
+  }
   .auth .sendOtp .LockIcon {
     background-color: #deaa62;
     padding: 15px 20px;

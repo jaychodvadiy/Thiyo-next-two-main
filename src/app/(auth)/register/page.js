@@ -211,6 +211,7 @@ function Register() {
                     >
                       Email Address
                     </label>
+                    <div className="sendOtp">
                     <input
                       type="email"
                       placeholder="Enter your email address"
@@ -224,6 +225,7 @@ function Register() {
                     <button type="submit" className="absolute lockicon">
                       Send OTP
                     </button>
+                    </div>
                     {formik.touched.email && formik.errors.email ? (
                       <div style={{ color: "red" }}>{formik.errors.email}</div>
                     ) : null}
