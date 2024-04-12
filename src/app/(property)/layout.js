@@ -1,8 +1,6 @@
 
 import { Inter } from "next/font/google";
 import "../globals.css";
-// import '../../assets/style1.css'
-// import '../../assets/style2.css'
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 

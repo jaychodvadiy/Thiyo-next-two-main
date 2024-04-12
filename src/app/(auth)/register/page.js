@@ -7,33 +7,14 @@ import Googleicons from "../../../assets/images/googleicon.png";
 import facebook from "../../../assets/images/facebook.png";
 import Link from "next/link";
 import PhoneInput from "react-phone-input-2";
-import { useEffect, useState } from "react";
-// import { useRouter } from "next/router";
-import { data } from "autoprefixer";
-// import { all } from "yap";
-import flags from "react-phone-number-input/flags";
+import { useState } from "react";
 import "react-phone-input-2/lib/style.css";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 import axios from "axios";
 
 function Register() {
-  // const initialValues = { fullname: "", email: "", number: "" };
-
-  const [fullName, SetFullName] = useState("");
-  const [email, SetEmail] = useState("");
-  const [number, SetNumber] = useState("");
-  const [errors, setErrors] = useState({});
-  const [formErrors, setFormErrors] = useState({});
-  const [formValue, setFormValue] = useState();
-  const [dropdown, setDropdown] = useState("");
-  const [state, setState] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState(""); // This will be used to show a message if the submission is successful
   const [submitted, setSubmitted] = useState();
-  const [accestockn, setAccestockn] = useState("");
-  const [clickedButton, setClickedButton] = useState(null);
-
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -41,78 +22,33 @@ function Register() {
       email: "",
     },
     validationSchema: Yup.object({
-      fullName:
-        clickedButton !== "resendotp"
-          ? Yup.string().required("Full Name is required")
-          : "",
-      number:
-        clickedButton !== "resendotp"
-          ? Yup.string().required("Mobile number is required")
-          : "",
-      email:
-        clickedButton !== "resendotp"
-          ? Yup.string().email("Invalid email").required("Email is required")
-          : "",
+      fullName: Yup.string().required("Full Name is required"),
+      number: Yup.string().required("Mobile number is required"),
+      email: Yup.string().email("Invalid email").required("Email is required"),
     }),
 
-    onSubmit: (values,action) => {
-      console.log(values); // Check form values in console
+    onSubmit: (values, action) => {
+      console.log(values); 
       setSubmitted(false);
       action.resetForm();
+      axios
+        .post("", {})
+        .then((response) => {
+          if (response.status === 200) {
+            toust.success("Register Successfully");
+            history.push("/login");
+          }
+          else{}
+          console.log(response)
+        })
+        .catch((error) => {
+          console.log(error,"henadlclick------>>>>>>>")
+        });
     },
   });
-  console.log(formik.values); // Debug form values
-  console.log(formik.errors); // Debug form errors
-  console.log(formik.touched); // Debug touched fields  
-
- const hendleClick=()=>{
-  // try{
-  //     axios.
-  // }
-  // catch{
-
-  // }
- }
-
-  // useEffect(() => {
-  //   if (localStorage.getItem("address")) {
-  //     setConnectionAddress(localStorage.getItem("address"));
-  //   }
-  // }, []);
-
-  // const handleClick = () => {
-  //   console.log(data?.current?.value, "initial value");
-  //   const error = {};
-  //   if (!fullName) {
-  //     error.fullname = "fullname is reqiuer";
-  //   }
-  //   if (!email) {
-  //     error.email = "Email is reqiuer";
-  //   }
-  //   if (!number) {
-  //     error.number = "Email is reqiuer";
-  //   }
-  //   if (Object.keys(errors).length > 0) {
-  //     setFormErrors(errors);
-  //     return;
-  //   }
-  //   localStorage.setItem("fullname", fullName);
-  //   localStorage.setItem("email", email);
-  //   localStorage.setItem("number", number);
-  //   console.log(localStorage.getItem("inputValue"), "******");
-  //   setFormValue(initialValues);
-  //   setFormErrors({});
-  //   // router.push('/login');
-  // };
-  // console.log(`fullname:${fullName} email:${email} number:${number}`);
-
-  // const handClick = (name) => {
-  //   console.log(name, "checking------->>>>>");
-  //   setDropdown((prev) => {
-  //     return prev === name ? "" : name;
-  //   });
-  // };
-
+  console.log(formik.values); 
+  console.log(formik.errors); 
+  console.log(formik.touched); 
   return (
     <div>
       <section>
@@ -160,15 +96,12 @@ function Register() {
                     ) : null}
                   </div>
                   <div className="col-12 mb-3">
-                    <label
-                      htmlFor="mobile"
-                      className="form-label"
-                    >
+                    <label htmlFor="mobile" className="form-label">
                       Mobile Number
                     </label>
 
                     <PhoneInput
-                    // defdefaultCountry={"in"}
+                      // defdefaultCountry={"in"}
                       country={"us"}
                       id="number"
                       name="number"
@@ -212,19 +145,19 @@ function Register() {
                       Email Address
                     </label>
                     <div className="sendOtp">
-                    <input
-                      type="email"
-                      placeholder="Enter your email address"
-                      className="form-control"
-                      id="email"
-                      name="email"
-                      onChange={formik.handleChange}
-                      onBlur={formik.handleBlur}
-                      value={formik.values.email}
-                    />
-                    <button type="submit" className="absolute lockicon">
-                      Send OTP
-                    </button>
+                      <input
+                        type="email"
+                        placeholder="Enter your email address"
+                        className="form-control"
+                        id="email"
+                        name="email"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.email}
+                      />
+                      <button type="submit" className="absolute lockicon">
+                        Send OTP
+                      </button>
                     </div>
                     {formik.touched.email && formik.errors.email ? (
                       <div style={{ color: "red" }}>{formik.errors.email}</div>
@@ -298,7 +231,7 @@ function Register() {
                     </div>
                   </div>
                   <h6 className="no-account text-center">
-                    Already have an Account, Click to{" "}
+                    Already have an Account, Click to
                     <Link href="/login">
                       <span className="singup">LOGIN</span>
                     </Link>

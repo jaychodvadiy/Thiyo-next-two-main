@@ -39,6 +39,7 @@
     "react-select": "^5.8.0",
     "react-social-login-buttons": "^4.1.0",
     "react-tel-input": "^0.1.14",
+    "react-toastify": "^10.0.5",
     "reactjs-social-login": "^2.6.3",
     "sharp": "^0.33.2",
     "swiper": "^11.0.7",
