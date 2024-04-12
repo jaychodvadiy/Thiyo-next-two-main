@@ -1,12 +1,9 @@
 "use client";
 import ThiyoLogo from "../assets/images/logofooter.25bbaa5d.png";
-// import instgaram from "../assets/images/bx_bxl-instagram-alt.png";
-// import Faecbook from "../assets/images/typcn_social-facebook.png";
-// import twitter from "../assets/images/typcn_social-twitter.png";
 import IosApp from "../assets/images/image 60.png";
 import AndroidApp from "../assets/images/image 61.png";
 import Image from "next/image";
-// import linked from "../assets/images/bx-inkedin.png";
+
 import { useState } from "react";
 function PageFooter() {
   const [dropdown, setDropdown] = useState("");

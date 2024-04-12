@@ -1,7 +1,6 @@
 "use client";
-// Loging.js
+
 import React, { useState } from "react";
-// import "../../../style/thiyo.css";
 import Image from "next/image";
 import ThiyoLogo from "../../../assets/images/logofooter.25bbaa5d.png";
 import Googleicons from "../../../assets/images/googleicon.png";
@@ -12,28 +11,22 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 function Loging() {
-  const [clickedButton, setClickedButton] = useState("");
-  const [email, setEmail] = useState("");
 
   const formik = useFormik({
     initialValues: {
       email: "",
     },
     validationSchema: Yup.object({
-      email:
-        clickedButton !== "resendotp"
-          ? Yup.string().trim().required("Email is reqiuer")
-          : "",
+      email: Yup.string().trim().required("Email is reqiuer"),
     }),
     onSubmit: (values) => {
-      console.log(values); // Check form values in console
+      console.log(values); 
       setSubmitted(false);
     },
   });
-  console.log(formik.values); // Debug form values
-  console.log(formik.errors); // Debug form errors
-  console.log(formik.touched); // Debug touched fields
-  console.log(formik.false); // Debug touched fields
+  console.log(formik.values); 
+  console.log(formik.errors); 
+  console.log(formik.touched); 
   return (
     <div>
       <div className="container-fluid">
@@ -55,53 +48,29 @@ function Loging() {
                     alt="ThiyoLogo"
                   />
                 </div>
-                {/* <div className="col-12 mb-4 ">
-                  <label
-                    htmlFor="exampleFormControlInput1"
-                    className="form-label mb-3"
-                  >
-                    Email Address
-                  </label>
-                  <div className="position-relative sendOtp">
-                    <input
-                      className="form-controles"
-                      id="email"
-                      placeholder="Enter your email address"
-                      type="email"
-                      defaultValue=""
-                      name="email"
-                      onChange={formik.handleChange}
-                      onBlur={formik.handleBlur}
-                      value={formik.values.email}
-                    />
-                    <button
-                      type="submit"
-                      className="position-position-absolute LockIcon"
-                    >
-                      Send OTP
-                    </button>
-                  </div>
-                  {formik.touched.email && formik.errors.email ? (
-                    <div style={{ color: "red" }}>{formik.errors.email}</div>
-                  ) : null}
-                </div> */}
                 <div class="col-12 mb-3">
                   <label for="email" class="form-label">
                     Email Address
                   </label>
                   <div class="relative sendOtp">
                     <input
-                      class="form-control"
-                      id="email"
-                      placeholder="Email Address"
-                      type="text"
-                      value=""
-                      name="email"
+                       className="form-controles"
+                       id="email"
+                       placeholder="Enter your email address"
+                       type="email"
+                       defaultValue=""
+                       name="email"
+                       onChange={formik.handleChange}
+                       onBlur={formik.handleBlur}
+                       value={formik.values.email}
                     />
                     <button type="submit" class=" LockIcon">
                       Send OTP
                     </button>
                   </div>
+                  {formik.touched.email && formik.errors.email ? (
+                    <div style={{ color: "red" }}>{formik.errors.email}</div>
+                  ) : null}
                 </div>
 
                 <div className="col-12 mb-3">

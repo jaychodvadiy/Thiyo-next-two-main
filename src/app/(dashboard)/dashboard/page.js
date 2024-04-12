@@ -88,13 +88,6 @@ function Villa() {
             >
               <div className="modal-dialog modal-dialog-centered">
                 <div className="modal-content">
-                  {/* <img
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                    className="img-fluid btn-close"
-                    src="/_next/static/media/sliderClose.766e2524.png"
-                    alt="close button"
-                  /> */}
                   <div className="swiper swiper-initialized swiper-horizontal mySwiper">
                     <div
                       className="swiper-wrapper"
@@ -105,42 +98,22 @@ function Villa() {
                     >
                       <div className="swiper-slide">
                         <div className="modalImage">
-                          {/* <img
-                            src="https://images.unsplash.com/photo-1489516408517-0c0a15662682"
-                            alt="Image"
-                          /> */}
                         </div>
                       </div>
                       <div className="swiper-slide">
                         <div className="modalImage">
-                          {/* <img
-                            src="https://images.unsplash.com/photo-1518684079-3c830dcef090"
-                            alt="Image"
-                          /> */}
                         </div>
                       </div>
                       <div className="swiper-slide">
                         <div className="modalImage">
-                          {/* <img
-                            src="https://plus.unsplash.com/premium_photo-1661964298224-7747aa0ac10c"
-                            alt="Image"
-                          /> */}
                         </div>
                       </div>
                       <div className="swiper-slide">
                         <div className="modalImage">
-                          {/* <img
-                            src="https://images.unsplash.com/photo-1526651197376-ada29b846227"
-                            alt="Image"
-                          /> */}
                         </div>
                       </div>
                       <div className="swiper-slide">
                         <div className="modalImage">
-                          {/* <img
-                            src="https://images.unsplash.com/photo-1677508398175-4a2a1408048f"
-                            alt="Image"
-                          /> */}
                         </div>
                       </div>
                     </div>
@@ -537,12 +510,7 @@ function Villa() {
                   <div className="modal-body">
                     <iframe
                       style={{ width: "770px", height: "450px" }}
-                      // width="100%"
-                      // height="100%"
-                      // src="https://www.youtube.com/embed/gZF_Rif-MfU?si=YTYV_XBsS4fQ2_IP"
-                      // src="https://data.sentiovr.com/spaces/544/space_1543330764/vtour/tour.html"
                       src="https://my.matterport.com/show/?m=CMatvVatCjc&play=1"
-                      // frameBorder="0"
                       frameBorder="0"
                       allowFullScreen=""
                       allow="xr-spatial-tracking"
@@ -799,10 +767,6 @@ function Villa() {
                                   <span> 1000 Sqft</span>
                                 </div>
                                 <div className="bathdetailitems">
-                                  {/* <img
-                                    src="/_next/static/media/parking.86354047.png"
-                                    alt=""
-                                  /> */}
                                   <span>Parking</span>
                                 </div>
                               </div>
@@ -1135,10 +1099,6 @@ function Villa() {
                                   <span> 1000 Sqft</span>
                                 </div>
                                 <div className="bathdetailitems">
-                                  {/* <img
-                                    src="/_next/static/media/parking.86354047.png"
-                                    alt=""
-                                  /> */}
                                   <span>Parking</span>
                                 </div>
                               </div>
@@ -1434,10 +1394,6 @@ function Villa() {
                                   <span> 1000 Sqft</span>
                                 </div>
                                 <div className="bathdetailitems">
-                                  {/* <img
-                                    src="/_next/static/media/parking.86354047.png"
-                                    alt=""
-                                  /> */}
                                   <span>Parking</span>
                                 </div>
                               </div>

@@ -32,15 +32,6 @@ const Verified = () => {
       return prev == name ? "" : name;
     });
   };
-
-  // function PageHeader() {
-  //   const [dropdown, setDropdown] = useState("");
-  //   const handleOpen = (name) => {
-  //     console.log(name, "chckname----->>>>>");
-  //     setDropdown((pre) => {
-  //       return pre == name ? "" : name;
-  //     });
-  //   };
   return (
     <div>
       <section>
@@ -1284,57 +1275,6 @@ const Verified = () => {
                                         </svg>
                                         Tredunlisted Villa
                                       </p>
-                                      <div className="mb-3 d-flex gap-3 align-items-center flex-wrap">
-                                        {/* <div className="bathdetailitems">
-                                          <svg
-                                            width="16"
-                                            height="16"
-                                            viewBox="0 0 16 16"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <path
-                                              d="M13.377 9.50781V10.1328C13.377 11.3266 12.7082 12.3641 11.7207 12.8891L12.127 14.5078H10.877L10.5645 13.2578C10.4582 13.2578 10.3582 13.2578 10.252 13.2578H5.25195C5.1457 13.2578 5.0457 13.2578 4.93945 13.2578L4.62695 14.5078H3.37695L3.7832 12.8891C2.7957 12.3641 2.12695 11.3266 2.12695 10.1328V9.50781H1.50195V8.25781H12.752V3.88281C12.752 3.71705 12.6861 3.55808 12.5689 3.44087C12.4517 3.32366 12.2927 3.25781 12.127 3.25781C11.8145 3.25781 11.577 3.47031 11.502 3.75156C11.8957 4.08906 12.127 4.58906 12.127 5.13281H8.37695C8.37695 4.63553 8.5745 4.15862 8.92613 3.80699C9.27776 3.45536 9.75467 3.25781 10.252 3.25781C10.2895 3.25781 10.3207 3.25781 10.3582 3.25781C10.6145 2.53281 11.3082 2.00781 12.127 2.00781C12.6242 2.00781 13.1011 2.20536 13.4528 2.55699C13.8044 2.90862 14.002 3.38553 14.002 3.88281V9.50781H13.377ZM12.127 9.50781H3.37695V10.1328C3.37695 10.6301 3.5745 11.107 3.92613 11.4586C4.27776 11.8103 4.75467 12.0078 5.25195 12.0078H10.252C10.7492 12.0078 11.2261 11.8103 11.5778 11.4586C11.9294 11.107 12.127 10.6301 12.127 10.1328V9.50781Z"
-                                              fill="#0F0F0F"
-                                            ></path>
-                                          </svg>
-                                          <span>2</span>
-                                        </div>
-                                        <div className="bathdetailitems">
-                                          <svg
-                                            width="12"
-                                            height="12"
-                                            viewBox="0 0 12 12"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                          >
-                                            <rect
-                                              x="1.45508"
-                                              y="1.21094"
-                                              width="9.70215"
-                                              height="9.70215"
-                                              stroke="#1B1B1B"
-                                            ></rect>
-                                            <path
-                                              d="M6.26562 1.17188V11.0887"
-                                              stroke="#1B1B1B"
-                                            ></path>
-                                            <path
-                                              d="M1.30664 6.12891L11.2235 6.12891"
-                                              stroke="#1B1B1B"
-                                            ></path>
-                                          </svg>
-                                          <span> 5000 Sqft</span>
-                                        </div>
-                                        <div className="bathdetailitems">
-                                          <Image
-                                            src="/_next/static/media/parking.86354047.png"
-                                            alt=""
-                                            className="w-72"
-                                          />
-                                          <span>Parking</span>
-                                        </div> */}
-                                      </div>
                                     </div>
                                     <div className="d-flex align-items-center md:gap-3 gap-1 flex-wrap">
                                       <button className="d-flex align-items-center justify-content-center">
@@ -1741,14 +1681,6 @@ const Verified = () => {
                                           </svg>
                                           <span> 5000 Sqft</span>
                                         </div>
-                                        {/* <div className="bathdetailitems">
-                                          <Image
-                                            src="/_next/static/media/parking.86354047.png"
-                                            alt=""
-                                            className="w-72"
-                                          />
-                                          <span>Parking</span>
-                                        </div> */}
                                       </div>
                                     </div>
                                     <div className="d-flex align-items-center md:gap-3 gap-1 flex-wrap">
@@ -2156,14 +2088,6 @@ const Verified = () => {
                                           </svg>
                                           <span> 5000 Sqft</span>
                                         </div>
-                                        {/* <div className="bathdetailitems">
-                                          <Image
-                                            src="/_next/static/media/parking.86354047.png"
-                                            alt=""
-                                            className="w-72"
-                                          />
-                                          <span>Parking</span>
-                                        </div> */}
                                       </div>
                                     </div>
                                     <div className="d-flex align-items-center md:gap-3 gap-1 flex-wrap">
@@ -2571,14 +2495,6 @@ const Verified = () => {
                                           </svg>
                                           <span> 5000 Sqft</span>
                                         </div>
-                                        {/* <div className="bathdetailitems">
-                                          <Image
-                                            src="/_next/static/media/parking.86354047.png"
-                                            alt=""
-                                            className="w-72"
-                                          />
-                                          <span>Parking</span>
-                                        </div> */}
                                       </div>
                                     </div>
                                     <div className="d-flex align-items-center md:gap-3 gap-1 flex-wrap">
@@ -2986,14 +2902,6 @@ const Verified = () => {
                                           </svg>
                                           <span> 5000 Sqft</span>
                                         </div>
-                                        {/* <div className="bathdetailitems">
-                                          <Image
-                                            src="/_next/static/media/parking.86354047.png"
-                                            alt=""
-                                            className="w-72"
-                                          />
-                                          <span>Parking</span>
-                                        </div> */}
                                       </div>
                                     </div>
                                     <div className="d-flex align-items-center md:gap-3 gap-1 flex-wrap">
@@ -3401,14 +3309,6 @@ const Verified = () => {
                                           </svg>
                                           <span> 5000 Sqft</span>
                                         </div>
-                                        {/* <div className="bathdetailitems">
-                                          <Image
-                                            src="/_next/static/media/parking.86354047.png"
-                                            alt=""
-                                            className="w-72"
-                                          />
-                                          <span>Parking</span>
-                                        </div> */}
                                       </div>
                                     </div>
                                     <div className="d-flex align-items-center md:gap-3 gap-1 flex-wrap">
@@ -3816,14 +3716,6 @@ const Verified = () => {
                                           </svg>
                                           <span> 5000 Sqft</span>
                                         </div>
-                                        {/* <div className="bathdetailitems">
-                                          <Image
-                                            src="/_next/static/media/parking.86354047.png"
-                                            alt=""
-                                            className="w-72"
-                                          />
-                                          <span>Parking</span>
-                                        </div> */}
                                       </div>
                                     </div>
                                     <div className="d-flex align-items-center md:gap-3 gap-1 flex-wrap">

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-
 import line from "../../../../assets/images/line.ca65a041.png";
 function QuestionsAsked() {
   return (
