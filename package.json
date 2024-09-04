@@ -44,7 +44,6 @@
     "sharp": "^0.33.2",
     "swiper": "^11.0.7",
     "use-places-autocomplete": "^4.0.1",
-    "yap": "^0.0.2",
     "yup": "^1.4.0"
   }
 }
