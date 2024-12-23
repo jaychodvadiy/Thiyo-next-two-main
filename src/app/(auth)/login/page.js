@@ -1,6 +1,7 @@
 "use client";
-
+// Loging.js
 import React, { useState } from "react";
+// import "../../../style/thiyo.css";
 import Image from "next/image";
 import ThiyoLogo from "../../../assets/images/logofooter.25bbaa5d.png";
 import Googleicons from "../../../assets/images/googleicon.png";
@@ -11,6 +12,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 function Loging() {
+  const [clickedButton, setClickedButton] = useState("");
+  const [email, setEmail] = useState("");
 
   const formik = useFormik({
     initialValues: {
